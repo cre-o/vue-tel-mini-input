@@ -1,34 +1,23 @@
 # vue-tel-mini-input
-International Telephone Input with Vue.
-
-Checkout Demo at [Github pages](https://educationlink.github.io/vue-tel-input/).
-
-<p align="center">
-<img width="600px" alt="In-action GIF" src="https://thumbs.gfycat.com/EducatedPoliteBluefintuna-size_restricted.gif"/>
-</p>
+International Telephone Input (this is minified version of package vue-tel-input package by [Steven](https://github.com/iamstevendao))
 
 ## Installation
 - **yarn**:
   ```bash
-    yarn add vue-tel-input
+    yarn add vue-mini-tel-input
   ```
 - **npm**:
   ```bash
-    npm i --save vue-tel-input
+    npm i --save vue-mini-tel-input
   ```
 
 ## Usage
-- Import default `CSS` to your project:
-    ```js
-    import 'vue-tel-input/dist/vue-tel-input.css';
-    ```
-
 - Install as a global component:
     ```javascript
     import Vue from 'vue'
-    import VueTelInput from 'vue-tel-input'
+    import VueMiniTelInput from 'vue-mini-tel-input'
 
-    Vue.use(VueTelInput)
+    Vue.use(VueMiniTelInput)
     ```
 
 - In your component:
@@ -118,4 +107,4 @@ $ yarn/npm dist
 - [mikob](https://github.com/mikob) for super awesome work to [remove the bootstrap dependency](https://github.com/EducationLink/vue-tel-input/pull/13).
 - [kalcifield](https://github.com/kalcifield) for helping make the input [preload with a phone number](https://github.com/EducationLink/vue-tel-input/pull/8).
 
-made with &#x2764; by [Steven](https://github.com/iamstevendao).
+made with &#x2764; by [Steven](https://github.com/iamstevendao) and [Sergey](https://github.com/cre-o).
