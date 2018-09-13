@@ -1344,6 +1344,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           this.$refs.input.setCustomValidity(this.response.isValid ? "" : this.invalidMsg), this.$emit("input", this.response.number), this.$emit("onInput", this.response);
         }, onBlur: function onBlur() {
           this.$emit("onBlur");
+        }, onFocus: function onFocus(t) {
+          console.log(this.$el), console.log(t), setTimeout(function () {
+            t.target.selectionStart = t.target.selectionEnd = 1e4;
+          }, 0);
         } } };
   }, function (t, e, n) {
     "use strict";
@@ -4472,7 +4476,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       var t = this,
           e = t.$createElement;return (t._self._c || e)("input", { directives: [{ name: "model", rawName: "v-model", value: t.phone, expression: "phone" }], ref: "input", attrs: { type: "tel", placeholder: t.placeholder, state: t.state, formatter: t.format, disabled: t.disabled, required: t.required }, domProps: { value: t.phone }, on: { blur: t.onBlur, input: [function (e) {
             e.target.composing || (t.phone = e.target.value);
-          }, t.onInput] } });
+          }, t.onInput], focus: t.onFocus } });
     },
         i = [],
         o = { render: r, staticRenderFns: i };e.a = o;

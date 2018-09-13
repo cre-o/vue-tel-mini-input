@@ -8,7 +8,8 @@
            :disabled="disabled"
            @blur="onBlur"
            @input="onInput"
-           :required="required">
+           :required="required"
+           @focus="onFocus">
 </template>
 
 <script>
@@ -182,6 +183,9 @@ export default {
     },
     onBlur() {
       this.$emit('onBlur');
+    },
+    onFocus(e) {
+      setTimeout(() => { e.target.selectionStart = e.target.selectionEnd = 10000 }, 0);
     }
   }
 };
