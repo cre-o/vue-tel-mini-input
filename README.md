@@ -1,4 +1,4 @@
-# vue-tel-input
+# vue-tel-mini-input
 International Telephone Input with Vue.
 
 Checkout Demo at [Github pages](https://educationlink.github.io/vue-tel-input/).
