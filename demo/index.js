@@ -1,11 +1,8 @@
 import Vue from 'vue';
-import VueTelInput from '../dist/vue-tel-input';
-
-import '../dist/vue-tel-input.css';
-
+import VueTelMiniInput from '../dist/vue-tel-mini-input';
 import App from './App.vue';
 
-Vue.use(VueTelInput);
+Vue.use(VueTelMiniInput);
 
 Vue.config.productionTip = false;
 

@@ -1,20 +1,20 @@
 {
-  "name": "vue-tel-input",
-  "version": "2.0.5",
+  "name": "vue-tel-mini-input",
+  "version": "1.0",
   "description": "International Telephone Input with Vue",
-  "author": "Steven Dao <iamstevendao@gmail.com>",
-  "main": "dist/vue-tel-input.js",
+  "author": "Steven Dao <iamstevendao@gmail.com>, Sergey Shukhta <promo.creo@gmail.com>",
+  "main": "dist/vue-tel-mini-input.js",
   "license": "MIT",
-  "homepage": "https://educationlink.github.io/vue-tel-input/",
+  "homepage": "https://github.com/cre-o/vue-tel-mini-input",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EducationLink/vue-tel-input.git"
+    "url": "https://github.com/cre-o/vue-tel-mini-input.git"
   },
   "scripts": {
-    "dist": "poi build ./src/vue-tel-input.js --format umd --module-name VueTelInput --filename.js vue-tel-input.js --filename.css vue-tel-input.css --no-sourceMap --no-html",
-    "dist:demo": "poi build ./demo/index.js --config ./demo/build.config.js --filename.css vue-tel-input.css --no-sourceMap --dist ./docs",
+    "dist": "poi build ./src/vue-tel-mini-input.js --format umd --module-name VueTelInput --filename.js vue-tel-mini-input.js --no-sourceMap --no-html",
+    "dist:demo": "poi build ./demo/index.js --config ./demo/build.config.js --no-sourceMap --dist ./docs",
     "start": "yarn dev",
-    "dev": "poi build ./demo/index.js --config ./demo/build.config.js --filename.css vue-tel-input.css --no-sourceMap --no-minimize --dist ./docs",
+    "dev": "poi build ./demo/index.js --config ./demo/build.config.js --no-sourceMap --no-minimize --dist ./docs",
     "release": "rm -rf dist && yarn dist",
     "demo": "yarn dist && yarn dev && yarn demo:open",
     "demo:open": "open 'http://localhost:5000/'; serve ./docs/"
@@ -26,7 +26,7 @@
     "vue",
     "telephone",
     "phone",
-    "vue-tel-input",
+    "vue-tel-mini-input",
     "phone input",
     "telephone input"
   ],

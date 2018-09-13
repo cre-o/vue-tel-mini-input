@@ -2,9 +2,9 @@ webpackJsonp([1],[
 /* 0 */,
 /* 1 */,
 /* 2 */
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib?{"babelrc":false,"presets":[["/Users/stevend/coding/vue/vue-tel-input/node_modules/babel-preset-poi/index.js",{"jsx":"vue"}]],"cacheDirectory":true}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./demo/App.vue ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib?{"babelrc":false,"presets":[["/Users/creo/IDO/WebDev/opensource/vue-tel-mini-input/node_modules/babel-preset-poi/index.js",{"jsx":"vue"}]],"cacheDirectory":true}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./demo/App.vue ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -69,7 +69,7 @@ webpackJsonp([1],[
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/stevend/coding/vue/vue-tel-input/demo/index.js */4);
+module.exports = __webpack_require__(/*! /Users/creo/IDO/WebDev/opensource/vue-tel-mini-input/demo/index.js */4);
 
 
 /***/ }),
@@ -84,33 +84,28 @@ module.exports = __webpack_require__(/*! /Users/stevend/coding/vue/vue-tel-input
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_input__ = __webpack_require__(/*! ../dist/vue-tel-input */ 8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_input___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_input__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dist_vue_tel_input_css__ = __webpack_require__(/*! ../dist/vue-tel-input.css */ 10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dist_vue_tel_input_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__dist_vue_tel_input_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_vue__ = __webpack_require__(/*! ./App.vue */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_mini_input__ = __webpack_require__(/*! ../dist/vue-tel-mini-input */ 8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_mini_input___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_mini_input__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_vue__ = __webpack_require__(/*! ./App.vue */ 10);
 
 
 
 
-
-
-
-__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_input___default.a);
+__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_1__dist_vue_tel_mini_input___default.a);
 
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.productionTip = false;
 
 /* eslint-disable no-new */
-new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEBPACK_IMPORTED_MODULE_3__App_vue__["a" /* default */])).$mount('#app');
+new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEBPACK_IMPORTED_MODULE_2__App_vue__["a" /* default */])).$mount('#app');
 
 /***/ }),
 /* 5 */,
 /* 6 */,
 /* 7 */,
 /* 8 */
-/*!*******************************!*\
-  !*** ./dist/vue-tel-input.js ***!
-  \*******************************/
+/*!************************************!*\
+  !*** ./dist/vue-tel-mini-input.js ***!
+  \************************************/
 /*! dynamic exports provided */
 /*! exports used: default */
 /***/ (function(module, exports, __webpack_require__) {
@@ -266,12 +261,12 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }function g(t, e, n) {
         var r = !1;if ((void 0 === e || e < 0) && (e = 0), e > this.length) return "";if ((void 0 === n || n > this.length) && (n = this.length), n <= 0) return "";if (n >>>= 0, e >>>= 0, n <= e) return "";for (t || (t = "utf8");;) {
           switch (t) {case "hex":
-              return L(this, e, n);case "utf8":case "utf-8":
+              return M(this, e, n);case "utf8":case "utf-8":
               return R(this, e, n);case "ascii":
               return T(this, e, n);case "latin1":case "binary":
-              return C(this, e, n);case "base64":
+              return L(this, e, n);case "base64":
               return A(this, e, n);case "ucs2":case "ucs-2":case "utf16le":case "utf-16le":
-              return M(this, e, n);default:
+              return C(this, e, n);default:
               if (r) throw new TypeError("Unknown encoding: " + t);t = (t + "").toLowerCase(), r = !0;}
         }
       }function m(t, e, n) {
@@ -309,13 +304,13 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }function w(t, e, n, r) {
         return K(G(e, t.length - n), t, n, r);
       }function E(t, e, n, r) {
-        return K(H(e), t, n, r);
+        return K(q(e), t, n, r);
       }function k(t, e, n, r) {
         return E(t, e, n, r);
       }function x(t, e, n, r) {
         return K(Y(e), t, n, r);
       }function S(t, e, n, r) {
-        return K(q(e, t.length - n), t, n, r);
+        return K(H(e, t.length - n), t, n, r);
       }function A(t, e, n) {
         return 0 === e && n === t.length ? V.fromByteArray(t) : V.fromByteArray(t.slice(e, n));
       }function R(t, e, n) {
@@ -338,15 +333,15 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         var r = "";n = Math.min(t.length, n);for (var i = e; i < n; ++i) {
           r += String.fromCharCode(127 & t[i]);
         }return r;
-      }function C(t, e, n) {
+      }function L(t, e, n) {
         var r = "";n = Math.min(t.length, n);for (var i = e; i < n; ++i) {
           r += String.fromCharCode(t[i]);
         }return r;
-      }function L(t, e, n) {
+      }function M(t, e, n) {
         var r = t.length;(!e || e < 0) && (e = 0), (!n || n < 0 || n > r) && (n = r);for (var i = "", o = e; o < n; ++o) {
           i += Z(t[o]);
         }return i;
-      }function M(t, e, n) {
+      }function C(t, e, n) {
         for (var r = t.slice(e, n), i = "", o = 0; o < r.length; o += 2) {
           i += String.fromCharCode(r[o] + 256 * r[o + 1]);
         }return i;
@@ -398,11 +393,11 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
             if (!(n < 1114112)) throw new Error("Invalid code point");if ((e -= 4) < 0) break;o.push(n >> 18 | 240, n >> 12 & 63 | 128, n >> 6 & 63 | 128, 63 & n | 128);
           }
         }return o;
-      }function H(t) {
+      }function q(t) {
         for (var e = [], n = 0; n < t.length; ++n) {
           e.push(255 & t.charCodeAt(n));
         }return e;
-      }function q(t, e) {
+      }function H(t, e) {
         for (var n, r, i, o = [], a = 0; a < t.length && !((e -= 2) < 0); ++a) {
           n = t.charCodeAt(a), r = n >> 8, i = n % 256, o.push(i), o.push(r);
         }return o;
@@ -414,8 +409,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         }return i;
       }function W(t) {
         return t !== t;
-      }var V = n(117),
-          J = n(118),
+      }var V = n(115),
+          J = n(116),
           X = n(51);e.Buffer = o, e.SlowBuffer = p, e.INSPECT_MAX_BYTES = 50, o.TYPED_ARRAY_SUPPORT = void 0 !== t.TYPED_ARRAY_SUPPORT ? t.TYPED_ARRAY_SUPPORT : function () {
         try {
           var t = new Uint8Array(1);return t.__proto__ = { __proto__: Uint8Array.prototype, foo: function foo() {
@@ -658,10 +653,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
                 R = A.split(":"),
                 O = g()(R, 2),
                 T = O[0],
-                C = O[1];switch (T) {case "tel":
-                p = C;break;case "ext":
-                _ = C;break;case "phone-context":
-                "+" === C[0] && (p = C + p);}
+                L = O[1];switch (T) {case "tel":
+                p = L;break;case "ext":
+                _ = L;break;case "phone-context":
+                "+" === L[0] && (p = L + p);}
           }
         } catch (t) {
           w = !0, E = t;
@@ -672,9 +667,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
             if (w) throw E;
           }
         }
-      } else p = d(o);if (!a(p)) return {};var L = h(p);L.extension && (p = L.number, _ = L.extension);var M = u(p, $),
-          I = M.country_phone_code,
-          j = M.number;if (!j) return {};var B = void 0,
+      } else p = d(o);if (!a(p)) return {};var M = h(p);M.extension && (p = M.number, _ = M.extension);var C = u(p, $),
+          I = C.country_phone_code,
+          j = C.number;if (!j) return {};var B = void 0,
           N = void 0,
           P = !1;if (I) {
         if (P = !0, s.country.restrict && I !== Object(b.o)($.countries[s.country.restrict])) return {};N = Object(b.k)(I, $);
@@ -740,7 +735,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           i = void 0,
           o = void 0;if ("number" == typeof t && (t = String(t)), "string" == typeof t && (r = t), "string" == typeof e ? (i = { country: { restrict: e } }, o = n) : n ? (i = e, o = n) : o = e, !o || !o.countries) throw new Error("Metadata is required");return i = i ? p()({}, z, i) : z, { text: r, options: i, metadata: o };
     }function h(t) {
-      var e = t.search(L);if (e < 0) return {};var n = t.slice(0, e);if (!a(n)) return {};for (var r = t.match(L), i = 1; i < r.length;) {
+      var e = t.search(M);if (e < 0) return {};var n = t.slice(0, e);if (!a(n)) return {};for (var r = t.match(M), i = 1; i < r.length;) {
         if (null != r[i] && r[i].length > 0) return { number: n, extension: r[i] };i++;
       }
     }n.d(e, "a", function () {
@@ -751,7 +746,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       return O;
     }), e.d = r, e.g = a, e.e = d, e.h = s, e.i = u, e.j = l, e.f = c;var $ = n(34),
         p = n.n($),
-        _ = n(88),
+        _ = n(86),
         g = n.n(_),
         m = n(17),
         v = n.n(m),
@@ -766,11 +761,11 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         R = "0-9０-９٠-٩۰-۹",
         O = "-‐-―−ー－／/．.  ­​⁠　()（）［］\\[\\]~⁓∼～",
         T = "([" + R + "]{1,7})",
-        C = ";ext=" + T + "|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[;,xｘ#＃~～]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*" + T + "#?|[- ]+([" + R + "]{1,5})#",
-        L = new RegExp("(?:" + C + ")$", "i"),
-        M = "[" + R + "]{" + k + "}",
+        L = ";ext=" + T + "|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[;,xｘ#＃~～]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*" + T + "#?|[- ]+([" + R + "]{1,5})#",
+        M = new RegExp("(?:" + L + ")$", "i"),
+        C = "[" + R + "]{" + k + "}",
         I = "[" + A + "]{0,1}(?:[" + O + "]*[" + R + "]){3,}[" + O + R + "]*",
-        j = new RegExp("^" + M + "$|^" + I + "(?:" + C + ")?$", "i"),
+        j = new RegExp("^" + C + "$|^" + I + "(?:" + L + ")?$", "i"),
         B = new RegExp("[" + A + R + "]"),
         N = new RegExp("[^" + R + "]+$"),
         P = new RegExp("^[" + A + "]+"),
@@ -838,11 +833,11 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       return w(t, 6);
     }function T(t) {
       return w(t, 7);
-    }function C(t) {
-      return w(t, 8);
     }function L(t) {
+      return w(t, 8);
+    }function M(t) {
       return w(t, 9);
-    }e.o = r, e.l = i, e.i = o, e.m = s, e.n = u, e.j = c, e.g = f, e.a = h, e.c = $, e.d = p, e.f = _, e.e = g, e.h = m, e.b = v, e.k = y, e.z = b, e.p = E, e.q = k, e.v = x, e.t = S, e.s = A, e.x = R, e.w = O, e.r = T, e.y = C, e.u = L;
+    }e.o = r, e.l = i, e.i = o, e.m = s, e.n = u, e.j = c, e.g = f, e.a = h, e.c = $, e.d = p, e.f = _, e.e = g, e.h = m, e.b = v, e.k = y, e.z = b, e.p = E, e.q = k, e.v = x, e.t = S, e.s = A, e.x = R, e.w = O, e.r = T, e.y = L, e.u = M;
   }, function (t, e, n) {
     "use strict";
     function r(t) {
@@ -917,8 +912,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     }).call(e, n(2).Buffer);
   }, function (t, e, n) {
     var r = n(15),
-        i = n(79),
-        o = n(80),
+        i = n(77),
+        o = n(78),
         a = Object.defineProperty;e.f = n(11) ? Object.defineProperty : function (t, e, n) {
       if (r(t), e = o(e, !0), r(n), i) try {
         return a(t, e, n);
@@ -933,7 +928,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       return n.call(t, e);
     };
   }, function (t, e, n) {
-    t.exports = { default: n(103), __esModule: !0 };
+    t.exports = { default: n(101), __esModule: !0 };
   }, function (t, e, n) {
     "use strict";
     function r() {
@@ -1089,7 +1084,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
   }, function (t, e, n) {
     var r = n(6),
         i = n(7),
-        o = n(77),
+        o = n(75),
         a = n(10),
         d = function d(t, e, n) {
       var s,
@@ -1148,7 +1143,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       return r[t] || (r[t] = i(t));
     };
   }, function (t, e, n) {
-    e = t.exports = n(54), e.Stream = e, e.Readable = e, e.Writable = n(58), e.Duplex = n(9), e.Transform = n(60), e.PassThrough = n(126);
+    e = t.exports = n(54), e.Stream = e, e.Readable = e, e.Writable = n(58), e.Duplex = n(9), e.Transform = n(60), e.PassThrough = n(124);
   }, function (t, e, n) {
     function r(t, e) {
       for (var n in t) {
@@ -1201,12 +1196,12 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         return "[" + Error.prototype.toString.call(t) + "]";
       }function c(t, e, n, r, i) {
         for (var o = [], a = 0, d = e.length; a < d; ++a) {
-          C(e, String(a)) ? o.push(f(t, e, n, r, String(a), !0)) : o.push("");
+          L(e, String(a)) ? o.push(f(t, e, n, r, String(a), !0)) : o.push("");
         }return i.forEach(function (i) {
           i.match(/^\d+$/) || o.push(f(t, e, n, r, i, !0));
         }), o;
       }function f(t, e, n, r, i, o) {
-        var a, d, u;if (u = Object.getOwnPropertyDescriptor(e, i) || { value: e[i] }, u.get ? d = u.set ? t.stylize("[Getter/Setter]", "special") : t.stylize("[Getter]", "special") : u.set && (d = t.stylize("[Setter]", "special")), C(r, i) || (a = "[" + i + "]"), d || (t.seen.indexOf(u.value) < 0 ? (d = _(n) ? s(t, u.value, null) : s(t, u.value, n - 1), d.indexOf("\n") > -1 && (d = o ? d.split("\n").map(function (t) {
+        var a, d, u;if (u = Object.getOwnPropertyDescriptor(e, i) || { value: e[i] }, u.get ? d = u.set ? t.stylize("[Getter/Setter]", "special") : t.stylize("[Getter]", "special") : u.set && (d = t.stylize("[Setter]", "special")), L(r, i) || (a = "[" + i + "]"), d || (t.seen.indexOf(u.value) < 0 ? (d = _(n) ? s(t, u.value, null) : s(t, u.value, n - 1), d.indexOf("\n") > -1 && (d = o ? d.split("\n").map(function (t) {
           return "  " + t;
         }).join("\n").substr(2) : "\n" + d.split("\n").map(function (t) {
           return "   " + t;
@@ -1252,14 +1247,14 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }function T() {
         var t = new Date(),
             e = [O(t.getHours()), O(t.getMinutes()), O(t.getSeconds())].join(":");return [t.getDate(), j[t.getMonth()], e].join(" ");
-      }function C(t, e) {
+      }function L(t, e) {
         return Object.prototype.hasOwnProperty.call(t, e);
-      }var L = /%[sdj%]/g;e.format = function (t) {
+      }var M = /%[sdj%]/g;e.format = function (t) {
         if (!v(t)) {
           for (var e = [], n = 0; n < arguments.length; n++) {
             e.push(i(arguments[n]));
           }return e.join(" ");
-        }for (var n = 1, r = arguments, o = r.length, a = String(t).replace(L, function (t) {
+        }for (var n = 1, r = arguments, o = r.length, a = String(t).replace(M, function (t) {
           if ("%%" === t) return "%";if (n >= o) return t;switch (t) {case "%s":
               return String(r[n++]);case "%d":
               return Number(r[n++]);case "%j":
@@ -1280,14 +1275,14 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         }if (b(t.process)) return function () {
           return e.deprecate(n, i).apply(this, arguments);
         };if (!0 === r.noDeprecation) return n;var a = !1;return o;
-      };var M,
+      };var C,
           I = {};e.debuglog = function (t) {
-        if (b(M) && (M = r.env.NODE_DEBUG || ""), t = t.toUpperCase(), !I[t]) if (new RegExp("\\b" + t + "\\b", "i").test(M)) {
+        if (b(C) && (C = r.env.NODE_DEBUG || ""), t = t.toUpperCase(), !I[t]) if (new RegExp("\\b" + t + "\\b", "i").test(C)) {
           var n = r.pid;I[t] = function () {
             var r = e.format.apply(e, arguments);console.error("%s %d: %s", t, n, r);
           };
         } else I[t] = function () {};return I[t];
-      }, e.inspect = i, i.colors = { bold: [1, 22], italic: [3, 23], underline: [4, 24], inverse: [7, 27], white: [37, 39], grey: [90, 39], black: [30, 39], blue: [34, 39], cyan: [36, 39], green: [32, 39], magenta: [35, 39], red: [31, 39], yellow: [33, 39] }, i.styles = { special: "cyan", number: "yellow", boolean: "yellow", undefined: "grey", null: "bold", string: "green", date: "magenta", regexp: "red" }, e.isArray = $, e.isBoolean = p, e.isNull = _, e.isNullOrUndefined = g, e.isNumber = m, e.isString = v, e.isSymbol = y, e.isUndefined = b, e.isRegExp = w, e.isObject = E, e.isDate = k, e.isError = x, e.isFunction = S, e.isPrimitive = A, e.isBuffer = n(146);var j = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];e.log = function () {
+      }, e.inspect = i, i.colors = { bold: [1, 22], italic: [3, 23], underline: [4, 24], inverse: [7, 27], white: [37, 39], grey: [90, 39], black: [30, 39], blue: [34, 39], cyan: [36, 39], green: [32, 39], magenta: [35, 39], red: [31, 39], yellow: [33, 39] }, i.styles = { special: "cyan", number: "yellow", boolean: "yellow", undefined: "grey", null: "bold", string: "green", date: "magenta", regexp: "red" }, e.isArray = $, e.isBoolean = p, e.isNull = _, e.isNullOrUndefined = g, e.isNumber = m, e.isString = v, e.isSymbol = y, e.isUndefined = b, e.isRegExp = w, e.isObject = E, e.isDate = k, e.isError = x, e.isFunction = S, e.isPrimitive = A, e.isBuffer = n(144);var j = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];e.log = function () {
         console.log("%s - %s", T(), e.format.apply(e, arguments));
       }, e.inherits = n(3), e._extend = function (t, e) {
         if (!e || !E(e)) return t;for (var n = Object.keys(e), r = n.length; r--;) {
@@ -1303,16 +1298,16 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           n[e] = t[e];
         }return n;
       }return Array.from(t);
-    }var i = n(72),
-        o = n(111),
-        a = n(112);e.a = { name: "vue-tel-input", props: { value: { type: String }, placeholder: { type: String, default: "Enter a phone number" }, disabledFetchingCountry: { type: Boolean, default: !1 }, disabled: { type: Boolean, default: !1 }, preferredCountries: { type: Array, default: function _default() {
+    }var i = n(70),
+        o = n(109),
+        a = n(110);e.a = { name: "vue-tel-mini-input", props: { value: { type: String }, placeholder: { type: String, default: "Enter a phone number" }, disabledFetchingCountry: { type: Boolean, default: !1 }, disabled: { type: Boolean, default: !1 }, preferredCountries: { type: Array, default: function _default() {
             return [];
           } }, invalidMsg: { default: "", type: String }, required: { type: Boolean, default: !1 }, defaultCountry: { type: String, default: "" } }, mounted: function mounted() {
         this.initializeCountry();
       }, created: function created() {
         this.value && (this.phone = this.value);
       }, data: function data() {
-        return { phone: "", allCountries: o.a, activeCountry: { iso2: "" }, open: !1, selectedIndex: null, typeToFindInput: "", typeToFindTimer: null };
+        return { phone: "", allCountries: o.a, activeCountry: { iso2: "" } };
       }, computed: { mode: function mode() {
           return this.phone ? "+" === this.phone[0] ? "code" : "0" === this.phone[0] ? "prefix" : "normal" : "";
         }, sortedCountries: function sortedCountries() {
@@ -1337,58 +1332,22 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           var t = this;if (this.defaultCountry) {
             var e = this.findCountry(this.defaultCountry);if (e) return void (this.activeCountry = e);
           }this.activeCountry = this.findCountry(this.preferredCountries[0]) || o.a[0], this.disabledFetchingCountry || Object(a.a)().then(function (e) {
-            t.activeCountry = t.findCountry(e) || t.activeCountry;
+            t.activeCountry = t.findCountry(e) || t.activeCountry, t.findCountry(e) && (t.phone = "+" + t.findCountry(e).dialCode);
           });
         }, findCountry: function findCountry() {
           var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";return o.a.find(function (e) {
             return e.iso2 === t.toUpperCase();
           });
-        }, getItemClass: function getItemClass(t, e) {
-          return { highlighted: this.selectedIndex === t, "last-preferred": t === this.preferredCountries.length - 1, preferred: !!~this.preferredCountries.map(function (t) {
-              return t.toUpperCase();
-            }).indexOf(e) };
         }, choose: function choose(t) {
           this.activeCountry = t, this.$emit("onInput", this.response);
         }, onInput: function onInput() {
           this.$refs.input.setCustomValidity(this.response.isValid ? "" : this.invalidMsg), this.$emit("input", this.response.number), this.$emit("onInput", this.response);
         }, onBlur: function onBlur() {
           this.$emit("onBlur");
-        }, toggleDropdown: function toggleDropdown() {
-          this.disabled || (this.open = !this.open);
-        }, clickedOutside: function clickedOutside() {
-          this.open = !1;
-        }, keyboardNav: function keyboardNav(t) {
-          var e = this;if (40 === t.keyCode) {
-            this.open = !0, null === this.selectedIndex ? this.selectedIndex = 0 : this.selectedIndex = Math.min(this.sortedCountries.length - 1, this.selectedIndex + 1);var n = this.$refs.list.children[this.selectedIndex];n.offsetTop + n.clientHeight > this.$refs.list.scrollTop + this.$refs.list.clientHeight && (this.$refs.list.scrollTop = n.offsetTop - this.$refs.list.clientHeight + n.clientHeight);
-          } else if (38 === t.keyCode) {
-            this.open = !0, null === this.selectedIndex ? this.selectedIndex = this.sortedCountries.length - 1 : this.selectedIndex = Math.max(0, this.selectedIndex - 1);var r = this.$refs.list.children[this.selectedIndex];r.offsetTop < this.$refs.list.scrollTop && (this.$refs.list.scrollTop = r.offsetTop);
-          } else if (13 === t.keyCode) null !== this.selectedIndex && this.choose(this.sortedCountries[this.selectedIndex]), this.open = !this.open;else {
-            this.typeToFindInput += t.key, clearTimeout(this.typeToFindTimer), this.typeToFindTimer = setTimeout(function () {
-              e.typeToFindInput = "";
-            }, 700);var i = this.sortedCountries.slice(this.preferredCountries.length).findIndex(function (t) {
-              return t.name.toLowerCase().startsWith(e.typeToFindInput);
-            });if (~i) {
-              this.selectedIndex = this.preferredCountries.length + i;var o = this.$refs.list.children[this.selectedIndex];(o.offsetTop < this.$refs.list.scrollTop || o.offsetTop + o.clientHeight > this.$refs.list.scrollTop + this.$refs.list.clientHeight) && (this.$refs.list.scrollTop = o.offsetTop - this.$refs.list.clientHeight / 2);
-            }
-          }
-        }, reset: function reset() {
-          this.selectedIndex = this.sortedCountries.map(function (t) {
-            return t.iso2;
-          }).indexOf(this.activeCountry.iso2), this.open = !1;
-        } }, directives: { "click-outside": { bind: function bind(t, e, n) {
-            if ("function" != typeof e.value) {
-              var r = n.context.name,
-                  i = "[Vue-click-outside:] provided expression " + e.expression + " is not a function, but has to be";r && (i += "Found in component " + r), console.warn(i);
-            }var o = e.modifiers.bubble,
-                a = function a(n) {
-              (o || !t.contains(n.target) && t !== n.target) && e.value(n);
-            };t.__vueClickOutside__ = a, document.addEventListener("click", a);
-          }, unbind: function unbind(t, e) {
-            document.removeEventListener("click", t.__vueClickOutside__), t.__vueClickOutside__ = null;
-          } } } };
+        } } };
   }, function (t, e, n) {
     "use strict";
-    e.__esModule = !0;var r = n(74),
+    e.__esModule = !0;var r = n(72),
         i = function (t) {
       return t && t.__esModule ? t : { default: t };
     }(r);e.default = i.default || function (t) {
@@ -1409,7 +1368,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       return { enumerable: !(1 & t), configurable: !(2 & t), writable: !(4 & t), value: e };
     };
   }, function (t, e, n) {
-    var r = n(82),
+    var r = n(80),
         i = n(42);t.exports = Object.keys || function (t) {
       return r(t, i);
     };
@@ -1438,22 +1397,22 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       return Object(r(t));
     };
   }, function (t, e, n) {
-    n(91);for (var r = n(6), i = n(10), o = n(12), a = n(4)("toStringTag"), d = "CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","), s = 0; s < d.length; s++) {
+    n(89);for (var r = n(6), i = n(10), o = n(12), a = n(4)("toStringTag"), d = "CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","), s = 0; s < d.length; s++) {
       var u = d[s],
           l = r[u],
           c = l && l.prototype;c && !c[a] && i(c, a, u), o[u] = o.Array;
     }
   }, function (t, e, n) {
     "use strict";
-    var r = n(94),
+    var r = n(92),
         i = n(23),
-        o = n(95),
+        o = n(93),
         a = n(10),
         d = n(16),
         s = n(12),
-        u = n(96),
+        u = n(94),
         l = n(46),
-        c = n(100),
+        c = n(98),
         f = n(4)("iterator"),
         h = !([].keys && "next" in [].keys()),
         $ = function $() {
@@ -1491,7 +1450,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     };
   }, function (t, e, n) {
     "use strict";
-    var r = n(101)(!0);n(45)(String, "String", function (t) {
+    var r = n(99)(!0);n(45)(String, "String", function (t) {
       this._t = String(t), this._i = 0;
     }, function () {
       var t,
@@ -1548,9 +1507,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }return n + t;
     }var a = n(17),
         d = n.n(a),
-        s = n(106),
+        s = n(104),
         u = n.n(s),
-        l = n(107),
+        l = n(105),
         c = n.n(l),
         f = n(8),
         h = n(5),
@@ -1696,9 +1655,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     };
   }, function (t, e, n) {
     (function (t) {
-      var r = n(119),
-          i = n(128),
-          o = n(129),
+      var r = n(117),
+          i = n(126),
+          o = n(127),
           a = n(61),
           d = e;d.request = function (e, n) {
         e = "string" == typeof e ? a.parse(e) : i(e);var o = -1 === t.location.protocol.search(/^https?:$/) ? "http:" : "",
@@ -1742,10 +1701,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }function a(t, e, n) {
         if ("function" == typeof t.prependListener) return t.prependListener(e, n);t._events && t._events[e] ? I(t._events[e]) ? t._events[e].unshift(n) : t._events[e] = [n, t._events[e]] : t.on(e, n);
       }function d(t, e) {
-        M = M || n(9), t = t || {}, this.objectMode = !!t.objectMode, e instanceof M && (this.objectMode = this.objectMode || !!t.readableObjectMode);var r = t.highWaterMark,
+        C = C || n(9), t = t || {}, this.objectMode = !!t.objectMode, e instanceof C && (this.objectMode = this.objectMode || !!t.readableObjectMode);var r = t.highWaterMark,
             i = this.objectMode ? 16 : 16384;this.highWaterMark = r || 0 === r ? r : i, this.highWaterMark = Math.floor(this.highWaterMark), this.buffer = new Z(), this.length = 0, this.pipes = null, this.pipesCount = 0, this.flowing = null, this.ended = !1, this.endEmitted = !1, this.reading = !1, this.sync = !0, this.needReadable = !1, this.emittedReadable = !1, this.readableListening = !1, this.resumeScheduled = !1, this.destroyed = !1, this.defaultEncoding = t.defaultEncoding || "utf8", this.awaitDrain = 0, this.readingMore = !1, this.decoder = null, this.encoding = null, t.encoding && (F || (F = n(59).StringDecoder), this.decoder = new F(t.encoding), this.encoding = t.encoding);
       }function s(t) {
-        if (M = M || n(9), !(this instanceof s)) return new s(t);this._readableState = new d(t, this), this.readable = !0, t && ("function" == typeof t.read && (this._read = t.read), "function" == typeof t.destroy && (this._destroy = t.destroy)), B.call(this);
+        if (C = C || n(9), !(this instanceof s)) return new s(t);this._readableState = new d(t, this), this.readable = !0, t && ("function" == typeof t.read && (this._read = t.read), "function" == typeof t.destroy && (this._destroy = t.destroy)), B.call(this);
       }function u(t, e, n, r, o) {
         var a = t._readableState;if (null === e) a.reading = !1, p(t, a);else {
           var d;o || (d = c(a, e)), d ? t.emit("error", d) : a.objectMode || e && e.length > 0 ? ("string" == typeof e || a.objectMode || Object.getPrototypeOf(e) === N.prototype || (e = i(e)), r ? a.endEmitted ? t.emit("error", new Error("stream.unshift() after end event")) : l(t, a, e, !0) : a.ended ? t.emit("error", new Error("stream.push() after EOF")) : (a.reading = !1, a.decoder && !n ? (e = a.decoder.write(e), a.objectMode || 0 !== e.length ? l(t, a, e, !1) : m(t, a)) : l(t, a, e, !1))) : r || (a.reading = !1);
@@ -1757,7 +1716,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }function f(t) {
         return !t.ended && (t.needReadable || t.length < t.highWaterMark || 0 === t.length);
       }function h(t) {
-        return t >= q ? t = q : (t--, t |= t >>> 1, t |= t >>> 2, t |= t >>> 4, t |= t >>> 8, t |= t >>> 16, t++), t;
+        return t >= H ? t = H : (t--, t |= t >>> 1, t |= t >>> 2, t |= t >>> 4, t |= t >>> 8, t |= t >>> 16, t++), t;
       }function $(t, e) {
         return t <= 0 || 0 === e.length && e.ended ? 0 : e.objectMode ? 1 : t !== t ? e.flowing && e.length ? e.buffer.head.data.length : e.length : (t > e.highWaterMark && (e.highWaterMark = h(t)), t <= e.length ? t : e.ended ? e.length : (e.needReadable = !0, 0));
       }function p(t, e) {
@@ -1767,11 +1726,11 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           }e.ended = !0, _(t);
         }
       }function _(t) {
-        var e = t._readableState;e.needReadable = !1, e.emittedReadable || (D("emitReadable", e.flowing), e.emittedReadable = !0, e.sync ? L(g, t) : g(t));
+        var e = t._readableState;e.needReadable = !1, e.emittedReadable || (D("emitReadable", e.flowing), e.emittedReadable = !0, e.sync ? M(g, t) : g(t));
       }function g(t) {
         D("emit readable"), t.emit("readable"), k(t);
       }function m(t, e) {
-        e.readingMore || (e.readingMore = !0, L(v, t, e));
+        e.readingMore || (e.readingMore = !0, M(v, t, e));
       }function v(t, e) {
         for (var n = e.length; !e.reading && !e.flowing && !e.ended && e.length < e.highWaterMark && (D("maybeReadMore read 0"), t.read(0), n !== e.length);) {
           n = e.length;
@@ -1783,7 +1742,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }function b(t) {
         D("readable nexttick read 0"), t.read(0);
       }function w(t, e) {
-        e.resumeScheduled || (e.resumeScheduled = !0, L(E, t, e));
+        e.resumeScheduled || (e.resumeScheduled = !0, M(E, t, e));
       }function E(t, e) {
         e.reading || (D("resume read 0"), t.read(0)), e.resumeScheduled = !1, e.awaitDrain = 0, t.emit("resume"), k(t), e.flowing && !e.reading && t.read(0);
       }function k(t) {
@@ -1811,24 +1770,24 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           }++i;
         }return e.length -= i, n;
       }function O(t) {
-        var e = t._readableState;if (e.length > 0) throw new Error('"endReadable()" called on non-empty stream');e.endEmitted || (e.ended = !0, L(T, e, t));
+        var e = t._readableState;if (e.length > 0) throw new Error('"endReadable()" called on non-empty stream');e.endEmitted || (e.ended = !0, M(T, e, t));
       }function T(t, e) {
         t.endEmitted || 0 !== t.length || (t.endEmitted = !0, e.readable = !1, e.emit("end"));
-      }function C(t, e) {
+      }function L(t, e) {
         for (var n = 0, r = t.length; n < r; n++) {
           if (t[n] === e) return n;
         }return -1;
-      }var L = n(21);t.exports = s;var M,
+      }var M = n(21);t.exports = s;var C,
           I = n(51);s.ReadableState = d;var j = (n(55).EventEmitter, function (t, e) {
         return t.listeners(e).length;
       }),
           B = n(56),
           N = n(31).Buffer,
           P = e.Uint8Array || function () {},
-          U = n(13);U.inherits = n(3);var z = n(121),
+          U = n(13);U.inherits = n(3);var z = n(119),
           D = void 0;D = z && z.debuglog ? z.debuglog("stream") : function () {};var F,
-          Z = n(122),
-          G = n(57);U.inherits(s, B);var H = ["error", "close", "destroy", "pause", "resume"];Object.defineProperty(s.prototype, "destroyed", { get: function get() {
+          Z = n(120),
+          G = n(57);U.inherits(s, B);var q = ["error", "close", "destroy", "pause", "resume"];Object.defineProperty(s.prototype, "destroyed", { get: function get() {
           return void 0 !== this._readableState && this._readableState.destroyed;
         }, set: function set(t) {
           this._readableState && (this._readableState.destroyed = t);
@@ -1843,7 +1802,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         return !1 === this._readableState.flowing;
       }, s.prototype.setEncoding = function (t) {
         return F || (F = n(59).StringDecoder), this._readableState.decoder = new F(t), this._readableState.encoding = t, this;
-      };var q = 8388608;s.prototype.read = function (t) {
+      };var H = 8388608;s.prototype.read = function (t) {
         D("read", t), t = parseInt(t, 10);var e = this._readableState,
             n = t;if (0 !== t && (e.emittedReadable = !1), 0 === t && e.needReadable && (e.length >= e.highWaterMark || e.ended)) return D("read: emitReadable", e.length, e.ended), 0 === e.length && e.ended ? O(this) : _(this), null;if (0 === (t = $(t, e)) && e.ended) return 0 === e.length && O(this), null;var r = e.needReadable;D("need readable", r), (0 === e.length || e.length - t < e.highWaterMark) && (r = !0, D("length less than watermark", r)), e.ended || e.reading ? (r = !1, D("reading or ended", r)) : r && (D("do read"), e.reading = !0, e.sync = !0, 0 === e.length && (e.needReadable = !0), this._read(e.highWaterMark), e.sync = !1, e.reading || (t = $(n, e)));var i;return i = t > 0 ? x(t, e) : null, null === i ? (e.needReadable = !0, t = 0) : e.length -= t, 0 === e.length && (e.ended || (e.needReadable = !0), n !== t && e.ended && O(this)), null !== i && this.emit("data", i), i;
       }, s.prototype._read = function (t) {
@@ -1856,7 +1815,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         }function o() {
           D("cleanup"), t.removeListener("close", u), t.removeListener("finish", l), t.removeListener("drain", _), t.removeListener("error", s), t.removeListener("unpipe", n), f.removeListener("end", i), f.removeListener("end", c), f.removeListener("data", d), g = !0, !h.awaitDrain || t._writableState && !t._writableState.needDrain || _();
         }function d(e) {
-          D("ondata"), m = !1, !1 !== t.write(e) || m || ((1 === h.pipesCount && h.pipes === t || h.pipesCount > 1 && -1 !== C(h.pipes, t)) && !g && (D("false write response, pause", f._readableState.awaitDrain), f._readableState.awaitDrain++, m = !0), f.pause());
+          D("ondata"), m = !1, !1 !== t.write(e) || m || ((1 === h.pipesCount && h.pipes === t || h.pipesCount > 1 && -1 !== L(h.pipes, t)) && !g && (D("false write response, pause", f._readableState.awaitDrain), f._readableState.awaitDrain++, m = !0), f.pause());
         }function s(e) {
           D("onerror", e), c(), t.removeListener("error", s), 0 === j(t, "error") && t.emit("error", e);
         }function u() {
@@ -1870,7 +1829,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
             h.pipes = t;break;case 1:
             h.pipes = [h.pipes, t];break;default:
             h.pipes.push(t);}h.pipesCount += 1, D("pipe count=%d opts=%j", h.pipesCount, e);var $ = (!e || !1 !== e.end) && t !== r.stdout && t !== r.stderr,
-            p = $ ? i : c;h.endEmitted ? L(p) : f.once("end", p), t.on("unpipe", n);var _ = y(f);t.on("drain", _);var g = !1,
+            p = $ ? i : c;h.endEmitted ? M(p) : f.once("end", p), t.on("unpipe", n);var _ = y(f);t.on("drain", _);var g = !1,
             m = !1;return f.on("data", d), a(t, "error", s), t.once("close", u), t.once("finish", l), t.emit("pipe", f), h.flowing || (D("pipe resume"), f.resume()), t;
       }, s.prototype.unpipe = function (t) {
         var e = this._readableState,
@@ -1879,10 +1838,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
               i = e.pipesCount;e.pipes = null, e.pipesCount = 0, e.flowing = !1;for (var o = 0; o < i; o++) {
             r[o].emit("unpipe", this, n);
           }return this;
-        }var a = C(e.pipes, t);return -1 === a ? this : (e.pipes.splice(a, 1), e.pipesCount -= 1, 1 === e.pipesCount && (e.pipes = e.pipes[0]), t.emit("unpipe", this, n), this);
+        }var a = L(e.pipes, t);return -1 === a ? this : (e.pipes.splice(a, 1), e.pipesCount -= 1, 1 === e.pipesCount && (e.pipes = e.pipes[0]), t.emit("unpipe", this, n), this);
       }, s.prototype.on = function (t, e) {
         var n = B.prototype.on.call(this, t, e);if ("data" === t) !1 !== this._readableState.flowing && this.resume();else if ("readable" === t) {
-          var r = this._readableState;r.endEmitted || r.readableListening || (r.readableListening = r.needReadable = !0, r.emittedReadable = !1, r.reading ? r.length && _(this) : L(b, this));
+          var r = this._readableState;r.endEmitted || r.readableListening || (r.readableListening = r.needReadable = !0, r.emittedReadable = !1, r.reading ? r.length && _(this) : M(b, this));
         }return n;
       }, s.prototype.addListener = s.prototype.on, s.prototype.resume = function () {
         var t = this._readableState;return t.flowing || (D("resume"), t.flowing = !0, w(this, t)), this;
@@ -1905,8 +1864,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
               return t[e].apply(t, arguments);
             };
           }(i));
-        }for (var o = 0; o < H.length; o++) {
-          t.on(H[o], r.emit.bind(r, H[o]));
+        }for (var o = 0; o < q.length; o++) {
+          t.on(q[o], r.emit.bind(r, q[o]));
         }return r._read = function (e) {
           D("wrapped _read", e), n && (n = !1, t.resume());
         }, r;
@@ -1998,7 +1957,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           m(e, t);
         }, this.writecb = null, this.writelen = 0, this.bufferedRequest = null, this.lastBufferedRequest = null, this.pendingcb = 0, this.prefinished = !1, this.errorEmitted = !1, this.bufferedRequestCount = 0, this.corkedRequestsFree = new o(this);
       }function l(t) {
-        if (O = O || n(9), !(N.call(l, this) || this instanceof O)) return new l(t);this._writableState = new u(t, this), this.writable = !0, t && ("function" == typeof t.write && (this._write = t.write), "function" == typeof t.writev && (this._writev = t.writev), "function" == typeof t.destroy && (this._destroy = t.destroy), "function" == typeof t.final && (this._final = t.final)), M.call(this);
+        if (O = O || n(9), !(N.call(l, this) || this instanceof O)) return new l(t);this._writableState = new u(t, this), this.writable = !0, t && ("function" == typeof t.write && (this._write = t.write), "function" == typeof t.writev && (this._writev = t.writev), "function" == typeof t.destroy && (this._destroy = t.destroy), "function" == typeof t.final && (this._final = t.final)), C.call(this);
       }function c(t, e) {
         var n = new Error("write after end");t.emit("error", n), R(e, n);
       }function f(t, e, n, r) {
@@ -2059,17 +2018,17 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           var i = r.callback;e.pendingcb--, i(n), r = r.next;
         }e.corkedRequestsFree ? e.corkedRequestsFree.next = t : e.corkedRequestsFree = t;
       }var R = n(21);t.exports = l;var O,
-          T = !e.browser && ["v0.10", "v0.9."].indexOf(e.version.slice(0, 5)) > -1 ? r : R;l.WritableState = u;var C = n(13);C.inherits = n(3);var L = { deprecate: n(125) },
-          M = n(56),
+          T = !e.browser && ["v0.10", "v0.9."].indexOf(e.version.slice(0, 5)) > -1 ? r : R;l.WritableState = u;var L = n(13);L.inherits = n(3);var M = { deprecate: n(123) },
+          C = n(56),
           I = n(31).Buffer,
           j = i.Uint8Array || function () {},
-          B = n(57);C.inherits(l, M), u.prototype.getBuffer = function () {
+          B = n(57);L.inherits(l, C), u.prototype.getBuffer = function () {
         for (var t = this.bufferedRequest, e = []; t;) {
           e.push(t), t = t.next;
         }return e;
       }, function () {
         try {
-          Object.defineProperty(u.prototype, "buffer", { get: L.deprecate(function () {
+          Object.defineProperty(u.prototype, "buffer", { get: M.deprecate(function () {
               return this.getBuffer();
             }, "_writableState.buffer is deprecated. Use _writableState.getBuffer instead.", "DEP0003") });
         } catch (t) {}
@@ -2100,7 +2059,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         } }), l.prototype.destroy = B.destroy, l.prototype._undestroy = B.undestroy, l.prototype._destroy = function (t, e) {
         this.end(), e(t);
       };
-    }).call(e, n(1), n(123).setImmediate, n(0));
+    }).call(e, n(1), n(121).setImmediate, n(0));
   }, function (t, e, n) {
     function r(t) {
       if (t && !s(t)) throw new Error("Unknown encoding: " + t);
@@ -2193,8 +2152,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       return i(t, !1, !0).resolve(e);
     }function d(t, e) {
       return t ? i(t, !1, !0).resolveObject(e) : e;
-    }var s = n(130),
-        u = n(132);e.parse = i, e.resolve = a, e.resolveObject = d, e.format = o, e.Url = r;var l = /^([a-z0-9.+-]+:)/i,
+    }var s = n(128),
+        u = n(130);e.parse = i, e.resolve = a, e.resolveObject = d, e.format = o, e.Url = r;var l = /^([a-z0-9.+-]+:)/i,
         c = /:[0-9]*$/,
         f = /^(\/\/?(?!\/)[^\?\s]*)(\?[^\s]*)?$/,
         h = ["<", ">", '"', "`", " ", "\r", "\n", "\t"],
@@ -2222,25 +2181,25 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           var A = d.indexOf(g[S]);-1 !== A && (-1 === x || A < x) && (x = A);
         }var R, O;O = -1 === x ? d.lastIndexOf("@") : d.lastIndexOf("@", x), -1 !== O && (R = d.slice(0, O), d = d.slice(O + 1), this.auth = decodeURIComponent(R)), x = -1;for (var S = 0; S < _.length; S++) {
           var A = d.indexOf(_[S]);-1 !== A && (-1 === x || A < x) && (x = A);
-        }-1 === x && (x = d.length), this.host = d.slice(0, x), d = d.slice(x), this.parseHost(), this.hostname = this.hostname || "";var T = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];if (!T) for (var C = this.hostname.split(/\./), S = 0, L = C.length; S < L; S++) {
-          var M = C[S];if (M && !M.match(m)) {
-            for (var I = "", j = 0, B = M.length; j < B; j++) {
-              M.charCodeAt(j) > 127 ? I += "x" : I += M[j];
+        }-1 === x && (x = d.length), this.host = d.slice(0, x), d = d.slice(x), this.parseHost(), this.hostname = this.hostname || "";var T = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];if (!T) for (var L = this.hostname.split(/\./), S = 0, M = L.length; S < M; S++) {
+          var C = L[S];if (C && !C.match(m)) {
+            for (var I = "", j = 0, B = C.length; j < B; j++) {
+              C.charCodeAt(j) > 127 ? I += "x" : I += C[j];
             }if (!I.match(m)) {
-              var N = C.slice(0, S),
-                  P = C.slice(S + 1),
-                  U = M.match(v);U && (N.push(U[1]), P.unshift(U[2])), P.length && (d = "/" + P.join(".") + d), this.hostname = N.join(".");break;
+              var N = L.slice(0, S),
+                  P = L.slice(S + 1),
+                  U = C.match(v);U && (N.push(U[1]), P.unshift(U[2])), P.length && (d = "/" + P.join(".") + d), this.hostname = N.join(".");break;
             }
           }
         }this.hostname.length > 255 ? this.hostname = "" : this.hostname = this.hostname.toLowerCase(), T || (this.hostname = s.toASCII(this.hostname));var z = this.port ? ":" + this.port : "",
             D = this.hostname || "";this.host = D + z, this.href += this.host, T && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== d[0] && (d = "/" + d));
-      }if (!y[$]) for (var S = 0, L = p.length; S < L; S++) {
+      }if (!y[$]) for (var S = 0, M = p.length; S < M; S++) {
         var F = p[S];if (-1 !== d.indexOf(F)) {
           var Z = encodeURIComponent(F);Z === F && (Z = escape(F)), d = d.split(F).join(Z);
         }
-      }var G = d.indexOf("#");-1 !== G && (this.hash = d.substr(G), d = d.slice(0, G));var H = d.indexOf("?");if (-1 !== H ? (this.search = d.substr(H), this.query = d.substr(H + 1), e && (this.query = E.parse(this.query)), d = d.slice(0, H)) : e && (this.search = "", this.query = {}), d && (this.pathname = d), w[$] && this.hostname && !this.pathname && (this.pathname = "/"), this.pathname || this.search) {
+      }var G = d.indexOf("#");-1 !== G && (this.hash = d.substr(G), d = d.slice(0, G));var q = d.indexOf("?");if (-1 !== q ? (this.search = d.substr(q), this.query = d.substr(q + 1), e && (this.query = E.parse(this.query)), d = d.slice(0, q)) : e && (this.search = "", this.query = {}), d && (this.pathname = d), w[$] && this.hostname && !this.pathname && (this.pathname = "/"), this.pathname || this.search) {
         var z = this.pathname || "",
-            q = this.search || "";this.path = z + q;
+            H = this.search || "";this.path = z + H;
       }return this.href = this.format(), this;
     }, r.prototype.format = function () {
       var t = this.auth || "";t && (t = encodeURIComponent(t), t = t.replace(/%3A/i, ":"), t += "@");var e = this.protocol || "",
@@ -2295,7 +2254,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     };
   }, function (t, e, n) {
     "use strict";
-    e.decode = e.parse = n(133), e.encode = e.stringify = n(134);
+    e.decode = e.parse = n(131), e.encode = e.stringify = n(132);
   }, function (t, e, n) {
     "use strict";
     t.exports = { 2: "need dictionary", 1: "stream end", 0: "", "-1": "file error", "-2": "stream error", "-3": "data error", "-4": "insufficient memory", "-5": "buffer error", "-6": "incompatible version" };
@@ -2331,14 +2290,11 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       } });
   }, function (t, e, n) {
     "use strict";
-    function r(t) {
-      n(69), n(70);
-    }var i = n(33),
-        o = n(153),
-        a = n(71),
-        d = r,
-        s = a(i.a, o.a, !1, d, "data-v-607bcec5", null);e.a = s.exports;
-  }, function (t, e) {}, function (t, e) {}, function (t, e) {
+    var r = n(33),
+        i = n(151),
+        o = n(69),
+        a = o(r.a, i.a, !1, null, null, null);e.a = a.exports;
+  }, function (t, e) {
     t.exports = function (t, e, n, r, i, o) {
       var a,
           d = t = t || {},
@@ -2363,7 +2319,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       f.a.call(this, t, u.a);
     }function d(t) {
       f.a.call(this, t, u.a);
-    }e.b = r, e.c = i, e.a = d;var s = n(73),
+    }e.b = r, e.c = i, e.a = d;var s = n(71),
         u = n.n(s),
         l = (n(5), n(20), n(19)),
         c = n(49),
@@ -2371,13 +2327,13 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
   }, function (t, e) {
     t.exports = { country_phone_code_to_countries: { 1: ["US", "AG", "AI", "AS", "BB", "BM", "BS", "CA", "DM", "DO", "GD", "GU", "JM", "KN", "KY", "LC", "MP", "MS", "PR", "SX", "TC", "TT", "VC", "VG", "VI"], 7: ["RU", "KZ"], 20: ["EG"], 27: ["ZA"], 30: ["GR"], 31: ["NL"], 32: ["BE"], 33: ["FR"], 34: ["ES"], 36: ["HU"], 39: ["IT", "VA"], 40: ["RO"], 41: ["CH"], 43: ["AT"], 44: ["GB", "GG", "IM", "JE"], 45: ["DK"], 46: ["SE"], 47: ["NO", "SJ"], 48: ["PL"], 49: ["DE"], 51: ["PE"], 52: ["MX"], 53: ["CU"], 54: ["AR"], 55: ["BR"], 56: ["CL"], 57: ["CO"], 58: ["VE"], 60: ["MY"], 61: ["AU", "CC", "CX"], 62: ["ID"], 63: ["PH"], 64: ["NZ"], 65: ["SG"], 66: ["TH"], 81: ["JP"], 82: ["KR"], 84: ["VN"], 86: ["CN"], 90: ["TR"], 91: ["IN"], 92: ["PK"], 93: ["AF"], 94: ["LK"], 95: ["MM"], 98: ["IR"], 211: ["SS"], 212: ["MA", "EH"], 213: ["DZ"], 216: ["TN"], 218: ["LY"], 220: ["GM"], 221: ["SN"], 222: ["MR"], 223: ["ML"], 224: ["GN"], 225: ["CI"], 226: ["BF"], 227: ["NE"], 228: ["TG"], 229: ["BJ"], 230: ["MU"], 231: ["LR"], 232: ["SL"], 233: ["GH"], 234: ["NG"], 235: ["TD"], 236: ["CF"], 237: ["CM"], 238: ["CV"], 239: ["ST"], 240: ["GQ"], 241: ["GA"], 242: ["CG"], 243: ["CD"], 244: ["AO"], 245: ["GW"], 246: ["IO"], 247: ["AC"], 248: ["SC"], 249: ["SD"], 250: ["RW"], 251: ["ET"], 252: ["SO"], 253: ["DJ"], 254: ["KE"], 255: ["TZ"], 256: ["UG"], 257: ["BI"], 258: ["MZ"], 260: ["ZM"], 261: ["MG"], 262: ["RE", "YT"], 263: ["ZW"], 264: ["NA"], 265: ["MW"], 266: ["LS"], 267: ["BW"], 268: ["SZ"], 269: ["KM"], 290: ["SH", "TA"], 291: ["ER"], 297: ["AW"], 298: ["FO"], 299: ["GL"], 350: ["GI"], 351: ["PT"], 352: ["LU"], 353: ["IE"], 354: ["IS"], 355: ["AL"], 356: ["MT"], 357: ["CY"], 358: ["FI", "AX"], 359: ["BG"], 370: ["LT"], 371: ["LV"], 372: ["EE"], 373: ["MD"], 374: ["AM"], 375: ["BY"], 376: ["AD"], 377: ["MC"], 378: ["SM"], 380: ["UA"], 381: ["RS"], 382: ["ME"], 385: ["HR"], 386: ["SI"], 387: ["BA"], 389: ["MK"], 420: ["CZ"], 421: ["SK"], 423: ["LI"], 500: ["FK"], 501: ["BZ"], 502: ["GT"], 503: ["SV"], 504: ["HN"], 505: ["NI"], 506: ["CR"], 507: ["PA"], 508: ["PM"], 509: ["HT"], 590: ["GP", "BL", "MF"], 591: ["BO"], 592: ["GY"], 593: ["EC"], 594: ["GF"], 595: ["PY"], 596: ["MQ"], 597: ["SR"], 598: ["UY"], 599: ["CW", "BQ"], 670: ["TL"], 672: ["NF"], 673: ["BN"], 674: ["NR"], 675: ["PG"], 676: ["TO"], 677: ["SB"], 678: ["VU"], 679: ["FJ"], 680: ["PW"], 681: ["WF"], 682: ["CK"], 683: ["NU"], 685: ["WS"], 686: ["KI"], 687: ["NC"], 688: ["TV"], 689: ["PF"], 690: ["TK"], 691: ["FM"], 692: ["MH"], 800: ["001"], 808: ["001"], 850: ["KP"], 852: ["HK"], 853: ["MO"], 855: ["KH"], 856: ["LA"], 870: ["001"], 878: ["001"], 880: ["BD"], 881: ["001"], 882: ["001"], 883: ["001"], 886: ["TW"], 888: ["001"], 960: ["MV"], 961: ["LB"], 962: ["JO"], 963: ["SY"], 964: ["IQ"], 965: ["KW"], 966: ["SA"], 967: ["YE"], 968: ["OM"], 970: ["PS"], 971: ["AE"], 972: ["IL"], 973: ["BH"], 974: ["QA"], 975: ["BT"], 976: ["MN"], 977: ["NP"], 979: ["001"], 992: ["TJ"], 993: ["TM"], 994: ["AZ"], 995: ["GE"], 996: ["KG"], 998: ["UZ"] }, countries: { AC: ["247", "[46]\\d{4}|[01589]\\d{5}"], AD: ["376", "[16]\\d{5,8}|[37-9]\\d{5}", [["(\\d{3})(\\d{3})", "$1 $2", ["[137-9]|6[0-8]"]], ["(\\d{4})(\\d{4})", "$1 $2", ["180", "180[02]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["690"]]]], AE: ["971", "[2-79]\\d{7,8}|800\\d{2,9}", [["([2-4679])(\\d{3})(\\d{4})", "$1 $2 $3", ["[2-4679][2-8]"]], ["(5\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["5"]], ["([479]00)(\\d)(\\d{5})", "$1 $2 $3", ["[479]00"], "$1"], ["([68]00)(\\d{2,9})", "$1 $2", ["[68]00"], "$1"]], "0", "0$1"], AF: ["93", "[2-7]\\d{8}", [["([2-7]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[2-7]"]]], "0", "0$1"], AG: ["1", "[2589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "268"], AI: ["1", "[2589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "264"], AL: ["355", "[2-57]\\d{7}|6\\d{8}|8\\d{5,7}|9\\d{5}", [["(4)(\\d{3})(\\d{4})", "$1 $2 $3", ["4[0-6]"]], ["(6\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["6"]], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2358][2-5]|4[7-9]"]], ["(\\d{3})(\\d{3,5})", "$1 $2", ["[235][16-9]|[79]|8[016-9]"]]], "0", "0$1"], AM: ["374", "[1-9]\\d{7}", [["(\\d{2})(\\d{6})", "$1 $2", ["1|47"]], ["(\\d{2})(\\d{6})", "$1 $2", ["4[1349]|[5-7]|88|9[1-9]"], "0$1"], ["(\\d{3})(\\d{5})", "$1 $2", ["[23]"]], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["8|90"], "0 $1"]], "0", "(0$1)"], AO: ["244", "[29]\\d{8}", [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3"]]], AR: ["54", "11\\d{8}|[2368]\\d{9}|9\\d{10}", [["([68]\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["[68]"]], ["(9)(11)(\\d{4})(\\d{4})", "$2 15-$3-$4", ["911"], null, null, "$1 $2 $3-$4"], ["(9)(\\d{3})(\\d{3})(\\d{4})", "$2 15-$3-$4", ["9(?:2[2-4689]|3[3-8])", "9(?:2(?:2[013]|3[067]|49|6[01346]|8|9[147-9])|3(?:36|4[1-358]|5[138]|6|7[069]|8[013578]))", "9(?:2(?:2(?:0[013-9]|[13])|3(?:0[013-9]|[67])|49|6(?:[0136]|4[0-59])|8|9(?:[19]|44|7[013-9]|8[14]))|3(?:36|4(?:[12]|3[4-6]|[58]4)|5(?:1|3[0-24-689]|8[46])|6|7[069]|8(?:[01]|34|[578][45])))", "9(?:2(?:2(?:0[013-9]|[13])|3(?:0[013-9]|[67])|49|6(?:[0136]|4[0-59])|8|9(?:[19]|44|7[013-9]|8[14]))|3(?:36|4(?:[12]|3(?:4|5[014]|6[1-39])|[58]4)|5(?:1|3[0-24-689]|8[46])|6|7[069]|8(?:[01]|34|[578][45])))"], null, null, "$1 $2 $3-$4"], ["(9)(\\d{4})(\\d{2})(\\d{4})", "$2 15-$3-$4", ["9[23]"], null, null, "$1 $2 $3-$4"], ["(11)(\\d{4})(\\d{4})", "$1 $2-$3", ["11"], null, "true"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2-$3", ["2(?:2[013]|3[067]|49|6[01346]|8|9[147-9])|3(?:36|4[1-358]|5[138]|6|7[069]|8[013578])", "2(?:2(?:0[013-9]|[13])|3(?:0[013-9]|[67])|49|6(?:[0136]|4[0-59])|8|9(?:[19]|44|7[013-9]|8[14]))|3(?:36|4(?:[12]|3[4-6]|[58]4)|5(?:1|3[0-24-689]|8[46])|6|7[069]|8(?:[01]|34|[578][45]))", "2(?:2(?:0[013-9]|[13])|3(?:0[013-9]|[67])|49|6(?:[0136]|4[0-59])|8|9(?:[19]|44|7[013-9]|8[14]))|3(?:36|4(?:[12]|3(?:4|5[014]|6[1-39])|[58]4)|5(?:1|3[0-24-689]|8[46])|6|7[069]|8(?:[01]|34|[578][45]))"], null, "true"], ["(\\d{4})(\\d{2})(\\d{4})", "$1 $2-$3", ["[23]"], null, "true"]], "0", "0$1", "0?(?:(11|2(?:2(?:02?|[13]|2[13-79]|4[1-6]|5[2457]|6[124-8]|7[1-4]|8[13-6]|9[1267])|3(?:02?|1[467]|2[03-6]|3[13-8]|[49][2-6]|5[2-8]|[67])|4(?:7[3-578]|9)|6(?:[0136]|2[24-6]|4[6-8]?|5[15-8])|80|9(?:0[1-3]|[19]|2\\d|3[1-6]|4[02568]?|5[2-4]|6[2-46]|72?|8[23]?))|3(?:3(?:2[79]|6|8[2578])|4(?:0[0-24-9]|[12]|3[5-8]?|4[24-7]|5[4-68]?|6[02-9]|7[126]|8[2379]?|9[1-36-8])|5(?:1|2[1245]|3[237]?|4[1-46-9]|6[2-4]|7[1-6]|8[2-5]?)|6[24]|7(?:[069]|1[1568]|2[15]|3[145]|4[13]|5[14-8]|7[2-57]|8[126])|8(?:[01]|2[15-7]|3[2578]?|4[13-6]|5[4-8]?|6[1-357-9]|7[36-8]?|8[5-8]?|9[124])))?15)?", "9$1"], AS: ["1", "[5689]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "684"], AT: ["43", "[1-9]\\d{3,12}", [["(116\\d{3})", "$1", ["116"], "$1"], ["(1)(\\d{3,12})", "$1 $2", ["1"]], ["(5\\d)(\\d{3,5})", "$1 $2", ["5[079]"]], ["(5\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["5[079]"]], ["(5\\d)(\\d{4})(\\d{4,7})", "$1 $2 $3", ["5[079]"]], ["(\\d{3})(\\d{3,10})", "$1 $2", ["(?:31|4)6|51|6(?:5[0-3579]|[6-9])|7(?:[28]0|32)|[89]"]], ["(\\d{4})(\\d{3,9})", "$1 $2", ["2|3(?:1[1-578]|[3-8])|4[2378]|5[2-6]|6(?:[12]|4[1-9]|5[468])|7(?:[24][1-8]|35|[5-79])"]]], "0", "0$1"], AU: ["61", "1\\d{4,9}|[2-578]\\d{8}", [["([2378])(\\d{4})(\\d{4})", "$1 $2 $3", ["[2378]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["14|[45]"], "0$1"], ["(16)(\\d{3,4})", "$1 $2", ["16"], "0$1"], ["(16)(\\d{3})(\\d{2,4})", "$1 $2 $3", ["16"], "0$1"], ["(1[389]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["1[389]0", "1(?:[38]0|9)0"]], ["(180)(2\\d{3})", "$1 $2", ["180", "1802"]], ["(19\\d)(\\d{3})", "$1 $2", ["19[13]"]], ["(19\\d{2})(\\d{4})", "$1 $2", ["19[679]"]], ["(13)(\\d{2})(\\d{2})", "$1 $2 $3", ["13[1-9]"]]], "0", null, null, null, null, null, ["[237]\\d{8}|8(?:51(?:0(?:0[03-9]|[1247]\\d|3[2-9]|5[0-8]|6[1-9]|8[0-6])|1(?:1[69]|[23]\\d|4[0-4]))|[6-8]\\d{4}|9(?:[02-9]\\d{3}|1(?:[0-57-9]\\d{2}|6[0135-9]\\d)))\\d{3}", "14(?:5\\d|71)\\d{5}|4(?:[0-3]\\d|4[047-9]|5[0-25-9]|6[6-9]|7[02-9]|8[12457-9]|9[017-9])\\d{6}", "180(?:0\\d{3}|2)\\d{3}", "19(?:0[0126]\\d|[679])\\d{5}", "500\\d{6}", null, null, "16\\d{3,7}", "550\\d{6}", "13(?:00\\d{3}|45[0-4]|\\d)\\d{3}"]], AW: ["297", "[25-9]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], AX: ["358", "1\\d{5,11}|[35]\\d{5,9}|2\\d{4,9}|4\\d{5,10}|6\\d{7,9}|7\\d{4,9}|8\\d{6,9}", [["(\\d{3})(\\d{3,7})", "$1 $2", ["(?:[1-3]0|[6-8])0"]], ["(75\\d{3})", "$1", ["75[12]"]], ["(116\\d{3})", "$1", ["116"], "$1"], ["(\\d{2})(\\d{4,10})", "$1 $2", ["[14]|2[09]|50|7[135]"]], ["(\\d)(\\d{4,11})", "$1 $2", ["[25689][1-8]|3"]]], "0", null, null, null, null, null, ["18[1-8]\\d{3,9}", "4\\d{5,10}|50\\d{4,8}", "800\\d{4,7}", "[67]00\\d{5,6}", null, null, "[13]0\\d{4,8}|2(?:0(?:[016-8]\\d{3,7}|[2-59]\\d{2,7})|9\\d{4,8})|60(?:[12]\\d{5,6}|6\\d{7})|7(?:1\\d{7}|3\\d{8}|5[03-9]\\d{2,7})"]], AZ: ["994", "[1-9]\\d{8}", [["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["1[28]|2(?:[0-36]|[45]2)|365"]], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[4-8]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["9"], "0$1"]], "0", "(0$1)"], BA: ["387", "[3-9]\\d{7,8}", [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2-$3", ["[3-5]"]], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["6[1-356]|[7-9]"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["6[047]"]]], "0", "0$1"], BB: ["1", "[2589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "246"], BD: ["880", "[2-79]\\d{5,9}|1\\d{9}|8[0-7]\\d{4,8}", [["(2)(\\d{7,8})", "$1-$2", ["2"]], ["(\\d{2})(\\d{4,6})", "$1-$2", ["[3-79]1"]], ["(\\d{4})(\\d{3,6})", "$1-$2", ["1|3(?:0|[2-58]2)|4(?:0|[25]2|3[23]|[4689][25])|5(?:[02-578]2|6[25])|6(?:[0347-9]2|[26][25])|7[02-9]2|8(?:[023][23]|[4-7]2)|9(?:[02][23]|[458]2|6[016])"]], ["(\\d{3})(\\d{3,7})", "$1-$2", ["[3-79][2-9]|8"]]], "0", "0$1"], BE: ["32", "[1-9]\\d{7,8}", [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["4[6-9]"]], ["(\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[23]|4[23]|9[2-4]"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[156]|7[018]|8(?:0[1-9]|[1-79])"]], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["(?:80|9)0"]]], "0", "0$1"], BF: ["226", "[25-7]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]]], BG: ["359", "[23567]\\d{5,7}|[489]\\d{6,8}", [["(2)(\\d)(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["2"]], ["(2)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2"]], ["(\\d{3})(\\d{4})", "$1 $2", ["43[124-7]|70[1-9]"]], ["(\\d{3})(\\d{3})(\\d{2})", "$1 $2 $3", ["43[124-7]|70[1-9]"]], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["[78]00"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["99[69]"]], ["(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["[356]|4[124-7]|7[1-9]|8[1-6]|9[1-7]"]], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["48|8[7-9]|9[08]"]]], "0", "0$1"], BH: ["973", "[136-9]\\d{7}", [["(\\d{4})(\\d{4})", "$1 $2"]]], BI: ["257", "[267]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]]], BJ: ["229", "[2689]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2689]"]]]], BL: ["590", "[56]\\d{8}", [["([56]\\d{2})(\\d{2})(\\d{4})", "$1 $2-$3", ["590|69[01]"]]], "0", null, null, null, null, null, ["590(?:2[7-9]|5[12]|87)\\d{4}", "69(?:0\\d{2}|1(?:2[29]|3[0-5]))\\d{4}"]], BM: ["1", "[4589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "441"], BN: ["673", "[2-578]\\d{6}", [["([2-578]\\d{2})(\\d{4})", "$1 $2", ["[2-578]"]]]], BO: ["591", "[23467]\\d{7}|8\\d{8}", [["([234])(\\d{7})", "$1 $2", ["[2-4]"]], ["([67]\\d{7})", "$1", ["[67]"]], ["(800)(\\d{2})(\\d{4})", "$1 $2 $3", ["800"]]], "0", null, "0(1\\d)?"], BQ: ["599", "[347]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2", ["[13-7]"]], ["(9)(\\d{3})(\\d{4})", "$1 $2 $3", ["9"]]], null, null, null, null, null, null, ["(?:318[023]|41(?:6[023]|70)|7(?:1[578]|50)\\d)\\d{3}", "(?:31(?:8[14-8]|9[14578])|416[145-9]|7(?:0[01]|7[07]|8\\d|9[056])\\d)\\d{3}"]], BR: ["55", "[1-46-9]\\d{7,10}|5(?:[0-4]\\d{7,9}|5(?:[2-8]\\d{7}|9\\d{7,8}))", [["(\\d{4})(\\d{4})", "$1-$2", ["300|40[02]", "300|40(?:0|20)"]], ["([3589]00)(\\d{2,3})(\\d{4})", "$1 $2 $3", ["[3589]00"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2-$3", ["[1-9][1-9]"], "($1)"], ["(\\d{2})(\\d{5})(\\d{4})", "$1 $2-$3", ["[1-9][1-9]9"], "($1)"]], "0", null, "0(?:(1[245]|2[1-35]|31|4[13]|[56]5|99)(\\d{10,11}))?", "$2"], BS: ["1", "[2589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "242"], BT: ["975", "[1-8]\\d{6,7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["1|77"]], ["([2-8])(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-68]|7[246]"]]]], BW: ["267", "[2-79]\\d{6,7}", [["(\\d{3})(\\d{4})", "$1 $2", ["[2-6]"]], ["(7\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["7"]], ["(90)(\\d{5})", "$1 $2", ["90"]]]], BY: ["375", "[1-4]\\d{8}|8(?:0(?:0\\d{3,7}|[13]\\d{7})|(?:10|20\\d)\\d{7})|9\\d{9,10}", [["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["17[0-3589]|2[4-9]|[34]", "17(?:[02358]|1[0-2]|9[0189])|2[4-9]|[34]"], "8 0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["1(?:5[24]|6[235]|7[467])|2(?:1[246]|2[25]|3[26])", "1(?:5[24]|6(?:2|3[04-9]|5[0346-9])|7(?:[46]|7[37-9]))|2(?:1[246]|2[25]|3[26])"], "8 0$1"], ["(\\d{4})(\\d{2})(\\d{3})", "$1 $2-$3", ["1(?:5[169]|6[3-5]|7[179])|2(?:1[35]|2[34]|3[3-5])", "1(?:5[169]|6(?:3[1-3]|4|5[125])|7(?:1[3-9]|7[0-24-6]|9[2-7]))|2(?:1[35]|2[34]|3[3-5])"], "8 0$1"], ["([89]\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["8[01]|9"], "8 $1"], ["(82\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["82"], "8 $1"], ["(800)(\\d{3})", "$1 $2", ["800"], "8 $1"], ["(800)(\\d{2})(\\d{2,4})", "$1 $2 $3", ["800"], "8 $1"]], "8", null, "8?0?"], BZ: ["501", "[2-8]\\d{6}|0\\d{10}", [["(\\d{3})(\\d{4})", "$1-$2", ["[2-8]"]], ["(0)(800)(\\d{4})(\\d{3})", "$1-$2-$3-$4", ["080", "0800"]]]], CA: ["1", "[2-9]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, null, ["(?:2(?:04|[23]6|[48]9|50)|3(?:06|43|65)|4(?:03|1[68]|3[178]|50)|5(?:06|1[49]|48|79|8[17])|6(?:0[04]|13|22|39|47)|7(?:0[59]|78|8[02])|8(?:[06]7|19|25|73)|90[25])[2-9]\\d{6}", null, "8(?:00|33|44|55|66|77|88)[2-9]\\d{6}", "900[2-9]\\d{6}", "5(?:(?:00|22|33|44|66|77|88)[2-9]|21[23])\\d{6}"]], CC: ["61", "[1458]\\d{5,9}", [["([2378])(\\d{4})(\\d{4})", "$1 $2 $3", ["[2378]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["14|[45]"], "0$1"], ["(16)(\\d{3,4})", "$1 $2", ["16"], "0$1"], ["(16)(\\d{3})(\\d{2,4})", "$1 $2 $3", ["16"], "0$1"], ["(1[389]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["1[389]0", "1(?:[38]0|9)0"]], ["(180)(2\\d{3})", "$1 $2", ["180", "1802"]], ["(19\\d)(\\d{3})", "$1 $2", ["19[13]"]], ["(19\\d{2})(\\d{4})", "$1 $2", ["19[679]"]], ["(13)(\\d{2})(\\d{2})", "$1 $2 $3", ["13[1-9]"]]], "0", null, null, null, null, null, ["8(?:51(?:0(?:02|31|60)|118)|91(?:0(?:1[0-2]|29)|1(?:[28]2|50|79)|2(?:10|64)|3(?:08|22|68)|4[29]8|62\\d|70[23]|959))\\d{3}", "14(?:5\\d|71)\\d{5}|4(?:[0-3]\\d|4[047-9]|5[0-25-9]|6[6-9]|7[02-9]|8[12547-9]|9[017-9])\\d{6}", "180(?:0\\d{3}|2)\\d{3}", "19(?:0[0126]\\d|[679])\\d{5}", "500\\d{6}", null, null, null, "550\\d{6}", "13(?:00\\d{2})?\\d{4}"]], CD: ["243", "[2-6]\\d{6}|[18]\\d{6,8}|9\\d{8}", [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["12"]], ["([89]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["8[0-2459]|9"]], ["(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["88"]], ["(\\d{2})(\\d{5})", "$1 $2", ["[1-6]"]]], "0", "0$1"], CF: ["236", "[278]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]]], CG: ["242", "[028]\\d{8}", [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["801"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[02]"]], ["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["800"]]]], CH: ["41", "[2-9]\\d{8}|860\\d{9}", [["([2-9]\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-7]|[89]1"]], ["([89]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["8[047]|90"]], ["(\\d{3})(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["860"]]], "0", "0$1"], CI: ["225", "[02-8]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]]], CK: ["682", "[2-8]\\d{4}", [["(\\d{2})(\\d{3})", "$1 $2"]]], CL: ["56", "1230\\d{7}|[2-46-9]\\d{8,10}|5[1-3578]\\d{7}", [["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2[23]"], "($1)"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[357]|4[1-35]|6[13-57]"], "($1)"], ["(9)(\\d{4})(\\d{4})", "$1 $2 $3", ["9"]], ["(44)(\\d{3})(\\d{4})", "$1 $2 $3", ["44"]], ["([68]00)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[68]00"], "$1"], ["(600)(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["600"], "$1"], ["(1230)(\\d{3})(\\d{4})", "$1 $2 $3", ["123", "1230"], "$1"], ["(\\d{5})(\\d{4})", "$1 $2", ["219"], "($1)"]], "0", "0$1", "0|(1(?:1[0-69]|2[0-57]|5[13-58]|69|7[0167]|8[018]))"], CM: ["237", "[2368]\\d{7,8}", [["([26])(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["[26]"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[23]|88"]]]], CN: ["86", "[1-7]\\d{6,11}|8[0-357-9]\\d{6,9}|9\\d{7,10}", [["([48]00)(\\d{3})(\\d{4})", "$1 $2 $3", ["[48]00"]], ["(\\d{2})(\\d{5,6})", "$1 $2", ["(?:10|2\\d)[19]", "(?:10|2\\d)(?:10|9[56])", "(?:10|2\\d)(?:100|9[56])"], "0$1"], ["(\\d{3})(\\d{5,6})", "$1 $2", ["[3-9]", "[3-9]\\d\\d[19]", "[3-9]\\d\\d(?:10|9[56])"], "0$1"], ["(21)(\\d{4})(\\d{4,6})", "$1 $2 $3", ["21"], "0$1", "true"], ["([12]\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["10[1-9]|2[02-9]", "10[1-9]|2[02-9]", "10(?:[1-79]|8(?:0[1-9]|[1-9]))|2[02-9]"], "0$1", "true"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["3(?:1[02-9]|35|49|5|7[02-68]|9[1-68])|4(?:1[02-9]|2[179]|[35][2-9]|6[47-9]|7|8[23])|5(?:3[03-9]|4[36]|5[02-9]|6[1-46]|7[028]|80|9[2-46-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[04-9]|4[3-6]|6[2368])|8(?:1[236-8]|2[5-7]|3|5[1-9]|7[02-9]|8[36-8]|9[1-7])|9(?:0[1-3689]|1[1-79]|[379]|4[13]|5[1-5])"], "0$1", "true"], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["3(?:11|7[179])|4(?:[15]1|3[1-35])|5(?:1|2[37]|3[12]|51|7[13-79]|9[15])|7(?:[39]1|5[457]|6[09])|8(?:[57]1|98)"], "0$1", "true"], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["807", "8078"], "0$1", "true"], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["1(?:[3-57-9]|66)"]], ["(10800)(\\d{3})(\\d{4})", "$1 $2 $3", ["108", "1080", "10800"]], ["(\\d{3})(\\d{7,8})", "$1 $2", ["950"]]], "0", null, "(1(?:[129]\\d{3}|79\\d{2}))|0"], CO: ["57", "(?:[13]\\d{0,3}|[24-8])\\d{7}", [["(\\d)(\\d{7})", "$1 $2", ["1(?:[2-7]|8[2-9]|9[0-3])|[24-8]", "1(?:[2-7]|8[2-9]|9(?:09|[1-3]))|[24-8]"], "($1)"], ["(\\d{3})(\\d{7})", "$1 $2", ["3"]], ["(1)(\\d{3})(\\d{7})", "$1-$2-$3", ["1(?:80|9[04])", "1(?:800|9(?:0[01]|4[78]))"], "0$1", null, "$1 $2 $3"]], "0", null, "0([3579]|4(?:44|56))?"], CR: ["506", "[24-9]\\d{7,9}", [["(\\d{4})(\\d{4})", "$1 $2", ["[24-7]|8[3-9]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1-$2-$3", ["[89]0"]]], null, null, "(19(?:0[012468]|1[09]|20|66|77|99))"], CU: ["53", "[2-57]\\d{5,7}", [["(\\d)(\\d{6,7})", "$1 $2", ["7"]], ["(\\d{2})(\\d{4,6})", "$1 $2", ["[2-4]"]], ["(\\d)(\\d{7})", "$1 $2", ["5"], "0$1"]], "0", "(0$1)"], CV: ["238", "[259]\\d{6}", [["(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3"]]], CW: ["599", "[134679]\\d{6,7}", [["(\\d{3})(\\d{4})", "$1 $2", ["[13-7]"]], ["(9)(\\d{3})(\\d{4})", "$1 $2 $3", ["9"]]], null, null, null, null, null, null, ["9(?:[48]\\d{2}|50\\d|7(?:2[0-24]|[34]\\d|6[35-7]|77|8[7-9]))\\d{4}", "9(?:5(?:[12467]\\d|3[01])|6(?:[15-9]\\d|3[01]))\\d{4}", null, null, null, null, null, "955\\d{5}", null, "60[0-2]\\d{4}"]], CX: ["61", "[1458]\\d{5,9}", [["([2378])(\\d{4})(\\d{4})", "$1 $2 $3", ["[2378]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["14|[45]"], "0$1"], ["(16)(\\d{3,4})", "$1 $2", ["16"], "0$1"], ["(16)(\\d{3})(\\d{2,4})", "$1 $2 $3", ["16"], "0$1"], ["(1[389]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["1[389]0", "1(?:[38]0|9)0"]], ["(180)(2\\d{3})", "$1 $2", ["180", "1802"]], ["(19\\d)(\\d{3})", "$1 $2", ["19[13]"]], ["(19\\d{2})(\\d{4})", "$1 $2", ["19[679]"]], ["(13)(\\d{2})(\\d{2})", "$1 $2 $3", ["13[1-9]"]]], "0", null, null, null, null, null, ["8(?:51(?:0(?:01|30|59)|117)|91(?:00[6-9]|1(?:21|49|78|81)|2(?:09|63)|3(?:12|26|75)|4(?:56|97)|64\\d|7(?:0[01]|1[0-2])|958))\\d{3}", "14(?:5\\d|71)\\d{5}|4(?:[0-3]\\d|4[047-9]|5[0-25-9]|6[6-9]|7[02-9]|8[12547-9]|9[017-9])\\d{6}", "180(?:0\\d{3}|2)\\d{3}", "19(?:0[0126]\\d|[679])\\d{5}", "500\\d{6}", null, null, null, "550\\d{6}", "13(?:00\\d{2})?\\d{4}"]], CY: ["357", "[257-9]\\d{7}", [["(\\d{2})(\\d{6})", "$1 $2"]]], CZ: ["420", "[2-8]\\d{8}|9\\d{8,11}", [["([2-9]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-8]|9[015-7]"]], ["(96\\d)(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["96"]], ["(9\\d)(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9[36]"]]]], DE: ["49", "[1-35-9]\\d{3,14}|4(?:[0-8]\\d{3,12}|9(?:[0-37]\\d|4(?:[1-35-8]|4\\d?)|5\\d{1,2}|6[1-8]\\d?)\\d{2,8})", [["(1\\d{2})(\\d{7,8})", "$1 $2", ["1[67]"]], ["(15\\d{3})(\\d{6})", "$1 $2", ["15[0568]"]], ["(1\\d{3})(\\d{7})", "$1 $2", ["15"]], ["(\\d{2})(\\d{3,11})", "$1 $2", ["3[02]|40|[68]9"]], ["(\\d{3})(\\d{3,11})", "$1 $2", ["2(?:0[1-389]|1[124]|2[18]|3[14]|[4-9]1)|3(?:[35-9][15]|4[015])|[4-8][1-9]1|9(?:06|[1-9]1)"]], ["(\\d{4})(\\d{2,11})", "$1 $2", ["[24-6]|3(?:[3569][02-46-9]|4[2-4679]|7[2-467]|8[2-46-8])|[7-9](?:0[1-9]|[1-9])", "[24-6]|3(?:3(?:0[1-467]|2[127-9]|3[124578]|[46][1246]|7[1257-9]|8[1256]|9[145])|4(?:2[135]|3[1357]|4[13578]|6[1246]|7[1356]|9[1346])|5(?:0[14]|2[1-3589]|3[1357]|[49][1246]|6[1-4]|7[1346]|8[13568])|6(?:0[356]|2[1-489]|3[124-6]|4[1347]|6[13]|7[12579]|8[1-356]|9[135])|7(?:2[1-7]|3[1357]|4[145]|6[1-5]|7[1-4])|8(?:21|3[1468]|4[1347]|6[0135-9]|7[1467]|8[136])|9(?:0[12479]|2[1358]|3[1357]|4[134679]|6[1-9]|7[136]|8[147]|9[1468]))|[7-9](?:0[1-9]|[1-9])"]], ["(3\\d{4})(\\d{1,10})", "$1 $2", ["3"]], ["(800)(\\d{7,12})", "$1 $2", ["800"]], ["(\\d{3})(\\d)(\\d{4,10})", "$1 $2 $3", ["1(?:37|80)|900", "1(?:37|80)|900[1359]"]], ["(1\\d{2})(\\d{5,11})", "$1 $2", ["181"]], ["(18\\d{3})(\\d{6})", "$1 $2", ["185", "1850", "18500"]], ["(18\\d{2})(\\d{7})", "$1 $2", ["18[68]"]], ["(18\\d)(\\d{8})", "$1 $2", ["18[2-579]"]], ["(700)(\\d{4})(\\d{4})", "$1 $2 $3", ["700"]], ["(138)(\\d{4})", "$1 $2", ["138"]], ["(15[013-68])(\\d{2})(\\d{8})", "$1 $2 $3", ["15[013-68]"]], ["(15[279]\\d)(\\d{2})(\\d{7})", "$1 $2 $3", ["15[279]"]], ["(1[67]\\d)(\\d{2})(\\d{7,8})", "$1 $2 $3", ["1(?:6[023]|7)"]]], "0", "0$1"], DJ: ["253", "[27]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]]], DK: ["45", "[2-9]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]]], DM: ["1", "[57-9]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "767"], DO: ["1", "[589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "8[024]9"], DZ: ["213", "(?:[1-4]|[5-9]\\d)\\d{7}", [["([1-4]\\d)(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[1-4]"]], ["([5-8]\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-8]"]], ["(9\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["9"]]], "0", "0$1"], EC: ["593", "1\\d{9,10}|[2-8]\\d{7}|9\\d{8}", [["(\\d)(\\d{3})(\\d{4})", "$1 $2-$3", ["[247]|[356][2-8]"], null, null, "$1-$2-$3"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["9"], "0$1"], ["(1800)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["180", "1800"], "$1"]], "0", "(0$1)"], EE: ["372", "[3-9]\\d{6,7}|800\\d{6,7}", [["([3-79]\\d{2})(\\d{4})", "$1 $2", ["[369]|4[3-8]|5(?:[0-2]|5[0-478]|6[45])|7[1-9]", "[369]|4[3-8]|5(?:[02]|1(?:[0-8]|95)|5[0-478]|6(?:4[0-4]|5[1-589]))|7[1-9]"]], ["(70)(\\d{2})(\\d{4})", "$1 $2 $3", ["70"]], ["(8000)(\\d{3})(\\d{3})", "$1 $2 $3", ["800", "8000"]], ["([458]\\d{3})(\\d{3,4})", "$1 $2", ["40|5|8(?:00|[1-5])", "40|5|8(?:00[1-9]|[1-5])"]]]], EG: ["20", "1\\d{4,9}|[24-6]\\d{8}|3\\d{7}|[89]\\d{8,9}", [["(\\d)(\\d{7,8})", "$1 $2", ["[23]"]], ["(\\d{2})(\\d{6,7})", "$1 $2", ["1(?:3|5[239])|[4-6]|[89][2-9]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1[0-25]|[89]00"]]], "0", "0$1"], EH: ["212", "[5-9]\\d{8}", [["([5-7]\\d{2})(\\d{6})", "$1-$2", ["5(?:2[015-7]|3[0-4])|[67]"]], ["([58]\\d{3})(\\d{5})", "$1-$2", ["5(?:2[2-489]|3[5-9]|92)|892", "5(?:2(?:[2-48]|9[0-7])|3(?:[5-79]|8[0-7])|924)|892"]], ["(5\\d{4})(\\d{4})", "$1-$2", ["5(?:29|38)", "5(?:29|38)[89]"]], ["([5]\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["5(?:4[067]|5[03])"]], ["(8[09])(\\d{7})", "$1-$2", ["8(?:0|9[013-9])"]]], "0", null, null, null, null, "528[89]"], ER: ["291", "[178]\\d{6}", [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3"]], "0", "0$1"], ES: ["34", "[5-9]\\d{8}", [["([89]00)(\\d{3})(\\d{3})", "$1 $2 $3", ["[89]00"]], ["([5-9]\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[568]|[79][0-8]"]]]], ET: ["251", "[1-59]\\d{8}", [["([1-59]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-59]"]]], "0", "0$1"], FI: ["358", "1\\d{4,11}|[2-9]\\d{4,10}", [["(\\d{3})(\\d{3,7})", "$1 $2", ["(?:[1-3]0|[6-8])0"]], ["(75\\d{3})", "$1", ["75[12]"]], ["(116\\d{3})", "$1", ["116"], "$1"], ["(\\d{2})(\\d{4,10})", "$1 $2", ["[14]|2[09]|50|7[135]"]], ["(\\d)(\\d{4,11})", "$1 $2", ["[25689][1-8]|3"]]], "0", "0$1", null, null, null, null, ["1(?:[3569][1-8]\\d{3,9}|[47]\\d{5,10})|2[1-8]\\d{3,9}|3(?:[1-8]\\d{3,9}|9\\d{4,8})|[5689][1-8]\\d{3,9}", "4(?:[0-8]\\d{4,9}|9\\d{3,8})|50\\d{4,8}", "800\\d{4,7}", "[67]00\\d{5,6}", null, null, "[13]0\\d{4,8}|2(?:0(?:[016-8]\\d{3,7}|[2-59]\\d{2,7})|9\\d{4,8})|60(?:[12]\\d{5,6}|6\\d{7})|7(?:1\\d{7}|3\\d{8}|5[03-9]\\d{3,7})"]], FJ: ["679", "[2-9]\\d{6}|0\\d{10}", [["(\\d{3})(\\d{4})", "$1 $2", ["[2-9]"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["0"]]]], FK: ["500", "[2-7]\\d{4}"], FM: ["691", "[39]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], FO: ["298", "[2-9]\\d{5}", [["(\\d{6})", "$1"]], null, null, "(10(?:01|[12]0|88))"], FR: ["33", "[1-9]\\d{8}", [["([1-79])(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["[1-79]"]], ["(8\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"], "0 $1"]], "0", "0$1"], GA: ["241", "0?\\d{7}", [["(\\d)(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-7]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["0"]]]], GB: ["44", "\\d{7,10}", [["(7\\d{3})(\\d{6})", "$1 $2", ["7(?:[1-57-9]|62)", "7(?:[1-57-9]|624)"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["2|5[56]|7[06]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1(?:[02-9]1|1)|3|9[018]"]], ["(\\d{5})(\\d{4,5})", "$1 $2", ["1(?:38|5[23]|69|76|94)", "1(?:(?:38|69)7|5(?:24|39)|768|946)", "1(?:3873|5(?:242|39[4-6])|(?:697|768)[347]|9467)"]], ["(1\\d{3})(\\d{5,6})", "$1 $2", ["1"]], ["(800)(\\d{4})", "$1 $2", ["800", "8001", "80011", "800111", "8001111"]], ["(845)(46)(4\\d)", "$1 $2 $3", ["845", "8454", "84546", "845464"]], ["(8\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["8(?:4[2-5]|7[0-3])"]], ["(80\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["80"]], ["(800)(\\d{6})", "$1 $2", ["800"]]], "0", "0$1", null, null, null, null, ["2(?:0[01378]|3[0189]|4[017]|8[0-46-9]|9[0-2])\\d{7}|1(?:1(?:3[0-48]|[46][0-4]|5[0-26-9]|[78][0-49])|21[0-7]|31[0-8]|[4-69]1\\d)\\d{6}|1(?:2(?:0[024-9]|2[3-9]|3[3-79]|4[1-689]|[58][02-9]|6[0-47-9]|7[013-9]|9\\d)|3(?:0\\d|[25][02-9]|3[02-579]|[468][0-46-9]|7[1-35-79]|9[2-578])|4(?:0[03-9]|[28][02-57-9]|[37]\\d|4[02-69]|5[0-8]|[69][0-79])|5(?:0[1-35-9]|2[024-9]|3[015689]|4[02-9]|5[03-9]|6\\d|7[0-35-9]|8[0-468]|9[0-57-9])|6(?:0[034689]|2[0-35689]|[38][013-9]|4[1-467]|5[0-69]|6[13-9]|7[0-8]|9[0124578])|7(?:0[0246-9]|2\\d|3[0236-8]|4[03-9]|5[0-46-9]|6[013-9]|7[0-35-9]|8[024-9]|9[02-9])|8(?:0[35-9]|2[1-57-9]|3[02-578]|4[0-578]|5[124-9]|6[2-69]|7\\d|8[02-9]|9[02569])|9(?:0[02-589]|2[02-689]|3[1-57-9]|4[2-9]|5[0-579]|6[2-47-9]|7[0-24578]|8\\d|9[2-57]))\\d{6}|1(?:2(?:0(?:46[1-4]|87[2-9])|545[1-79]|76(?:2\\d|3[1-8]|6[1-6])|9(?:7(?:2[0-4]|3[2-5])|8(?:2[2-8]|7[0-47-9]|8[345])))|3(?:638[2-5]|647[23]|8(?:47[04-9]|64[0157-9]))|4(?:044[1-7]|20(?:2[23]|8\\d)|6(?:0(?:30|5[2-57]|6[1-8]|7[2-8])|140)|8(?:052|87[123]))|5(?:24(?:3[2-79]|6\\d)|276\\d|6(?:26[06-9]|686))|6(?:06(?:4\\d|7[4-79])|295[567]|35[34]\\d|47(?:24|61)|59(?:5[08]|6[67]|74)|955[0-4])|7(?:26(?:6[13-9]|7[0-7])|442\\d|50(?:2[0-3]|[3-68]2|76))|8(?:27[56]\\d|37(?:5[2-5]|8[239])|84(?:3[2-58]))|9(?:0(?:0(?:6[1-8]|85)|52\\d)|3583|4(?:66[1-8]|9(?:2[01]|81))|63(?:23|3[1-4])|9561))\\d{3}|176888[2-46-8]\\d{2}|16977[23]\\d{3}", "7(?:[1-3]\\d{3}|4(?:[0-46-9]\\d{2}|5(?:[0-689]\\d|7[0-57-9]))|5(?:0[0-8]|[13-9]\\d|2[0-35-9])\\d|7(?:0(?:0[01]|[1-9]\\d)|[1-7]\\d{2}|8[02-9]\\d|9[0-689]\\d)|8(?:[014-9]\\d|[23][0-8])\\d|9(?:[024-9]\\d{2}|1(?:[02-9]\\d|1[028])|3[0-689]\\d))\\d{5}", "80(?:0(?:1111|\\d{6,7})|8\\d{7})", "(?:87[123]|9(?:[01]\\d|8[2349]))\\d{7}", "70\\d{8}", null, "(?:3[0347]|55)\\d{8}", "76(?:0[012]|2[356]|4[0134]|5[49]|6[0-369]|77|81|9[39])\\d{6}", "56\\d{8}", "8(?:4(?:5464\\d|[2-5]\\d{7})|70\\d{7})"]], GD: ["1", "[4589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "473"], GE: ["995", "[34578]\\d{8}", [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[348]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["7"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["5"]]], "0"], GF: ["594", "[56]\\d{8}", [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]], "0", "0$1"], GG: ["44", "[135789]\\d{6,9}", [["(7\\d{3})(\\d{6})", "$1 $2", ["7(?:[1-57-9]|62)", "7(?:[1-57-9]|624)"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["2|5[56]|7[06]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1(?:[02-9]1|1)|3|9[018]"]], ["(\\d{5})(\\d{4,5})", "$1 $2", ["1(?:38|5[23]|69|76|94)", "1(?:(?:38|69)7|5(?:24|39)|768|946)", "1(?:3873|5(?:242|39[4-6])|(?:697|768)[347]|9467)"]], ["(1\\d{3})(\\d{5,6})", "$1 $2", ["1"]], ["(800)(\\d{4})", "$1 $2", ["800", "8001", "80011", "800111", "8001111"]], ["(845)(46)(4\\d)", "$1 $2 $3", ["845", "8454", "84546", "845464"]], ["(8\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["8(?:4[2-5]|7[0-3])"]], ["(80\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["80"]], ["(800)(\\d{6})", "$1 $2", ["800"]]], "0", null, null, null, null, null, ["1481[25-9]\\d{5}", "7(?:781\\d|839\\d|911[17])\\d{5}", "80(?:0(?:1111|\\d{6,7})|8\\d{7})", "(?:87[123]|9(?:[01]\\d|8[0-3]))\\d{7}", "70\\d{8}", null, "(?:3[0347]|55)\\d{8}", "76(?:0[012]|2[356]|4[0134]|5[49]|6[0-369]|77|81|9[39])\\d{6}", "56\\d{8}", "8(?:4(?:5464\\d|[2-5]\\d{7})|70\\d{7})"]], GH: ["233", "[235]\\d{8}|8\\d{7}", [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[235]"]], ["(\\d{3})(\\d{5})", "$1 $2", ["8"]]], "0", "0$1"], GI: ["350", "[256]\\d{7}", [["(\\d{3})(\\d{5})", "$1 $2", ["2"]]]], GL: ["299", "[1-689]\\d{5}", [["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3"]]], GM: ["220", "[2-9]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], GN: ["224", "[367]\\d{7,8}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["3"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[67]"]]]], GP: ["590", "[56]\\d{8}", [["([56]\\d{2})(\\d{2})(\\d{4})", "$1 $2-$3", ["590|69[01]"]]], "0", "0$1", null, null, null, null, ["590(?:0[1-68]|1[0-2]|2[0-68]|3[1289]|4[0-24-9]|5[3-579]|6[0189]|7[08]|8[0-689]|9\\d)\\d{4}", "69(?:0\\d{2}|1(?:2[29]|3[0-5]))\\d{4}"]], GQ: ["240", "[23589]\\d{8}", [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[235]"]], ["(\\d{3})(\\d{6})", "$1 $2", ["[89]"]]]], GR: ["30", "[26-9]\\d{9}", [["([27]\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["21|7"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["2[2-9]1|[689]"]], ["(2\\d{3})(\\d{6})", "$1 $2", ["2[2-9][02-9]"]]]], GT: ["502", "[2-7]\\d{7}|1[89]\\d{9}", [["(\\d{4})(\\d{4})", "$1 $2", ["[2-7]"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]]]], GU: ["1", "[5689]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "671"], GW: ["245", "(?:4(?:0\\d{5}|4\\d{7})|9\\d{8})", [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["44|9[5-7]"]], ["(\\d{3})(\\d{4})", "$1 $2", ["40"]]]], GY: ["592", "[2-46-9]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], HK: ["852", "[2-7]\\d{7}|8[0-3]\\d{6,7}|9\\d{4,10}", [["(\\d{4})(\\d{4})", "$1 $2", ["[2-7]|[89](?:0[1-9]|[1-9])"]], ["(800)(\\d{3})(\\d{3})", "$1 $2 $3", ["800"]], ["(900)(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["900"]], ["(900)(\\d{2,5})", "$1 $2", ["900"]]]], HN: ["504", "[237-9]\\d{7}", [["(\\d{4})(\\d{4})", "$1-$2"]]], HR: ["385", "[1-7]\\d{5,8}|[89]\\d{6,8}", [["(1)(\\d{4})(\\d{3})", "$1 $2 $3", ["1"]], ["([2-5]\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2-5]"]], ["(9\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["9"]], ["(6[01])(\\d{2})(\\d{2,3})", "$1 $2 $3", ["6[01]"]], ["([67]\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[67]"]], ["(80[01])(\\d{2})(\\d{2,3})", "$1 $2 $3", ["80[01]"]], ["(80[01])(\\d{3})(\\d{3})", "$1 $2 $3", ["80[01]"]]], "0", "0$1"], HT: ["509", "[2-489]\\d{7}", [["(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3"]]], HU: ["36", "[1-9]\\d{7,8}", [["(1)(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2-9]"]]], "06", "($1)"], ID: ["62", "(?:[1-79]\\d{6,10}|8\\d{7,11})", [["(\\d{2})(\\d{5,8})", "$1 $2", ["2[124]|[36]1"], "(0$1)"], ["(\\d{3})(\\d{5,8})", "$1 $2", ["2[035-9]|[36][02-9]|[4579]"], "(0$1)"], ["(8\\d{2})(\\d{3,4})(\\d{3})", "$1-$2-$3", ["8[1-35-9]"]], ["(8\\d{2})(\\d{4})(\\d{4,5})", "$1-$2-$3", ["8[1-35-9]"]], ["(1)(500)(\\d{3})", "$1 $2 $3", ["150", "1500"], "$1"], ["(177)(\\d{6,8})", "$1 $2", ["177"]], ["(800)(\\d{5,7})", "$1 $2", ["800"]], ["(804)(\\d{3})(\\d{4})", "$1 $2 $3", ["804"]], ["(80\\d)(\\d)(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["80[79]"]]], "0", "0$1"], IE: ["353", "[124-9]\\d{6,9}", [["(1)(\\d{3,4})(\\d{4})", "$1 $2 $3", ["1"]], ["(\\d{2})(\\d{5})", "$1 $2", ["2[24-9]|47|58|6[237-9]|9[35-9]"]], ["(\\d{3})(\\d{5})", "$1 $2", ["40[24]|50[45]"]], ["(48)(\\d{4})(\\d{4})", "$1 $2 $3", ["48"]], ["(818)(\\d{3})(\\d{3})", "$1 $2 $3", ["818"]], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[24-69]|7[14]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["76|8[35-9]"], "0$1"], ["(8\\d)(\\d)(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["8[35-9]5"], "0$1"], ["(700)(\\d{3})(\\d{3})", "$1 $2 $3", ["700"], "0$1"], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1(?:5|8[059])", "1(?:5|8[059]0)"], "$1"]], "0", "(0$1)"], IL: ["972", "1\\d{6,11}|[2-589]\\d{3}(?:\\d{3,6})?|6\\d{3}|7\\d{6,9}", [["([2-489])(\\d{3})(\\d{4})", "$1-$2-$3", ["[2-489]"], "0$1"], ["([57]\\d)(\\d{3})(\\d{4})", "$1-$2-$3", ["[57]"], "0$1"], ["(153)(\\d{1,2})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["153"]], ["(1)([7-9]\\d{2})(\\d{3})(\\d{3})", "$1-$2-$3-$4", ["1[7-9]"]], ["(1255)(\\d{3})", "$1-$2", ["125", "1255"]], ["(1200)(\\d{3})(\\d{3})", "$1-$2-$3", ["120", "1200"]], ["(1212)(\\d{2})(\\d{2})", "$1-$2-$3", ["121", "1212"]], ["(1599)(\\d{6})", "$1-$2", ["159", "1599"]], ["(151)(\\d{1,2})(\\d{3})(\\d{4})", "$1-$2 $3-$4", ["151"]], ["(\\d{4})", "*$1", ["[2-689]"]]], "0"], IM: ["44", "[135789]\\d{6,9}", [["(7\\d{3})(\\d{6})", "$1 $2", ["7(?:[1-57-9]|62)", "7(?:[1-57-9]|624)"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["2|5[56]|7[06]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1(?:[02-9]1|1)|3|9[018]"]], ["(\\d{5})(\\d{4,5})", "$1 $2", ["1(?:38|5[23]|69|76|94)", "1(?:(?:38|69)7|5(?:24|39)|768|946)", "1(?:3873|5(?:242|39[4-6])|(?:697|768)[347]|9467)"]], ["(1\\d{3})(\\d{5,6})", "$1 $2", ["1"]], ["(800)(\\d{4})", "$1 $2", ["800", "8001", "80011", "800111", "8001111"]], ["(845)(46)(4\\d)", "$1 $2 $3", ["845", "8454", "84546", "845464"]], ["(8\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["8(?:4[2-5]|7[0-3])"]], ["(80\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["80"]], ["(800)(\\d{6})", "$1 $2", ["800"]]], "0", null, null, null, null, null, ["1624[5-8]\\d{5}", "7(?:4576|[59]24\\d|624[0-4689])\\d{5}", "808162\\d{4}", "(?:872299|90[0167]624)\\d{4}", "70\\d{8}", null, "3(?:08162\\d|3\\d{5}|4(?:40[49]06|5624\\d)|7(?:0624\\d|2299\\d))\\d{3}|55\\d{8}", null, "56\\d{8}", "8(?:4(?:40[49]06|5624\\d)|70624\\d)\\d{3}"]], IN: ["91", "008\\d{9}|1\\d{7,12}|[2-9]\\d{9,10}", [["(\\d{8})", "$1", ["561", "5616", "56161"], "$1"], ["(\\d{5})(\\d{5})", "$1 $2", ["6(?:[09]0|2[03689]|3[05-9])|7(?:[02-8]|19|9[037-9])|8(?:0[015-9]|[1-9])|9", "6(?:[09]0|2(?:0[01]|39|60|8[0-2]|9[04])|3(?:0[01]|5[0-2]|60|7[05]|81|9[03-5]))|7(?:[07]|19[0-5]|2(?:[0235-9]|[14][017-9])|3(?:[025-9]|[134][017-9])|4(?:[0-35689]|[47][017-9])|5(?:[02-46-9]|[15][017-9])|6(?:[02-9]|1[0-257-9])|8(?:[0-79]|8[0189])|9(?:[089]|31|7[02-9]))|8(?:0(?:[01589]|6[67]|7[02-9])|1(?:[0-57-9]|6[07-9])|2(?:[014][07-9]|[235-9])|3(?:[03-57-9]|[126][07-9])|[45]|6(?:[02457-9]|[136][07-9])|7(?:[078][07-9]|[1-69])|8(?:[0-25-9]|3[07-9]|4[047-9])|9(?:[02-9]|1[027-9]))|9", "6(?:[09]0|2(?:0[01]|39|60|8[0-2]|9[04])|3(?:0[01]|5[0-2]|60|7[05]|81|9[03-5]))|7(?:0|19[0-5]|2(?:[0235-79]|[14][017-9]|8(?:[0-69]|[78][089]))|3(?:[05-8]|1(?:[0189]|7[5-9])|2(?:[0-49][089]|[5-8])|3[017-9]|4(?:[07-9]|11)|9(?:[01689]|[2-5][089]|7[0189]))|4(?:[056]|1(?:[0135-9]|[24][089])|[29](?:[0-7][089]|[89])|3(?:[0-8][089]|9)|[47](?:[089]|11|7[02-8])|8(?:[0-24-7][089]|[389]))|5(?:[0346-9]|[15][017-9]|2(?:[03-9]|[12][089]))|6(?:[0346-9]|1[0-257-9]|2(?:[0-4]|[5-9][089])|5(?:[0-367][089]|[4589]))|7(?:0(?:[02-9]|1[089])|[1-9])|8(?:[0-79]|8(?:0[0189]|11|8[013-9]|9))|9(?:[089]|313|7(?:[02-8]|9[07-9])))|8(?:0(?:[01589]|6[67]|7(?:[02-8]|9[05-9]))|1(?:[02-57-9]|1(?:[0-35-9]|4[0-46-9])|6(?:[089]|7[02-8]))|2(?:0(?:[089]|7[02])|[14](?:[089]|7[02-8])|[235-9])|3(?:[03-57-9]|1(?:[089]|7[02-6])|2(?:[09]|77|8[0-689])|6(?:[089]|7[02-7]))|[45]|6(?:[02457-9]|[136](?:[089]|7[02-8]))|7(?:0[07-9]|[1-69]|[78](?:[089]|7[02-8]))|8(?:[0-25-9]|3(?:[089]|7[02-8])|4(?:[0489]|7[02-68]))|9(?:[02-9]|1(?:[0289]|7[2-6])))|9"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["11|2[02]|33|4[04]|79[1-9]|80[2-46]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1(?:2[0-249]|3[0-25]|4[145]|[59][14]|[68][1-9]|7[1257])|2(?:1[257]|3[013]|4[01]|5[0137]|6[0158]|78|8[1568]|9[14])|3(?:26|4[1-3]|5[34]|6[01489]|7[02-46]|8[159])|4(?:1[36]|2[1-47]|3[15]|5[12]|6[0-26-9]|7[0-24-9]|8[013-57]|9[014-7])|5(?:1[025]|22|[36][25]|4[28]|5[12]|[78]1|9[15])|6(?:12|[2-4]1|5[17]|6[13]|7[14]|80)|7(?:12|2[14]|3[134]|4[47]|5[15]|[67]1|88)|8(?:16|2[014]|3[126]|6[136]|7[078]|8[34]|91)"]], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1(?:[23579]|[468][1-9])|[2-8]"]], ["(\\d{2})(\\d{3})(\\d{4})(\\d{3})", "$1 $2 $3 $4", ["008"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["140"], "$1"], ["(\\d{4})(\\d{2})(\\d{4})", "$1 $2 $3", ["160", "1600"], "$1"], ["(\\d{4})(\\d{4,5})", "$1 $2", ["180", "1800"], "$1"], ["(\\d{4})(\\d{2,4})(\\d{4})", "$1 $2 $3", ["180", "1800"], "$1"], ["(\\d{4})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["186", "1860"], "$1"], ["(\\d{4})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["18[06]"], "$1"]], "0", "0$1", null, null, !0], IO: ["246", "3\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], IQ: ["964", "[1-7]\\d{7,9}", [["(1)(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], ["([2-6]\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2-6]"]], ["(7\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"]]], "0", "0$1"], IR: ["98", "[1-8]\\d{5,9}|9(?:[0-4]\\d{8}|9\\d{8})", [["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["[1-8]"]], ["(\\d{2})(\\d{4,5})", "$1 $2", ["[1-8]"]], ["(\\d{4,5})", "$1", ["96"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["9"]]], "0", "0$1"], IS: ["354", "[4-9]\\d{6}|38\\d{7}", [["(\\d{3})(\\d{4})", "$1 $2", ["[4-9]"]], ["(3\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["3"]]]], IT: ["39", "[01589]\\d{5,10}|3(?:[12457-9]\\d{8}|[36]\\d{7,9})", [["(\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["0[26]|55"]], ["(0[26])(\\d{4})(\\d{5})", "$1 $2 $3", ["0[26]"]], ["(0[26])(\\d{4,6})", "$1 $2", ["0[26]"]], ["(0\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["0[13-57-9][0159]"]], ["(\\d{3})(\\d{3,6})", "$1 $2", ["0[13-57-9][0159]|8(?:03|4[17]|9[245])", "0[13-57-9][0159]|8(?:03|4[17]|9(?:2|[45][0-4]))"]], ["(0\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["0[13-57-9][2-46-8]"]], ["(0\\d{3})(\\d{2,6})", "$1 $2", ["0[13-57-9][2-46-8]"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[13]|8(?:00|4[08]|9[59])", "[13]|8(?:00|4[08]|9(?:5[5-9]|9))"]], ["(\\d{4})(\\d{4})", "$1 $2", ["894", "894[5-9]"]], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["3"]]], null, null, null, null, null, null, ["0(?:[26]\\d{4,9}|(?:1(?:[0159]\\d|[27][1-5]|31|4[1-4]|6[1356]|8[2-57])|3(?:[0159]\\d|2[1-4]|3[12]|[48][1-6]|6[2-59]|7[1-7])|4(?:[0159]\\d|[23][1-9]|4[245]|6[1-5]|7[1-4]|81)|5(?:[0159]\\d|2[1-5]|3[2-6]|4[1-79]|6[4-6]|7[1-578]|8[3-8])|7(?:[0159]\\d|2[12]|3[1-7]|4[2346]|6[13569]|7[13-6]|8[1-59])|8(?:[0159]\\d|2[34578]|3[1-356]|[6-8][1-5])|9(?:[0159]\\d|[238][1-5]|4[12]|6[1-8]|7[1-6]))\\d{2,7})", "3(?:[12457-9]\\d{8}|6\\d{7,8}|3\\d{7,9})", "80(?:0\\d{6}|3\\d{3})", "0878\\d{5}|1(?:44|6[346])\\d{6}|89(?:2\\d{3}|4(?:[0-4]\\d{2}|[5-9]\\d{4})|5(?:[0-4]\\d{2}|[5-9]\\d{6})|9\\d{6})", "1(?:78\\d|99)\\d{6}", null, null, null, "55\\d{8}", "84(?:[08]\\d{6}|[17]\\d{3})"]], JE: ["44", "[135789]\\d{6,9}", [["(7\\d{3})(\\d{6})", "$1 $2", ["7(?:[1-57-9]|62)", "7(?:[1-57-9]|624)"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["2|5[56]|7[06]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1(?:[02-9]1|1)|3|9[018]"]], ["(\\d{5})(\\d{4,5})", "$1 $2", ["1(?:38|5[23]|69|76|94)", "1(?:(?:38|69)7|5(?:24|39)|768|946)", "1(?:3873|5(?:242|39[4-6])|(?:697|768)[347]|9467)"]], ["(1\\d{3})(\\d{5,6})", "$1 $2", ["1"]], ["(800)(\\d{4})", "$1 $2", ["800", "8001", "80011", "800111", "8001111"]], ["(845)(46)(4\\d)", "$1 $2 $3", ["845", "8454", "84546", "845464"]], ["(8\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["8(?:4[2-5]|7[0-3])"]], ["(80\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["80"]], ["(800)(\\d{6})", "$1 $2", ["800"]]], "0", null, null, null, null, null, ["1534[0-24-8]\\d{5}", "7(?:509\\d|7(?:00[378]|97[7-9])|829\\d|937\\d)\\d{5}", "80(?:07(?:35|81)|8901)\\d{4}", "(?:871206|90(?:066[59]|1810|71(?:07|55)))\\d{4}", "701511\\d{4}", null, "3(?:0(?:07(?:35|81)|8901)|3\\d{4}|4(?:4(?:4(?:05|42|69)|703)|5(?:041|800))|7(?:0002|1206))\\d{4}|55\\d{8}", "76(?:0[012]|2[356]|4[0134]|5[49]|6[0-369]|77|81|9[39])\\d{6}", "56\\d{8}", "8(?:4(?:4(?:4(?:05|42|69)|703)|5(?:041|800))|70002)\\d{4}"]], JM: ["1", "[589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "876"], JO: ["962", "[235-9]\\d{7,8}", [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[2356]|87"], "(0$1)"], ["(7)(\\d{4})(\\d{4})", "$1 $2 $3", ["7[457-9]"]], ["(\\d{2})(\\d{7})", "$1 $2", ["70"]], ["(\\d{3})(\\d{5,6})", "$1 $2", ["8[0158]|9"]]], "0", "0$1"], JP: ["81", "[1-9]\\d{8,9}|00(?:[36]\\d{7,14}|7\\d{5,7}|8\\d{7})", [["(\\d{3})(\\d{3})(\\d{3})", "$1-$2-$3", ["(?:12|57|99)0"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1-$2-$3", ["800"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1-$2-$3", ["[2579]0|80[1-9]"]], ["(\\d{4})(\\d)(\\d{4})", "$1-$2-$3", ["1(?:26|3[79]|4[56]|5[4-68]|6[3-5])|499|5(?:76|97)|746|8(?:3[89]|47|51|63)|9(?:49|80|9[16])", "1(?:267|3(?:7[247]|9[278])|4(?:5[67]|66)|5(?:47|58|64|8[67])|6(?:3[245]|48|5[4-68]))|499[2468]|5(?:76|97)9|7468|8(?:3(?:8[78]|96)|477|51[24]|636)|9(?:496|802|9(?:1[23]|69))", "1(?:267|3(?:7[247]|9[278])|4(?:5[67]|66)|5(?:47|58|64|8[67])|6(?:3[245]|48|5[4-68]))|499[2468]|5(?:769|979[2-69])|7468|8(?:3(?:8[78]|96[2457-9])|477|51[24]|636[2-57-9])|9(?:496|802|9(?:1[23]|69))"]], ["(\\d{3})(\\d{2})(\\d{4})", "$1-$2-$3", ["1(?:2[3-6]|3[3-9]|4[2-6]|5[2-8]|[68][2-7]|7[2-689]|9[1-578])|2(?:2[03-689]|3[3-58]|4[0-468]|5[04-8]|6[013-8]|7[06-9]|8[02-57-9]|9[13])|4(?:2[28]|3[689]|6[035-7]|7[05689]|80|9[3-5])|5(?:3[1-36-9]|4[4578]|5[013-8]|6[1-9]|7[2-8]|8[14-7]|9[4-9])|7(?:2[15]|3[5-9]|4[02-9]|6[135-8]|7[0-4689]|9[014-9])|8(?:2[49]|3[3-8]|4[5-8]|5[2-9]|6[35-9]|7[579]|8[03-579]|9[2-8])|9(?:[23]0|4[02-46-9]|5[024-79]|6[4-9]|7[2-47-9]|8[02-7]|9[3-7])", "1(?:2[3-6]|3[3-9]|4[2-6]|5(?:[236-8]|[45][2-69])|[68][2-7]|7[2-689]|9[1-578])|2(?:2(?:[04-689]|3[23])|3[3-58]|4[0-468]|5(?:[0468][2-9]|5[78]|7[2-4])|6(?:[0135-8]|4[2-5])|7(?:[0679]|8[2-7])|8(?:[024578]|3[25-9]|9[6-9])|9(?:11|3[2-4]))|4(?:2(?:2[2-9]|8[237-9])|3[689]|6[035-7]|7(?:[059][2-8]|[68])|80|9[3-5])|5(?:3[1-36-9]|4[4578]|5[013-8]|6[1-9]|7[2-8]|8[14-7]|9(?:[4-7]|[89][2-8]))|7(?:2[15]|3[5-9]|4[02-9]|6[135-8]|7[0-4689]|9(?:[017-9]|4[6-8]|5[2-478]|6[2-589]))|8(?:2(?:4[4-8]|9[2-8])|3(?:[3-6][2-9]|7[2-6]|8[2-5])|4[5-8]|5[2-9]|6(?:[37]|5[4-7]|6[2-9]|8[2-8]|9[236-9])|7[579]|8[03-579]|9[2-8])|9(?:[23]0|4[02-46-9]|5[024-79]|6[4-9]|7[2-47-9]|8[02-7]|9(?:3[34]|4[2-69]|[5-7]))", "1(?:2[3-6]|3[3-9]|4[2-6]|5(?:[236-8]|[45][2-69])|[68][2-7]|7[2-689]|9[1-578])|2(?:2(?:[04-689]|3[23])|3[3-58]|4[0-468]|5(?:[0468][2-9]|5[78]|7[2-4])|6(?:[0135-8]|4[2-5])|7(?:[0679]|8[2-7])|8(?:[024578]|3[25-9]|9[6-9])|9(?:11|3[2-4]))|4(?:2(?:2[2-9]|8[237-9])|3[689]|6[035-7]|7(?:[059][2-8]|[68])|80|9[3-5])|5(?:3[1-36-9]|4[4578]|5[013-8]|6[1-9]|7[2-8]|8[14-7]|9(?:[4-7]|[89][2-8]))|7(?:2[15]|3[5-9]|4[02-9]|6[135-8]|7[0-4689]|9(?:[017-9]|4[6-8]|5[2-478]|6[2-589]))|8(?:2(?:4[4-8]|9(?:20|[3578]|4[04-9]|6[56]))|3(?:[3-6][2-9]|7(?:[2-5]|6[0-59])|8[2-5])|4[5-8]|5[2-9]|6(?:[37]|5(?:[467]|5[014-9])|6(?:[2-8]|9[02-69])|8[2-8]|9(?:[236-8]|9[23]))|7[579]|8[03-579]|9[2-8])|9(?:[23]0|4[02-46-9]|5[024-79]|6[4-9]|7[2-47-9]|8[02-7]|9(?:3(?:3[02-9]|4[0-24689])|4[2-69]|[5-7]))", "1(?:2[3-6]|3[3-9]|4[2-6]|5(?:[236-8]|[45][2-69])|[68][2-7]|7[2-689]|9[1-578])|2(?:2(?:[04-689]|3[23])|3[3-58]|4[0-468]|5(?:[0468][2-9]|5[78]|7[2-4])|6(?:[0135-8]|4[2-5])|7(?:[0679]|8[2-7])|8(?:[024578]|3[25-9]|9[6-9])|9(?:11|3[2-4]))|4(?:2(?:2[2-9]|8[237-9])|3[689]|6[035-7]|7(?:[059][2-8]|[68])|80|9[3-5])|5(?:3[1-36-9]|4[4578]|5[013-8]|6[1-9]|7[2-8]|8[14-7]|9(?:[4-7]|[89][2-8]))|7(?:2[15]|3[5-9]|4[02-9]|6[135-8]|7[0-4689]|9(?:[017-9]|4[6-8]|5[2-478]|6[2-589]))|8(?:2(?:4[4-8]|9(?:20|[3578]|4[04-9]|6(?:5[25]|60)))|3(?:[3-6][2-9]|7(?:[2-5]|6[0-59])|8[2-5])|4[5-8]|5[2-9]|6(?:[37]|5(?:[467]|5[014-9])|6(?:[2-8]|9[02-69])|8[2-8]|9(?:[236-8]|9[23]))|7[579]|8[03-579]|9[2-8])|9(?:[23]0|4[02-46-9]|5[024-79]|6[4-9]|7[2-47-9]|8[02-7]|9(?:3(?:3[02-9]|4[0-24689])|4[2-69]|[5-7]))"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["1|2(?:2[37]|5[5-9]|64|78|8[39]|91)|4(?:2[2689]|64|7[347])|5[2-589]|60|8(?:2[124589]|3[279]|[46-9])|9(?:[235-8]|93)", "1|2(?:2[37]|5(?:[57]|[68]0|9[19])|64|78|8[39]|917)|4(?:2(?:20|[68]|9[178])|64|7[347])|5[2-589]|60|8(?:2[124589]|3[279]|[46-9])|9(?:[235-8]|93[34])", "1|2(?:2[37]|5(?:[57]|[68]0|9(?:17|99))|64|78|8[39]|917)|4(?:2(?:20|[68]|9[178])|64|7[347])|5[2-589]|60|8(?:2[124589]|3[279]|[46-9])|9(?:[235-8]|93(?:31|4))"]], ["(\\d{3})(\\d{2})(\\d{4})", "$1-$2-$3", ["2(?:[34]7|[56]9|74|9[14-79])|82|993"]], ["(\\d)(\\d{4})(\\d{4})", "$1-$2-$3", ["3|4(?:2[09]|7[01])|6[1-9]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["[2479][1-9]"]]], "0", "0$1"], KE: ["254", "20\\d{6,7}|[4-9]\\d{6,9}", [["(\\d{2})(\\d{5,7})", "$1 $2", ["[24-6]"]], ["(\\d{3})(\\d{6})", "$1 $2", ["7"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[89]"]]], "0", "0$1", "005|0"], KG: ["996", "[235-8]\\d{8,9}", [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[25-7]|31[25]"]], ["(\\d{4})(\\d{5})", "$1 $2", ["3(?:1[36]|[2-9])"]], ["(\\d{3})(\\d{3})(\\d)(\\d{3})", "$1 $2 $3 $4", ["8"]]], "0", "0$1"], KH: ["855", "[1-9]\\d{7,9}", [["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["1\\d[1-9]|[2-9]"], "0$1"], ["(1[89]00)(\\d{3})(\\d{3})", "$1 $2 $3", ["1[89]0", "1[89]00"]]], "0"], KI: ["686", "[2458]\\d{4}|3\\d{4,7}|[67]\\d{7}", [], null, null, "0"], KM: ["269", "[3478]\\d{6}", [["(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3"]]], KN: ["1", "[589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "869"], KP: ["850", "1\\d{9}|[28]\\d{7}", [["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], ["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["2"]], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["8"]]], "0", "0$1"], KR: ["82", "00(?:3\\d{8,9}|7\\d{9,11})|[1-7]\\d{4,9}|8\\d{8}", [["(\\d{2})(\\d{3,4})", "$1-$2", ["(?:3[1-3]|[46][1-4]|5[1-5])1"]], ["(\\d{4})(\\d{4})", "$1-$2", ["1(?:5[246-9]|6[046-8]|8[03579])", "1(?:5(?:22|44|66|77|88|99)|6(?:[07]0|44|6[16]|88)|8(?:00|33|55|77|99))"], "$1"], ["(\\d{5})", "$1", ["1[016-9]1", "1[016-9]11", "1[016-9]114"]], ["(\\d)(\\d{3,4})(\\d{4})", "$1-$2-$3", ["2[1-9]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["60[2-9]|80"]], ["(\\d{2})(\\d{3,4})(\\d{4})", "$1-$2-$3", ["1[0-25-9]|(?:3[1-3]|[46][1-4]|5[1-5])[1-9]"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1-$2-$3", ["[57]0"]]], "0", "0$1", "0(8[1-46-8]|85\\d{2})?"], KW: ["965", "[12569]\\d{6,7}", [["(\\d{4})(\\d{3,4})", "$1 $2", ["[16]|2(?:[0-35-9]|4[0-35-9])|52[25]|9[024-9]"]], ["(\\d{3})(\\d{5})", "$1 $2", ["244|5(?:[015]|6[56])"]]]], KY: ["1", "[3589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "345"], KZ: ["7", "(?:33\\d|7\\d{2}|80[089])\\d{7}", [["([3489]\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["[3489]"]], ["(7\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"]]], "8", null, null, null, null, null, ["33622\\d{5}|7(?:1(?:0(?:[23]\\d|4[0-3]|59|63)|1(?:[23]\\d|4[0-79]|59)|2(?:[23]\\d|59)|3(?:2\\d|3[0-79]|4[0-35-9]|59)|4(?:[24]\\d|3[013-9]|5[1-9])|5(?:2\\d|3[1-9]|4[0-7]|59)|6(?:[234]\\d|5[19]|61)|72\\d|8(?:[27]\\d|3[1-46-9]|4[0-5]))|2(?:1(?:[23]\\d|4[46-9]|5[3469])|2(?:2\\d|3[0679]|46|5[12679])|3(?:[234]\\d|5[139])|4(?:2\\d|3[1235-9]|59)|5(?:[23]\\d|4[01246-8]|59|61)|6(?:2\\d|3[1-9]|4[0-4]|59)|7(?:[2379]\\d|40|5[279])|8(?:[23]\\d|4[0-3]|59)|9(?:2\\d|3[124578]|59)))\\d{5}", "7(?:0[012578]|47|6[02-4]|7[15-8]|85)\\d{7}", "800\\d{7}", "809\\d{7}", "808\\d{7}", null, null, null, "751\\d{7}"]], LA: ["856", "[2-8]\\d{7,9}", [["(20)(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["20"]], ["([2-8]\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["2[13]|3[14]|[4-8]"]], ["(30)(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["30"]]], "0", "0$1"], LB: ["961", "[13-9]\\d{6,7}", [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[13-69]|7(?:[2-57]|62|8[0-7]|9[04-9])|8[02-9]"], "0$1"], ["([7-9]\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["7(?:[01]|6[013-9]|8[89]|9[1-3])|[89][01]"]]], "0"], LC: ["1", "[5789]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "758"], LI: ["423", "6\\d{8}|[23789]\\d{6}", [["(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3", ["[237-9]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["6[56]"]], ["(69)(7\\d{2})(\\d{4})", "$1 $2 $3", ["697"]]], "0", null, "0|10(?:01|20|66)"], LK: ["94", "[1-9]\\d{8}", [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[1-689]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"]]], "0", "0$1"], LR: ["231", "2\\d{7,8}|[378]\\d{8}|4\\d{6}|5\\d{6,8}", [["(2\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["2"]], ["([4-5])(\\d{3})(\\d{3})", "$1 $2 $3", ["[45]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[23578]"]]], "0", "0$1"], LS: ["266", "[2568]\\d{7}", [["(\\d{4})(\\d{4})", "$1 $2"]]], LT: ["370", "[3-9]\\d{7}", [["([34]\\d)(\\d{6})", "$1 $2", ["37|4(?:1|5[45]|6[2-4])"]], ["([3-6]\\d{2})(\\d{5})", "$1 $2", ["3[148]|4(?:[24]|6[09])|528|6"]], ["([7-9]\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["[7-9]"], "8 $1"], ["(5)(2\\d{2})(\\d{4})", "$1 $2 $3", ["52[0-79]"]]], "8", "(8-$1)", "[08]", null, !0], LU: ["352", "[24-9]\\d{3,10}|3(?:[0-46-9]\\d{2,9}|5[013-9]\\d{1,8})", [["(\\d{2})(\\d{3})", "$1 $2", ["[2-5]|7[1-9]|[89](?:0[2-9]|[1-9])"]], ["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3", ["[2-5]|7[1-9]|[89](?:0[2-9]|[1-9])"]], ["(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["20"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{1,2})", "$1 $2 $3 $4", ["2(?:[0367]|4[3-8])"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["20"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})(\\d{1,2})", "$1 $2 $3 $4 $5", ["2(?:[0367]|4[3-8])"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{1,4})", "$1 $2 $3 $4", ["2(?:[12589]|4[12])|[3-5]|7[1-9]|8(?:0[2-9]|[1-9])|9(?:0[2-46-9]|[1-9])"]], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["70|80[01]|90[015]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["6"]]], null, null, "(15(?:0[06]|1[12]|35|4[04]|55|6[26]|77|88|99)\\d)"], LV: ["371", "[2689]\\d{7}", [["([2689]\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[2689]"]]]], LY: ["218", "[25679]\\d{8}", [["([25-79]\\d)(\\d{7})", "$1-$2", ["[25-79]"]]], "0", "0$1"], MA: ["212", "[5-9]\\d{8}", [["([5-7]\\d{2})(\\d{6})", "$1-$2", ["5(?:2[015-7]|3[0-4])|[67]"]], ["([58]\\d{3})(\\d{5})", "$1-$2", ["5(?:2[2-489]|3[5-9]|92)|892", "5(?:2(?:[2-48]|9[0-7])|3(?:[5-79]|8[0-7])|924)|892"]], ["(5\\d{4})(\\d{4})", "$1-$2", ["5(?:29|38)", "5(?:29|38)[89]"]], ["([5]\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["5(?:4[067]|5[03])"]], ["(8[09])(\\d{7})", "$1-$2", ["8(?:0|9[013-9])"]]], "0", "0$1", null, null, null, null, ["5(?:2(?:[015-79]\\d|2[02-9]|3[2-57]|4[2-8]|8[235-7])\\d|3(?:[0-48]\\d|[57][2-9]|6[2-8]|9[3-9])\\d|4[067]\\d{2}|5[03]\\d{2})\\d{4}", "(?:6(?:[0-79]\\d|8[0-247-9])|7(?:0[067]|6[1267]|7[07]))\\d{6}", "80\\d{7}", "89\\d{7}", null, null, null, null, "5924[01]\\d{4}"]], MC: ["377", "[34689]\\d{7,8}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[39]"], "$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["4"]], ["(6)(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["6"]], ["(\\d{3})(\\d{3})(\\d{2})", "$1 $2 $3", ["8"], "$1"]], "0", "0$1"], MD: ["373", "[235-9]\\d{7}", [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["22|3"]], ["([25-7]\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["2[13-9]|[5-7]"]], ["([89]\\d{2})(\\d{5})", "$1 $2", ["[89]"]]], "0", "0$1"], ME: ["382", "[2-9]\\d{7,8}", [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-57-9]|6[036-9]"]]], "0", "0$1"], MF: ["590", "[56]\\d{8}", [["([56]\\d{2})(\\d{2})(\\d{4})", "$1 $2-$3", ["590|69[01]"]]], "0", null, null, null, null, null, ["590(?:0[079]|13|2[79]|30|43|5[0-268]|7[79]|87)\\d{4}", "69(?:0\\d{2}|1(?:2[29]|3[0-5]))\\d{4}"]], MG: ["261", "[23]\\d{8}", [["([23]\\d)(\\d{2})(\\d{3})(\\d{2})", "$1 $2 $3 $4", ["[23]"]]], "0", "0$1"], MH: ["692", "[2-6]\\d{6}", [["(\\d{3})(\\d{4})", "$1-$2"]], "1"], MK: ["389", "[2-578]\\d{7}", [["(2)(\\d{3})(\\d{4})", "$1 $2 $3", ["2"]], ["([347]\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[347]"]], ["([58]\\d{2})(\\d)(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[58]"]]], "0", "0$1"], ML: ["223", "[246-9]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[246-9]"]]]], MM: ["95", "[178]\\d{5,7}|[24-6]\\d{5,8}|9(?:[279]\\d{0,2}|5|[34]\\d{1,2}|6(?:\\d{1,2})?|8(?:\\d{2})?)\\d{6}", [["(\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["1|2[245]"]], ["(2)(\\d{4})(\\d{4})", "$1 $2 $3", ["251"]], ["(\\d)(\\d{2})(\\d{3})", "$1 $2 $3", ["16|2"]], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["432|67|81"]], ["(\\d{2})(\\d{2})(\\d{3,4})", "$1 $2 $3", ["[4-8]"]], ["(9)(\\d{3})(\\d{4,6})", "$1 $2 $3", ["9(?:2[0-4]|[35-9]|4[137-9])"]], ["(9)([34]\\d{4})(\\d{4})", "$1 $2 $3", ["9(?:3[0-36]|4[0-57-9])"]], ["(9)(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["92[56]"]], ["(9)(\\d{3})(\\d{3})(\\d{2})", "$1 $2 $3 $4", ["93"]]], "0", "0$1"], MN: ["976", "[12]\\d{7,9}|[57-9]\\d{7}", [["([12]\\d)(\\d{2})(\\d{4})", "$1 $2 $3", ["[12]1"]], ["([12]2\\d)(\\d{5,6})", "$1 $2", ["[12]2[1-3]"]], ["([12]\\d{3})(\\d{5})", "$1 $2", ["[12](?:27|[3-5])", "[12](?:27|[3-5]\\d)2"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[57-9]"], "$1"], ["([12]\\d{4})(\\d{4,5})", "$1 $2", ["[12](?:27|[3-5])", "[12](?:27|[3-5]\\d)[4-9]"]]], "0", "0$1"], MO: ["853", "[268]\\d{7}", [["([268]\\d{3})(\\d{4})", "$1 $2", ["[268]"]]]], MP: ["1", "[5689]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "670"], MQ: ["596", "[56]\\d{8}", [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]], "0", "0$1"], MR: ["222", "[2-48]\\d{7}", [["([2-48]\\d)(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-48]"]]]], MS: ["1", "[5689]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "664"], MT: ["356", "[2357-9]\\d{7}", [["(\\d{4})(\\d{4})", "$1 $2"]]], MU: ["230", "[2-9]\\d{6,7}", [["([2-46-9]\\d{2})(\\d{4})", "$1 $2", ["[2-46-9]"]], ["(5\\d{3})(\\d{4})", "$1 $2", ["5"]]]], MV: ["960", "[346-8]\\d{6,9}|9(?:00\\d{7}|\\d{6})", [["(\\d{3})(\\d{4})", "$1-$2", ["[3467]|9(?:0[1-9]|[1-9])"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[89]00"]]]], MW: ["265", "(?:1(?:\\d{2})?|[2789]\\d{2})\\d{6}", [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["1"]], ["(2\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["2"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[17-9]"]]], "0", "0$1"], MX: ["52", "[1-9]\\d{9,10}", [["([358]\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["33|55|81"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[2467]|3[0-2457-9]|5[089]|8[02-9]|9[0-35-9]"]], ["(1)([358]\\d)(\\d{4})(\\d{4})", "044 $2 $3 $4", ["1(?:33|55|81)"], "$1", null, "$1 $2 $3 $4"], ["(1)(\\d{3})(\\d{3})(\\d{4})", "044 $2 $3 $4", ["1(?:[2467]|3[0-2457-9]|5[089]|8[2-9]|9[1-35-9])"], "$1", null, "$1 $2 $3 $4"]], "01", "01 $1", "0[12]|04[45](\\d{10})", "1$1", !0], MY: ["60", "[13-9]\\d{7,9}", [["([4-79])(\\d{3})(\\d{4})", "$1-$2 $3", ["[4-79]"], "0$1"], ["(3)(\\d{4})(\\d{4})", "$1-$2 $3", ["3"], "0$1"], ["([18]\\d)(\\d{3})(\\d{3,4})", "$1-$2 $3", ["1[02-46-9][1-9]|8"], "0$1"], ["(1)([36-8]00)(\\d{2})(\\d{4})", "$1-$2-$3-$4", ["1[36-8]0", "1[36-8]00"]], ["(11)(\\d{4})(\\d{4})", "$1-$2 $3", ["11"], "0$1"], ["(15[49])(\\d{3})(\\d{4})", "$1-$2 $3", ["15[49]"], "0$1"]], "0"], MZ: ["258", "[28]\\d{7,8}", [["([28]\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2|8[2-7]"]], ["(80\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["80"]]]], NA: ["264", "[68]\\d{7,8}", [["(8\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["8[1-35]"]], ["(6\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["6"]], ["(88)(\\d{3})(\\d{3})", "$1 $2 $3", ["88"]], ["(870)(\\d{3})(\\d{3})", "$1 $2 $3", ["870"]]], "0", "0$1"], NC: ["687", "[2-57-9]\\d{5}", [["(\\d{2})(\\d{2})(\\d{2})", "$1.$2.$3", ["[2-46-9]|5[0-4]"]]]], NE: ["227", "[0289]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["09|[289]"]], ["(08)(\\d{3})(\\d{3})", "$1 $2 $3", ["08"]]]], NF: ["672", "[13]\\d{5}", [["(\\d{2})(\\d{4})", "$1 $2", ["1"]], ["(\\d)(\\d{5})", "$1 $2", ["3"]]]], NG: ["234", "[1-6]\\d{5,8}|9\\d{5,9}|[78]\\d{5,13}", [["(\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[12]|9(?:0[3-9]|[1-9])"]], ["(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["[3-6]|7(?:0[1-9]|[1-79])|8[2-9]"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["70|8[01]|90[235-9]"]], ["([78]00)(\\d{4})(\\d{4,5})", "$1 $2 $3", ["[78]00"]], ["([78]00)(\\d{5})(\\d{5,6})", "$1 $2 $3", ["[78]00"]], ["(78)(\\d{2})(\\d{3})", "$1 $2 $3", ["78"]]], "0", "0$1"], NI: ["505", "[125-8]\\d{7}", [["(\\d{4})(\\d{4})", "$1 $2"]]], NL: ["31", "1\\d{4,8}|[2-7]\\d{8}|[89]\\d{6,9}", [["([1-578]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["1[035]|2[0346]|3[03568]|4[0356]|5[0358]|7|8[4578]"]], ["([1-5]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["1[16-8]|2[259]|3[124]|4[17-9]|5[124679]"]], ["(6)(\\d{8})", "$1 $2", ["6[0-57-9]"]], ["(66)(\\d{7})", "$1 $2", ["66"]], ["(14)(\\d{3,4})", "$1 $2", ["14"], "$1"], ["([89]0\\d)(\\d{4,7})", "$1 $2", ["[89]0"]]], "0", "0$1"], NO: ["47", "0\\d{4}|[2-9]\\d{7}", [["([489]\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["[489]"]], ["([235-7]\\d)(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[235-7]"]]], null, null, null, null, null, null, ["(?:2[1-4]|3[1-3578]|5[1-35-7]|6[1-4679]|7[0-8])\\d{6}", "(?:4[015-8]|5[89]|87|9\\d)\\d{6}", "80[01]\\d{5}", "82[09]\\d{5}", "880\\d{5}", null, "0\\d{4}|81(?:0(?:0[7-9]|1\\d)|5\\d{2})\\d{3}", null, "85[0-5]\\d{5}", "810(?:0[0-6]|[2-8]\\d)\\d{3}"]], NP: ["977", "[1-8]\\d{7}|9(?:[1-69]\\d{6,8}|7[2-6]\\d{5,7}|8\\d{8})", [["(1)(\\d{7})", "$1-$2", ["1[2-6]"]], ["(\\d{2})(\\d{6})", "$1-$2", ["1[01]|[2-8]|9(?:[1-69]|7[15-9])"]], ["(9\\d{2})(\\d{7})", "$1-$2", ["9(?:6[013]|7[245]|8)"], "$1"]], "0", "0$1"], NR: ["674", "[458]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], NU: ["683", "[1-5]\\d{3}"], NZ: ["64", "6[235-9]\\d{6}|[2-57-9]\\d{7,9}", [["(\\d)(\\d{3})(\\d{4})", "$1-$2 $3", ["240|[346]|7[2-57-9]|9[1-9]"]], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["21"]], ["(\\d{2})(\\d{3})(\\d{3,5})", "$1 $2 $3", ["2(?:1[1-9]|[69]|7[0-35-9])|70|86"]], ["(2\\d)(\\d{3,4})(\\d{4})", "$1 $2 $3", ["2[028]"]], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["90"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2(?:10|74)|5|[89]0"]]], "0", "0$1"], OM: ["968", "(?:5|[279]\\d)\\d{6}|800\\d{5,6}", [["(2\\d)(\\d{6})", "$1 $2", ["2"]], ["([79]\\d{3})(\\d{4})", "$1 $2", ["[79]"]], ["([58]00)(\\d{4,6})", "$1 $2", ["[58]00"]]]], PA: ["507", "[1-9]\\d{6,7}", [["(\\d{3})(\\d{4})", "$1-$2", ["[1-57-9]"]], ["(\\d{4})(\\d{4})", "$1-$2", ["6"]]]], PE: ["51", "[14-9]\\d{7,8}", [["(1)(\\d{7})", "$1 $2", ["1"]], ["([4-8]\\d)(\\d{6})", "$1 $2", ["[4-7]|8[2-4]"]], ["(\\d{3})(\\d{5})", "$1 $2", ["80"]], ["(9\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"], "$1"]], "0", "(0$1)"], PF: ["689", "4\\d{5,7}|8\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["4[09]|8[79]"]], ["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3", ["44"]]]], PG: ["675", "[1-9]\\d{6,7}", [["(\\d{3})(\\d{4})", "$1 $2", ["[13-689]|27"]], ["(\\d{4})(\\d{4})", "$1 $2", ["20|7"]]]], PH: ["63", "1\\d{10,12}|2\\d{5,7}|[3-7]\\d{8}|8\\d{7,9}|9\\d{9}", [["(2)(\\d{3})(\\d{4})", "$1 $2 $3", ["2"], "(0$1)"], ["(2)(\\d{5})", "$1 $2", ["2"], "(0$1)"], ["(\\d{4})(\\d{4,6})", "$1 $2", ["3(?:23|39|46)|4(?:2[3-6]|[35]9|4[26]|76)|5(?:22|44)|642|8(?:62|8[245])", "3(?:230|397|461)|4(?:2(?:35|[46]4|51)|396|4(?:22|63)|59[347]|76[15])|5(?:221|446)|642[23]|8(?:622|8(?:[24]2|5[13]))"], "(0$1)"], ["(\\d{5})(\\d{4})", "$1 $2", ["346|4(?:27|9[35])|883", "3469|4(?:279|9(?:30|56))|8834"], "(0$1)"], ["([3-8]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[3-8]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["81|9"], "0$1"], ["(1800)(\\d{3})(\\d{4})", "$1 $2 $3", ["180", "1800"]], ["(1800)(\\d{1,2})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["180", "1800"]]], "0"], PK: ["92", "1\\d{8}|[2-8]\\d{5,11}|9(?:[013-9]\\d{4,10}|2\\d(?:111\\d{6}|\\d{3,7}))", [["([89]00)(\\d{3})(\\d{2})", "$1 $2 $3", ["[89]00"], "0$1"], ["(1\\d{3})(\\d{5})", "$1 $2", ["1"], "$1"], ["(\\d{2})(\\d{7,8})", "$1 $2", ["(?:2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91)[2-9]"]], ["(\\d{3})(\\d{6,7})", "$1 $2", ["2[349]|45|54|60|72|8[2-5]|9[2-469]", "(?:2[349]|45|54|60|72|8[2-5]|9[2-469])\\d[2-9]"]], ["(58\\d{3})(\\d{5})", "$1 $2", ["58[126]"]], ["(3\\d{2})(\\d{7})", "$1 $2", ["3"], "0$1"], ["(\\d{2})(111)(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["(?:2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91)1", "(?:2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91)11", "(?:2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91)111"]], ["(\\d{3})(111)(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["2[349]|45|54|60|72|8[2-5]|9[2-9]", "(?:2[349]|45|54|60|72|8[2-5]|9[2-9])\\d1", "(?:2[349]|45|54|60|72|8[2-5]|9[2-9])\\d11", "(?:2[349]|45|54|60|72|8[2-5]|9[2-9])\\d111"]]], "0", "(0$1)"], PL: ["48", "[1-57-9]\\d{6,8}|6\\d{5,8}", [["(\\d{3})(\\d{3})", "$1 $2", ["11[68]|64"]], ["(\\d{5})", "$1", ["19"]], ["(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["1[2-8]|2[2-69]|3[2-4]|4[1-468]|5[24-689]|6[1-3578]|7[14-7]|8[1-79]|9[145]"]], ["(\\d{3})(\\d{2})(\\d{2,3})", "$1 $2 $3", ["64"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["26|39|45|5[0137]|6[0469]|7[02389]|8[08]"]], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[14]|2[0-57-9]|3[2-4]|5[24-689]|6[1-3578]|7[14-7]|8[1-79]|9[145]"]]]], PM: ["508", "[45]\\d{5}", [["([45]\\d)(\\d{2})(\\d{2})", "$1 $2 $3", ["[45]"]]], "0", "0$1"], PR: ["1", "[5789]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "787|939"], PS: ["970", "1\\d{9}|[24589]\\d{7,8}", [["([2489])(2\\d{2})(\\d{4})", "$1 $2 $3", ["[2489]2"]], ["(5[69]\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["5[69]"]], ["(1[78]00)(\\d{3})(\\d{3})", "$1 $2 $3", ["1[78]0", "1[78]00"], "$1"]], "0", "0$1"], PT: ["351", "[2-46-9]\\d{8}", [["(2\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["2[12]"]], ["([2-46-9]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["2[3-9]|[346-9]"]]]], PW: ["680", "[2-8]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], PY: ["595", "5[0-5]\\d{4,7}|[2-46-9]\\d{5,8}", [["(\\d{2})(\\d{5})", "$1 $2", ["[26]1|3[289]|4[1246-8]|7[1-3]|8[1-36]"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[26]1|3[289]|4[1246-8]|7[1-3]|8[1-36]"], "(0$1)"], ["(\\d{3})(\\d{3,6})", "$1 $2", ["[2-9]0"], "0$1"], ["(\\d{3})(\\d{6})", "$1 $2", ["9[1-9]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["870", "8700"]], ["(\\d{3})(\\d{4,5})", "$1 $2", ["[2-8][1-9]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-8][1-9]"], "0$1"]], "0"], QA: ["974", "[2-8]\\d{6,7}", [["([28]\\d{2})(\\d{4})", "$1 $2", ["[28]"]], ["([3-7]\\d{3})(\\d{4})", "$1 $2", ["[3-7]"]]]], RE: ["262", "[268]\\d{8}", [["([268]\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[268]"]]], "0", "0$1", null, null, null, "262|69|8"], RO: ["40", "[23]\\d{5,8}|[7-9]\\d{8}", [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[23]1"]], ["(\\d{2})(\\d{4})", "$1 $2", ["[23]1"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[23][3-7]|[7-9]"]], ["(2\\d{2})(\\d{3})", "$1 $2", ["2[3-6]"]]], "0", "0$1"], RS: ["381", "[126-9]\\d{4,11}|3(?:[0-79]\\d{3,10}|8[2-9]\\d{2,9})", [["([23]\\d{2})(\\d{4,9})", "$1 $2", ["(?:2[389]|39)0"]], ["([1-3]\\d)(\\d{5,10})", "$1 $2", ["1|2(?:[0-24-7]|[389][1-9])|3(?:[0-8]|9[1-9])"]], ["(6\\d)(\\d{6,8})", "$1 $2", ["6"]], ["([89]\\d{2})(\\d{3,9})", "$1 $2", ["[89]"]], ["(7[26])(\\d{4,9})", "$1 $2", ["7[26]"]], ["(7[08]\\d)(\\d{4,9})", "$1 $2", ["7[08]"]]], "0", "0$1"], RU: ["7", "[347-9]\\d{9}", [["([3489]\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["[3489]"]], ["(7\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"]]], "8", "8 ($1)", null, null, !0, null, ["(?:3(?:0[12]|4[1-35-79]|5[1-3]|65|8[1-58]|9[0145])|4(?:01|1[1356]|2[13467]|7[1-5]|8[1-7]|9[1-689])|8(?:1[1-8]|2[01]|3[13-6]|4[0-8]|5[15]|6[1-35-79]|7[1-37-9]))\\d{7}", "9\\d{9}", "80[04]\\d{7}", "80[39]\\d{7}", "808\\d{7}"]], RW: ["250", "[027-9]\\d{7,8}", [["(2\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["2"]], ["([7-9]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[7-9]"], "0$1"], ["(0\\d)(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["0"]]], "0"], SA: ["966", "1\\d{7,8}|(?:[2-467]|92)\\d{7}|5\\d{8}|8\\d{9}", [["([1-467])(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-467]"]], ["(1\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["1[1-467]"]], ["(5\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["5"]], ["(92\\d{2})(\\d{5})", "$1 $2", ["92"], "$1"], ["(800)(\\d{3})(\\d{4})", "$1 $2 $3", ["800"], "$1"], ["(811)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["811"]]], "0", "0$1"], SB: ["677", "[1-9]\\d{4,6}", [["(\\d{2})(\\d{5})", "$1 $2", ["[7-9]"]]]], SC: ["248", "[24689]\\d{5,6}", [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[246]"]]]], SD: ["249", "[19]\\d{8}", [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3"]], "0", "0$1"], SE: ["46", "[1-35-9]\\d{5,11}|4\\d{6,8}", [["(8)(\\d{2,3})(\\d{2,3})(\\d{2})", "$1-$2 $3 $4", ["8"], null, null, "$1 $2 $3 $4"], ["([1-69]\\d)(\\d{2,3})(\\d{2})(\\d{2})", "$1-$2 $3 $4", ["1[013689]|2[0136]|3[1356]|4[0246]|54|6[03]|90"], null, null, "$1 $2 $3 $4"], ["([1-469]\\d)(\\d{3})(\\d{2})", "$1-$2 $3", ["[12][136]|3[356]|4[0246]|6[03]|90"], null, null, "$1 $2 $3"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1-$2 $3 $4", ["1[2457]|2(?:[247-9]|5[0138])|3[0247-9]|4[1357-9]|5[0-35-9]|6(?:[124-689]|7[0-2])|9(?:[125-8]|3[0-5]|4[0-3])"], null, null, "$1 $2 $3 $4"], ["(\\d{3})(\\d{2,3})(\\d{2})", "$1-$2 $3", ["1[2457]|2(?:[247-9]|5[0138])|3[0247-9]|4[1357-9]|5[0-35-9]|6(?:[124-689]|7[0-2])|9(?:[125-8]|3[0-5]|4[0-3])"], null, null, "$1 $2 $3"], ["(7\\d)(\\d{3})(\\d{2})(\\d{2})", "$1-$2 $3 $4", ["7"], null, null, "$1 $2 $3 $4"], ["(77)(\\d{2})(\\d{2})", "$1-$2$3", ["77"], null, null, "$1 $2 $3"], ["(20)(\\d{2,3})(\\d{2})", "$1-$2 $3", ["20"], null, null, "$1 $2 $3"], ["(9[034]\\d)(\\d{2})(\\d{2})(\\d{3})", "$1-$2 $3 $4", ["9[034]"], null, null, "$1 $2 $3 $4"], ["(9[034]\\d)(\\d{4})", "$1-$2", ["9[034]"], null, null, "$1 $2"], ["(\\d{3})(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1-$2 $3 $4 $5", ["25[245]|67[3-6]"], null, null, "$1 $2 $3 $4 $5"]], "0", "0$1"], SG: ["65", "[36]\\d{7}|[17-9]\\d{7,10}", [["([3689]\\d{3})(\\d{4})", "$1 $2", ["[369]|8[1-9]"]], ["(1[89]00)(\\d{3})(\\d{4})", "$1 $2 $3", ["1[89]0", "1[89]00"]], ["(7000)(\\d{4})(\\d{3})", "$1 $2 $3", ["700", "7000"]], ["(800)(\\d{3})(\\d{4})", "$1 $2 $3", ["800"]]]], SH: ["290", "[256]\\d{4}|8\\d{3}", [], null, null, null, null, null, null, ["2(?:[0-57-9]\\d|6[4-9])\\d{2}", "[56]\\d{4}", null, null, null, null, null, null, "262\\d{2}"]], SI: ["386", "[1-7]\\d{6,7}|[89]\\d{4,7}", [["(\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[12]|[34][24-8]|5[2-8]|7[3-8]"], "(0$1)"], ["([3-7]\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[37][01]|4[0139]|51|6"]], ["([89][09])(\\d{3,6})", "$1 $2", ["[89][09]"]], ["([58]\\d{2})(\\d{5})", "$1 $2", ["59|8[1-3]"]]], "0", "0$1"], SJ: ["47", "0\\d{4}|[45789]\\d{7}", [["([489]\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["[489]"]], ["([235-7]\\d)(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[235-7]"]]], null, null, null, null, null, null, ["79\\d{6}", "(?:4[015-8]|5[89]|9\\d)\\d{6}", "80[01]\\d{5}", "82[09]\\d{5}", "880\\d{5}", null, "0\\d{4}|81(?:0(?:0[7-9]|1\\d)|5\\d{2})\\d{3}", null, "85[0-5]\\d{5}", "810(?:0[0-6]|[2-8]\\d)\\d{3}"]], SK: ["421", "(?:[2-68]\\d{5,8}|9\\d{6,8})", [["(2)(1[67])(\\d{3,4})", "$1 $2 $3", ["21[67]"]], ["([3-5]\\d)(\\d{2})(\\d{2,3})", "$1 $2 $3", ["[3-5]"]], ["(2)(\\d{3})(\\d{3})(\\d{2})", "$1/$2 $3 $4", ["2"]], ["([3-5]\\d)(\\d{3})(\\d{2})(\\d{2})", "$1/$2 $3 $4", ["[3-5]"]], ["([689]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[689]"]], ["(9090)(\\d{3})", "$1 $2", ["909", "9090"]]], "0", "0$1"], SL: ["232", "[2-9]\\d{7}", [["(\\d{2})(\\d{6})", "$1 $2"]], "0", "(0$1)"], SM: ["378", "[05-7]\\d{7,9}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-7]"]], ["(0549)(\\d{6})", "$1 $2", ["054", "0549"], null, null, "($1) $2"], ["(\\d{6})", "0549 $1", ["[89]"], null, null, "(0549) $1"]], null, null, "([89]\\d{5})", "0549$1"], SN: ["221", "[3789]\\d{8}", [["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[379]"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"]]]], SO: ["252", "[1-9]\\d{5,8}", [["(\\d{6})", "$1", ["[134]"]], ["(\\d)(\\d{6})", "$1 $2", ["[13-5]|2[0-79]"]], ["(\\d)(\\d{7})", "$1 $2", ["24|[67]"]], ["(\\d{2})(\\d{4})", "$1 $2", ["8[125]"]], ["(\\d{2})(\\d{5,7})", "$1 $2", ["15|28|6[1-35-9]|799|9[2-9]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["3[59]|4[89]|6[24-6]|79|8[08]|90"]]], "0"], SR: ["597", "[2-8]\\d{5,6}", [["(\\d{3})(\\d{3})", "$1-$2", ["[2-4]|5[2-58]"]], ["(\\d{2})(\\d{2})(\\d{2})", "$1-$2-$3", ["56"]], ["(\\d{3})(\\d{4})", "$1-$2", ["[6-8]"]]]], SS: ["211", "[19]\\d{8}", [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", null, "0$1"]], "0"], ST: ["239", "[29]\\d{6}", [["(\\d{3})(\\d{4})", "$1 $2"]]], SV: ["503", "[267]\\d{7}|[89]\\d{6}(?:\\d{4})?", [["(\\d{4})(\\d{4})", "$1 $2", ["[267]"]], ["(\\d{3})(\\d{4})", "$1 $2", ["[89]"]], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["[89]"]]]], SX: ["1", "[5789]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "721"], SY: ["963", "[1-59]\\d{7,8}", [["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[1-5]"]], ["(9\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"]]], "0", "0$1", null, null, !0], SZ: ["268", "[027]\\d{7}", [["(\\d{4})(\\d{4})", "$1 $2", ["[027]"]]]], TA: ["290", "8\\d{3}", [], null, null, null, null, null, null, ["8\\d{3}"]], TC: ["1", "[5689]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "649"], TD: ["235", "[2679]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4"]]], TG: ["228", "[279]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[279]"]]]], TH: ["66", "1\\d{8,9}|[2-9]\\d{7,8}", [["(2)(\\d{3})(\\d{4})", "$1 $2 $3", ["2"]], ["([13-9]\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["14|[3-9]"]], ["(1[89]00)(\\d{3})(\\d{3})", "$1 $2 $3", ["1[89]0", "1[89]00"], "$1"]], "0", "0$1"], TJ: ["992", "[3-57-9]\\d{8}", [["([349]\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["[34]7|91[78]"]], ["([457-9]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["4[148]|[578]|9(?:[0235-9]|1[59])"]], ["(331700)(\\d)(\\d{2})", "$1 $2 $3", ["331", "3317", "33170", "331700"]], ["(\\d{4})(\\d)(\\d{4})", "$1 $2 $3", ["3[1-5]", "3(?:[1245]|3(?:[02-9]|1[0-589]))"]]], "8", null, null, null, !0], TK: ["690", "[2-47]\\d{3,6}"], TL: ["670", "[2-489]\\d{6}|7\\d{6,7}", [["(\\d{3})(\\d{4})", "$1 $2", ["[2-489]|70"]], ["(\\d{4})(\\d{4})", "$1 $2", ["7[3-8]"]]]], TM: ["993", "[1-6]\\d{7}", [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["12"]], ["(\\d{2})(\\d{6})", "$1 $2", ["6"], "8 $1"], ["(\\d{3})(\\d)(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["13|[2-5]"]]], "8", "(8 $1)"], TN: ["216", "[2-57-9]\\d{7}", [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3"]]], TO: ["676", "[02-8]\\d{4,6}", [["(\\d{2})(\\d{3})", "$1-$2", ["[1-6]|7[0-4]|8[05]"]], ["(\\d{3})(\\d{4})", "$1 $2", ["7[5-9]|8[47-9]"]], ["(\\d{4})(\\d{3})", "$1 $2", ["0"]]]], TR: ["90", "[2-589]\\d{9}|444\\d{4}", [["(\\d{3})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[23]|4(?:[0-35-9]|4[0-35-9])"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["5[02-69]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["51|[89]"], "0$1"], ["(444)(\\d{1})(\\d{3})", "$1 $2 $3", ["444"]]], "0", null, null, null, !0], TT: ["1", "[589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "868"], TV: ["688", "[279]\\d{4,6}"], TW: ["886", "2\\d{6,8}|[3-689]\\d{7,8}|7\\d{7,9}", [["(20)(\\d)(\\d{4})", "$1 $2 $3", ["202"]], ["([258]0)(\\d{3})(\\d{4})", "$1 $2 $3", ["20[013-9]|50[0-46-9]|80[0-79]"]], ["([2-8])(\\d{3,4})(\\d{4})", "$1 $2 $3", ["[25][2-8]|[346]|[78][1-9]"]], ["(9\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"]], ["(70)(\\d{4})(\\d{4})", "$1 $2 $3", ["70"]]], "0", "0$1"], TZ: ["255", "\\d{9}", [["([24]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[24]"]], ["([67]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[67]"]], ["([89]\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["[89]"]]], "0", "0$1"], UA: ["380", "[3-9]\\d{8}", [["([3-9]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[38]9|4(?:[45][0-5]|87)|5(?:0|[67][37])|6[36-8]|7|9[1-9]", "[38]9|4(?:[45][0-5]|87)|5(?:0|6(?:3[14-7]|7)|7[37])|6[36-8]|7|9[1-9]"]], ["([3-689]\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["(?:3[1-8]|4[136-8])2|5(?:[12457]2|6[24])|6(?:[12][29]|[49]2|5[24])|8[0-8]|90", "3(?:[1-46-8]2[013-9]|52)|4(?:[1378]2|62[013-9])|5(?:[12457]2|6[24])|6(?:[12][29]|[49]2|5[24])|8[0-8]|90"]], ["([3-6]\\d{3})(\\d{5})", "$1 $2", ["3(?:[1-46-8]|5[013-9])|4(?:[137][013-9]|[45][6-9]|6|8[4-6])|5(?:[1245][013-9]|3|6[0135689]|7[4-6])|6(?:[12][13-8]|[49][013-9]|5[0135-9])", "3(?:[1-46-8](?:[013-9]|22)|5[013-9])|4(?:[137][013-9]|[45][6-9]|6(?:[013-9]|22)|8[4-6])|5(?:[1245][013-9]|3|6(?:[015689]|3[02389])|7[4-6])|6(?:[12][13-8]|[49][013-9]|5[0135-9])"]]], "0", "0$1"], UG: ["256", "\\d{9}", [["(\\d{3})(\\d{6})", "$1 $2", ["20[0-8]|4(?:6[45]|[7-9])|[7-9]", "20(?:[013-8]|2[5-9])|4(?:6[45]|[7-9])|[7-9]"]], ["(\\d{2})(\\d{7})", "$1 $2", ["3|4(?:[1-5]|6[0-36-9])"]], ["(2024)(\\d{5})", "$1 $2", ["202", "2024"]]], "0", "0$1"], US: ["1", "[2-9]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, !0, null, ["(?:2(?:0[1-35-9]|1[02-9]|2[03-589]|3[149]|4[08]|5[1-46]|6[0279]|7[026]|8[13])|3(?:0[1-57-9]|1[02-9]|2[0135]|3[0-24679]|4[67]|5[12]|6[014]|8[056])|4(?:0[124-9]|1[02-579]|2[3-5]|3[0245]|4[0235]|58|6[39]|7[0589]|8[04])|5(?:0[1-57-9]|1[0235-8]|20|3[0149]|4[01]|5[19]|6[1-47]|7[013-5]|8[056])|6(?:0[1-35-9]|1[024-9]|2[03689]|3[016]|4[16]|5[017]|6[0-279]|78|8[012])|7(?:0[1-46-8]|1[02-9]|2[04-7]|3[1247]|4[037]|5[47]|6[02359]|7[02-59]|8[156])|8(?:0[1-68]|1[02-8]|28|3[0-258]|4[3578]|5[046-9]|6[02-5]|7[028])|9(?:0[1346-9]|1[02-9]|2[0589]|3[014678]|4[0179]|5[12469]|7[0-3589]|8[04-69]))[2-9]\\d{6}", null, "8(?:00|33|44|55|66|77|88)[2-9]\\d{6}", "900[2-9]\\d{6}", "5(?:(?:00|22|33|44|66|77|88)[2-9]|21[23])\\d{6}"]], UY: ["598", "[2489]\\d{6,7}", [["(\\d{4})(\\d{4})", "$1 $2", ["[24]"]], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["9[1-9]"], "0$1"], ["(\\d{3})(\\d{4})", "$1 $2", ["[89]0"], "0$1"]], "0"], UZ: ["998", "[679]\\d{8}", [["([679]\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[679]"]]], "8", "8 $1"], VA: ["39", "(?:0(?:878\\d{5}|6698\\d{5})|[1589]\\d{5,10}|3(?:[12457-9]\\d{8}|[36]\\d{7,9}))", [["(\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["0[26]|55"]], ["(0[26])(\\d{4})(\\d{5})", "$1 $2 $3", ["0[26]"]], ["(0[26])(\\d{4,6})", "$1 $2", ["0[26]"]], ["(0\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["0[13-57-9][0159]"]], ["(\\d{3})(\\d{3,6})", "$1 $2", ["0[13-57-9][0159]|8(?:03|4[17]|9[245])", "0[13-57-9][0159]|8(?:03|4[17]|9(?:2|[45][0-4]))"]], ["(0\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["0[13-57-9][2-46-8]"]], ["(0\\d{3})(\\d{2,6})", "$1 $2", ["0[13-57-9][2-46-8]"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[13]|8(?:00|4[08]|9[59])", "[13]|8(?:00|4[08]|9(?:5[5-9]|9))"]], ["(\\d{4})(\\d{4})", "$1 $2", ["894", "894[5-9]"]], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["3"]]], null, null, null, null, null, null, ["06698\\d{5}", "3(?:[12457-9]\\d{8}|6\\d{7,8}|3\\d{7,9})", "80(?:0\\d{6}|3\\d{3})", "0878\\d{5}|1(?:44|6[346])\\d{6}|89(?:2\\d{3}|4(?:[0-4]\\d{2}|[5-9]\\d{4})|5(?:[0-4]\\d{2}|[5-9]\\d{6})|9\\d{6})", "1(?:78\\d|99)\\d{6}", null, null, null, "55\\d{8}", "84(?:[08]\\d{6}|[17]\\d{3})"]], VC: ["1", "[5789]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "784"], VE: ["58", "[24589]\\d{9}", [["(\\d{3})(\\d{7})", "$1-$2"]], "0", "0$1"], VG: ["1", "[2589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "284"], VI: ["1", "[3589]\\d{9}", [["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", null, null, null, "$1-$2-$3"]], "1", null, null, null, null, "340"], VN: ["84", "1\\d{6,9}|2\\d{9}|6\\d{6,7}|7\\d{6}|8\\d{6,8}|9\\d{8}", [["([17]99)(\\d{4})", "$1 $2", ["[17]99"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["2[48]"]], ["(80)(\\d{5})", "$1 $2", ["80"]], ["(69\\d)(\\d{4,5})", "$1 $2", ["69"]], ["(\\d{3})(\\d{4})(\\d{3})", "$1 $2 $3", ["2[0-35-79]"]], ["([89]\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8(?:8|9[89])|9"]], ["(1[2689]\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["1(?:[26]|8[68]|99)"]], ["(86[89])(\\d{3})(\\d{3})", "$1 $2 $3", ["86[89]"]], ["(1[89]00)(\\d{4,6})", "$1 $2", ["1[89]0", "1[89]00"], "$1"]], "0", "0$1", null, null, !0], VU: ["678", "[2-57-9]\\d{4,6}", [["(\\d{3})(\\d{4})", "$1 $2", ["[579]"]]]], WF: ["681", "[4-8]\\d{5}", [["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3"]]], WS: ["685", "[2-8]\\d{4,6}", [["(8\\d{2})(\\d{3,4})", "$1 $2", ["8"]], ["(7\\d)(\\d{5})", "$1 $2", ["7"]], ["(\\d{5})", "$1", ["[2-6]"]]]], YE: ["967", "[1-7]\\d{6,8}", [["([1-7])(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[1-6]|7[24-68]"]], ["(7\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["7[0137]"]]], "0", "0$1"], YT: ["262", "[268]\\d{8}", [["([268]\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[268]"]]], "0", null, null, null, null, "269|63"], ZA: ["27", "[1-79]\\d{8}|8\\d{4,8}", [["(860)(\\d{3})(\\d{3})", "$1 $2 $3", ["860"]], ["(\\d{2})(\\d{3,4})", "$1 $2", ["8[1-4]"]], ["(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["8[1-4]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-79]|8(?:[0-57]|6[1-9])"]]], "0", "0$1"], ZM: ["260", "[289]\\d{8}", [["(\\d{2})(\\d{4})", "$1 $2", null, "$1"], ["([1-8])(\\d{2})(\\d{4})", "$1 $2 $3", ["[1-8]"], "$1"], ["([29]\\d)(\\d{7})", "$1 $2", ["[29]"]], ["(800)(\\d{3})(\\d{3})", "$1 $2 $3", ["800"]]], "0", "0$1"], ZW: ["263", "2(?:[0-57-9]\\d{3,8}|6(?:[14]\\d{7}|\\d{4}))|[13-69]\\d{4,9}|7\\d{8}|8[06]\\d{5,8}", [["([49])(\\d{3})(\\d{2,4})", "$1 $2 $3", ["4|9[2-9]"]], ["(7\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["7"]], ["(86\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["86[24]"]], ["([2356]\\d{2})(\\d{3,5})", "$1 $2", ["2(?:0[45]|2[278]|[49]8|[78])|3(?:[09]8|17|3[78]|7[1569]|8[37])|5[15][78]|6(?:[29]8|37|[68][78]|75)"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2(?:1[39]|2[0157]|31|[56][14]|7[35]|84)|329"]], ["([1-356]\\d)(\\d{3,5})", "$1 $2", ["1[3-9]|2[02569]|3[0-69]|5[05689]|6"]], ["([235]\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[23]9|54"]], ["([25]\\d{3})(\\d{3,5})", "$1 $2", ["(?:25|54)8", "258[23]|5483"]], ["(8\\d{3})(\\d{6})", "$1 $2", ["86"]], ["(80\\d)(\\d{4})", "$1 $2", ["80"]]], "0", "0$1"], "001": ["979", "\\d{9}", [["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3"]]] } };
   }, function (t, e, n) {
-    t.exports = { default: n(75), __esModule: !0 };
+    t.exports = { default: n(73), __esModule: !0 };
   }, function (t, e, n) {
-    n(76), t.exports = n(7).Object.assign;
+    n(74), t.exports = n(7).Object.assign;
   }, function (t, e, n) {
-    var r = n(23);r(r.S + r.F, "Object", { assign: n(81) });
+    var r = n(23);r(r.S + r.F, "Object", { assign: n(79) });
   }, function (t, e, n) {
-    var r = n(78);t.exports = function (t, e, n) {
+    var r = n(76);t.exports = function (t, e, n) {
       if (r(t), void 0 === e) return t;switch (n) {case 1:
           return function (n) {
             return t.call(e, n);
@@ -2408,8 +2364,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
   }, function (t, e, n) {
     "use strict";
     var r = n(37),
-        i = n(86),
-        o = n(87),
+        i = n(84),
+        o = n(85),
         a = n(43),
         d = n(38),
         s = Object.assign;t.exports = !s || n(25)(function () {
@@ -2429,7 +2385,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
   }, function (t, e, n) {
     var r = n(16),
         i = n(26),
-        o = n(83)(!1),
+        o = n(81)(!1),
         a = n(29)("IE_PROTO");t.exports = function (t, e) {
       var n,
           d = i(t),
@@ -2442,8 +2398,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     };
   }, function (t, e, n) {
     var r = n(26),
-        i = n(84),
-        o = n(85);t.exports = function (t) {
+        i = n(82),
+        o = n(83);t.exports = function (t) {
       return function (e, n, a) {
         var d,
             s = r(e),
@@ -2476,7 +2432,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     "use strict";
     function r(t) {
       return t && t.__esModule ? t : { default: t };
-    }e.__esModule = !0;var i = n(89),
+    }e.__esModule = !0;var i = n(87),
         o = r(i),
         a = n(17),
         d = r(a);e.default = function () {
@@ -2500,13 +2456,13 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       };
     }();
   }, function (t, e, n) {
-    t.exports = { default: n(90), __esModule: !0 };
+    t.exports = { default: n(88), __esModule: !0 };
   }, function (t, e, n) {
-    n(44), n(47), t.exports = n(102);
+    n(44), n(47), t.exports = n(100);
   }, function (t, e, n) {
     "use strict";
-    var r = n(92),
-        i = n(93),
+    var r = n(90),
+        i = n(91),
         o = n(12),
         a = n(26);t.exports = n(45)(Array, "Array", function (t, e) {
       this._t = a(t), this._i = 0, this._k = e;
@@ -2527,7 +2483,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     t.exports = n(10);
   }, function (t, e, n) {
     "use strict";
-    var r = n(97),
+    var r = n(95),
         i = n(36),
         o = n(46),
         a = {};n(10)(a, n(4)("iterator"), function () {
@@ -2537,14 +2493,14 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     };
   }, function (t, e, n) {
     var r = n(15),
-        i = n(98),
+        i = n(96),
         o = n(42),
         a = n(29)("IE_PROTO"),
         d = function d() {},
         _s = function s() {
       var t,
           e = n(35)("iframe"),
-          r = o.length;for (e.style.display = "none", n(99).appendChild(e), e.src = "javascript:", t = e.contentWindow.document, t.open(), t.write("<script>document.F=Object<\/script>"), t.close(), _s = t.F; r--;) {
+          r = o.length;for (e.style.display = "none", n(97).appendChild(e), e.src = "javascript:", t = e.contentWindow.document, t.open(), t.write("<script>document.F=Object<\/script>"), t.close(), _s = t.F; r--;) {
         delete _s.prototype[o[r]];
       }return _s();
     };t.exports = Object.create || function (t, e) {
@@ -2585,10 +2541,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       var e = Object(t);return void 0 !== e[i] || "@@iterator" in e || o.hasOwnProperty(r(e));
     };
   }, function (t, e, n) {
-    n(44), n(47), t.exports = n(104);
+    n(44), n(47), t.exports = n(102);
   }, function (t, e, n) {
     var r = n(15),
-        i = n(105);t.exports = n(7).getIterator = function (t) {
+        i = n(103);t.exports = n(7).getIterator = function (t) {
       var e = i(t);if ("function" != typeof e) throw TypeError(t + " is not iterable!");return r(e.call(t));
     };
   }, function (t, e, n) {
@@ -2604,7 +2560,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     };
   }, function (t, e, n) {
     "use strict";
-    e.__esModule = !0;var r = n(108),
+    e.__esModule = !0;var r = n(106),
         i = function (t) {
       return t && t.__esModule ? t : { default: t };
     }(r);e.default = function () {
@@ -2617,9 +2573,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       };
     }();
   }, function (t, e, n) {
-    t.exports = { default: n(109), __esModule: !0 };
+    t.exports = { default: n(107), __esModule: !0 };
   }, function (t, e, n) {
-    n(110);var r = n(7).Object;t.exports = function (t, e, n) {
+    n(108);var r = n(7).Object;t.exports = function (t, e, n) {
       return r.defineProperty(t, e, n);
     };
   }, function (t, e, n) {
@@ -2631,7 +2587,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     });
   }, function (t, e, n) {
     "use strict";
-    var r = n(113),
+    var r = n(111),
         i = n.n(r),
         o = function o() {
       return new Promise(function (t, e) {
@@ -2641,7 +2597,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       });
     };e.a = o;
   }, function (t, e, n) {
-    var r = n(114);t.exports = n(r ? 115 : 148);
+    var r = n(112);t.exports = n(r ? 113 : 146);
   }, function (t, e, n) {
     (function (e) {
       t.exports = !(void 0 === e || !e.versions || !e.versions.node);
@@ -2655,7 +2611,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           return void e("Parse error: " + t);
         }if (200 != n.statusCode) return void e("Unexpected response code.");e(null, r);
       });
-    }var i = n(116);t.exports = r;
+    }var i = n(114);t.exports = r;
   }, function (t, e, n) {
     "use strict";
     (function (e) {
@@ -2665,10 +2621,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t === "undefined" ? "undefined" : _typeof(t);
       },
           i = n(52),
-          o = n(135),
+          o = n(133),
           a = n(61),
           d = n(62),
-          s = n(136),
+          s = n(134),
           u = n(32),
           l = function l(t, n) {
         if ("string" != typeof t && !t.hasOwnProperty("url")) throw new Error("Missing url option from options for request method.");var u = "object" === (void 0 === t ? "undefined" : r(t)) ? a.parse(t.url) : a.parse(t),
@@ -2776,9 +2732,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         }
       }var d = n(53),
           s = n(3),
-          u = n(120),
+          u = n(118),
           l = n(30),
-          c = n(127),
+          c = n(125),
           f = u.IncomingMessage,
           h = u.readyStates,
           $ = t.exports = function (t) {
@@ -2964,7 +2920,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       clearTimeout(t._idleTimeoutId);var e = t._idleTimeout;e >= 0 && (t._idleTimeoutId = setTimeout(function () {
         t._onTimeout && t._onTimeout();
       }, e));
-    }, n(124), e.setImmediate = setImmediate, e.clearImmediate = clearImmediate;
+    }, n(122), e.setImmediate = setImmediate, e.clearImmediate = clearImmediate;
   }, function (t, e, n) {
     (function (t, e) {
       (function (t, n) {
@@ -3087,14 +3043,14 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     (function (t, r) {
       var i;(function (o) {
         function a(t) {
-          throw new RangeError(L[t]);
+          throw new RangeError(M[t]);
         }function d(t, e) {
           for (var n = t.length, r = []; n--;) {
             r[n] = e(t[n]);
           }return r;
         }function s(t, e) {
           var n = t.split("@"),
-              r = "";return n.length > 1 && (r = n[0] + "@", t = n[1]), t = t.replace(C, "."), r + d(t.split("."), e).join(".");
+              r = "";return n.length > 1 && (r = n[0] + "@", t = n[1]), t = t.replace(L, "."), r + d(t.split("."), e).join(".");
         }function u(t) {
           for (var e, n, r = [], i = 0, o = t.length; i < o;) {
             e = t.charCodeAt(i++), e >= 55296 && e <= 56319 && i < o ? (n = t.charCodeAt(i++), 56320 == (64512 & n) ? r.push(((1023 & e) << 10) + (1023 & n) + 65536) : (r.push(e), i--)) : r.push(e);
@@ -3108,9 +3064,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         }function f(t, e) {
           return t + 22 + 75 * (t < 26) - ((0 != e) << 5);
         }function h(t, e, n) {
-          var r = 0;for (t = n ? I(t / x) : t >> 1, t += I(t / e); t > M * E >> 1; r += b) {
-            t = I(t / M);
-          }return I(r + (M + 1) * t / (t + k));
+          var r = 0;for (t = n ? I(t / x) : t >> 1, t += I(t / e); t > C * E >> 1; r += b) {
+            t = I(t / C);
+          }return I(r + (C + 1) * t / (t + k));
         }function $(t) {
           var e,
               n,
@@ -3182,15 +3138,15 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
             R = "-",
             O = /^xn--/,
             T = /[^\x20-\x7E]/,
-            C = /[\x2E\u3002\uFF0E\uFF61]/g,
-            L = { overflow: "Overflow: input needs wider integers to process", "not-basic": "Illegal input >= 0x80 (not a basic code point)", "invalid-input": "Invalid input" },
-            M = b - w,
+            L = /[\x2E\u3002\uFF0E\uFF61]/g,
+            M = { overflow: "Overflow: input needs wider integers to process", "not-basic": "Illegal input >= 0x80 (not a basic code point)", "invalid-input": "Invalid input" },
+            C = b - w,
             I = Math.floor,
             j = String.fromCharCode;v = { version: "1.4.1", ucs2: { decode: u, encode: l }, decode: $, encode: p, toASCII: g, toUnicode: _ }, void 0 !== (i = function () {
           return v;
         }.call(e, n, e, t)) && (t.exports = i);
       })();
-    }).call(e, n(131)(t), n(0));
+    }).call(e, n(129)(t), n(0));
   }, function (t, e) {
     t.exports = function (t) {
       return t.webpackPolyfill || (t.deprecate = function () {}, t.paths = [], t.children || (t.children = []), Object.defineProperty(t, "loaded", { enumerable: !0, get: function get() {
@@ -3292,10 +3248,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         if (this._opts = n = n || {}, this._chunkSize = n.chunkSize || e.Z_DEFAULT_CHUNK, $.call(this, n), n.flush && n.flush !== p.Z_NO_FLUSH && n.flush !== p.Z_PARTIAL_FLUSH && n.flush !== p.Z_SYNC_FLUSH && n.flush !== p.Z_FULL_FLUSH && n.flush !== p.Z_FINISH && n.flush !== p.Z_BLOCK) throw new Error("Invalid flush flag: " + n.flush);if (this._flushFlag = n.flush || p.Z_NO_FLUSH, n.chunkSize && (n.chunkSize < e.Z_MIN_CHUNK || n.chunkSize > e.Z_MAX_CHUNK)) throw new Error("Invalid chunk size: " + n.chunkSize);if (n.windowBits && (n.windowBits < e.Z_MIN_WINDOWBITS || n.windowBits > e.Z_MAX_WINDOWBITS)) throw new Error("Invalid windowBits: " + n.windowBits);if (n.level && (n.level < e.Z_MIN_LEVEL || n.level > e.Z_MAX_LEVEL)) throw new Error("Invalid compression level: " + n.level);if (n.memLevel && (n.memLevel < e.Z_MIN_MEMLEVEL || n.memLevel > e.Z_MAX_MEMLEVEL)) throw new Error("Invalid memLevel: " + n.memLevel);if (n.strategy && n.strategy != e.Z_FILTERED && n.strategy != e.Z_HUFFMAN_ONLY && n.strategy != e.Z_RLE && n.strategy != e.Z_FIXED && n.strategy != e.Z_DEFAULT_STRATEGY) throw new Error("Invalid strategy: " + n.strategy);if (n.dictionary && !t.isBuffer(n.dictionary)) throw new Error("Invalid dictionary: it should be a Buffer instance");this._binding = new p.Zlib(r);var i = this;this._hadError = !1, this._binding.onerror = function (t, n) {
           i._binding = null, i._hadError = !0;var r = new Error(t);r.errno = n, r.code = e.codes[n], i.emit("error", r);
         };var o = e.Z_DEFAULT_COMPRESSION;"number" == typeof n.level && (o = n.level);var a = e.Z_DEFAULT_STRATEGY;"number" == typeof n.strategy && (a = n.strategy), this._binding.init(n.windowBits || e.Z_DEFAULT_WINDOWBITS, o, n.memLevel || e.Z_DEFAULT_MEMLEVEL, a, n.dictionary), this._buffer = new t(this._chunkSize), this._offset = 0, this._closed = !1, this._level = o, this._strategy = a, this.once("end", this.close);
-      }var $ = n(137),
-          p = n(138),
+      }var $ = n(135),
+          p = n(136),
           _ = n(32),
-          g = n(147).ok;p.Z_MIN_WINDOWBITS = 8, p.Z_MAX_WINDOWBITS = 15, p.Z_DEFAULT_WINDOWBITS = 15, p.Z_MIN_CHUNK = 64, p.Z_MAX_CHUNK = 1 / 0, p.Z_DEFAULT_CHUNK = 16384, p.Z_MIN_MEMLEVEL = 1, p.Z_MAX_MEMLEVEL = 9, p.Z_DEFAULT_MEMLEVEL = 8, p.Z_MIN_LEVEL = -1, p.Z_MAX_LEVEL = 9, p.Z_DEFAULT_LEVEL = p.Z_DEFAULT_COMPRESSION, Object.keys(p).forEach(function (t) {
+          g = n(145).ok;p.Z_MIN_WINDOWBITS = 8, p.Z_MAX_WINDOWBITS = 15, p.Z_DEFAULT_WINDOWBITS = 15, p.Z_MIN_CHUNK = 64, p.Z_MAX_CHUNK = 1 / 0, p.Z_DEFAULT_CHUNK = 16384, p.Z_MIN_MEMLEVEL = 1, p.Z_MAX_MEMLEVEL = 9, p.Z_DEFAULT_MEMLEVEL = 8, p.Z_MIN_LEVEL = -1, p.Z_MAX_LEVEL = 9, p.Z_DEFAULT_LEVEL = p.Z_DEFAULT_COMPRESSION, Object.keys(p).forEach(function (t) {
         t.match(/^Z/) && (e[t] = p[t]);
       }), e.codes = { Z_OK: p.Z_OK, Z_STREAM_END: p.Z_STREAM_END, Z_NEED_DICT: p.Z_NEED_DICT, Z_ERRNO: p.Z_ERRNO, Z_STREAM_ERROR: p.Z_STREAM_ERROR, Z_DATA_ERROR: p.Z_DATA_ERROR, Z_MEM_ERROR: p.Z_MEM_ERROR, Z_BUF_ERROR: p.Z_BUF_ERROR, Z_VERSION_ERROR: p.Z_VERSION_ERROR }, Object.keys(e.codes).forEach(function (t) {
         e.codes[e.codes[t]] = t;
@@ -3403,10 +3359,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           this[e + n] = t[n];
         }
       }var a = n(63),
-          d = n(139),
-          s = n(140),
-          u = n(142),
-          l = n(145);for (var c in l) {
+          d = n(137),
+          s = n(138),
+          u = n(140),
+          l = n(143);for (var c in l) {
         e[c] = l[c];
       }e.NONE = 0, e.DEFLATE = 1, e.INFLATE = 2, e.GZIP = 3, e.GUNZIP = 4, e.DEFLATERAW = 5, e.INFLATERAW = 6, e.UNZIP = 7, i.prototype.init = function (t, n, r, i, o) {
         switch (this.windowBits = t, this.level = n, this.memLevel = r, this.strategy = i, this.mode !== e.GZIP && this.mode !== e.GUNZIP || (this.windowBits += 16), this.mode === e.UNZIP && (this.windowBits += 32), this.mode !== e.DEFLATERAW && this.mode !== e.INFLATERAW || (this.windowBits = -this.windowBits), this.strm = new d(), this.mode) {case e.DEFLATE:case e.GZIP:case e.DEFLATERAW:
@@ -3457,13 +3413,13 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       var e = t.state,
           n = e.pending;n > t.avail_out && (n = t.avail_out), 0 !== n && (T.arraySet(t.output, e.pending_buf, e.pending_out, n, t.next_out), t.next_out += n, e.pending_out += n, t.total_out += n, t.avail_out -= n, e.pending -= n, 0 === e.pending && (e.pending_out = 0));
     }function d(t, e) {
-      C._tr_flush_block(t, t.block_start >= 0 ? t.block_start : -1, t.strstart - t.block_start, e), t.block_start = t.strstart, a(t.strm);
+      L._tr_flush_block(t, t.block_start >= 0 ? t.block_start : -1, t.strstart - t.block_start, e), t.block_start = t.strstart, a(t.strm);
     }function s(t, e) {
       t.pending_buf[t.pending++] = e;
     }function u(t, e) {
       t.pending_buf[t.pending++] = e >>> 8 & 255, t.pending_buf[t.pending++] = 255 & e;
     }function l(t, e, n, r) {
-      var i = t.avail_in;return i > r && (i = r), 0 === i ? 0 : (t.avail_in -= i, T.arraySet(e, t.input, t.next_in, i, n), 1 === t.state.wrap ? t.adler = L(t.adler, e, i, n) : 2 === t.state.wrap && (t.adler = M(t.adler, e, i, n)), t.next_in += i, t.total_in += i, i);
+      var i = t.avail_in;return i > r && (i = r), 0 === i ? 0 : (t.avail_in -= i, T.arraySet(e, t.input, t.next_in, i, n), 1 === t.state.wrap ? t.adler = M(t.adler, e, i, n) : 2 === t.state.wrap && (t.adler = C(t.adler, e, i, n)), t.next_in += i, t.total_in += i, i);
     }function c(t, e) {
       var n,
           r,
@@ -3510,38 +3466,38 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         if (t.lookahead < ut) {
           if (f(t), t.lookahead < ut && e === j) return mt;if (0 === t.lookahead) break;
         }if (n = 0, t.lookahead >= dt && (t.ins_h = (t.ins_h << t.hash_shift ^ t.window[t.strstart + dt - 1]) & t.hash_mask, n = t.prev[t.strstart & t.w_mask] = t.head[t.ins_h], t.head[t.ins_h] = t.strstart), 0 !== n && t.strstart - n <= t.w_size - ut && (t.match_length = c(t, n)), t.match_length >= dt) {
-          if (r = C._tr_tally(t, t.strstart - t.match_start, t.match_length - dt), t.lookahead -= t.match_length, t.match_length <= t.max_lazy_match && t.lookahead >= dt) {
+          if (r = L._tr_tally(t, t.strstart - t.match_start, t.match_length - dt), t.lookahead -= t.match_length, t.match_length <= t.max_lazy_match && t.lookahead >= dt) {
             t.match_length--;do {
               t.strstart++, t.ins_h = (t.ins_h << t.hash_shift ^ t.window[t.strstart + dt - 1]) & t.hash_mask, n = t.prev[t.strstart & t.w_mask] = t.head[t.ins_h], t.head[t.ins_h] = t.strstart;
             } while (0 != --t.match_length);t.strstart++;
           } else t.strstart += t.match_length, t.match_length = 0, t.ins_h = t.window[t.strstart], t.ins_h = (t.ins_h << t.hash_shift ^ t.window[t.strstart + 1]) & t.hash_mask;
-        } else r = C._tr_tally(t, 0, t.window[t.strstart]), t.lookahead--, t.strstart++;if (r && (d(t, !1), 0 === t.strm.avail_out)) return mt;
+        } else r = L._tr_tally(t, 0, t.window[t.strstart]), t.lookahead--, t.strstart++;if (r && (d(t, !1), 0 === t.strm.avail_out)) return mt;
       }return t.insert = t.strstart < dt - 1 ? t.strstart : dt - 1, e === P ? (d(t, !0), 0 === t.strm.avail_out ? yt : bt) : t.last_lit && (d(t, !1), 0 === t.strm.avail_out) ? mt : vt;
     }function p(t, e) {
       for (var n, r, i;;) {
         if (t.lookahead < ut) {
           if (f(t), t.lookahead < ut && e === j) return mt;if (0 === t.lookahead) break;
-        }if (n = 0, t.lookahead >= dt && (t.ins_h = (t.ins_h << t.hash_shift ^ t.window[t.strstart + dt - 1]) & t.hash_mask, n = t.prev[t.strstart & t.w_mask] = t.head[t.ins_h], t.head[t.ins_h] = t.strstart), t.prev_length = t.match_length, t.prev_match = t.match_start, t.match_length = dt - 1, 0 !== n && t.prev_length < t.max_lazy_match && t.strstart - n <= t.w_size - ut && (t.match_length = c(t, n), t.match_length <= 5 && (t.strategy === q || t.match_length === dt && t.strstart - t.match_start > 4096) && (t.match_length = dt - 1)), t.prev_length >= dt && t.match_length <= t.prev_length) {
-          i = t.strstart + t.lookahead - dt, r = C._tr_tally(t, t.strstart - 1 - t.prev_match, t.prev_length - dt), t.lookahead -= t.prev_length - 1, t.prev_length -= 2;do {
+        }if (n = 0, t.lookahead >= dt && (t.ins_h = (t.ins_h << t.hash_shift ^ t.window[t.strstart + dt - 1]) & t.hash_mask, n = t.prev[t.strstart & t.w_mask] = t.head[t.ins_h], t.head[t.ins_h] = t.strstart), t.prev_length = t.match_length, t.prev_match = t.match_start, t.match_length = dt - 1, 0 !== n && t.prev_length < t.max_lazy_match && t.strstart - n <= t.w_size - ut && (t.match_length = c(t, n), t.match_length <= 5 && (t.strategy === H || t.match_length === dt && t.strstart - t.match_start > 4096) && (t.match_length = dt - 1)), t.prev_length >= dt && t.match_length <= t.prev_length) {
+          i = t.strstart + t.lookahead - dt, r = L._tr_tally(t, t.strstart - 1 - t.prev_match, t.prev_length - dt), t.lookahead -= t.prev_length - 1, t.prev_length -= 2;do {
             ++t.strstart <= i && (t.ins_h = (t.ins_h << t.hash_shift ^ t.window[t.strstart + dt - 1]) & t.hash_mask, n = t.prev[t.strstart & t.w_mask] = t.head[t.ins_h], t.head[t.ins_h] = t.strstart);
           } while (0 != --t.prev_length);if (t.match_available = 0, t.match_length = dt - 1, t.strstart++, r && (d(t, !1), 0 === t.strm.avail_out)) return mt;
         } else if (t.match_available) {
-          if (r = C._tr_tally(t, 0, t.window[t.strstart - 1]), r && d(t, !1), t.strstart++, t.lookahead--, 0 === t.strm.avail_out) return mt;
+          if (r = L._tr_tally(t, 0, t.window[t.strstart - 1]), r && d(t, !1), t.strstart++, t.lookahead--, 0 === t.strm.avail_out) return mt;
         } else t.match_available = 1, t.strstart++, t.lookahead--;
-      }return t.match_available && (r = C._tr_tally(t, 0, t.window[t.strstart - 1]), t.match_available = 0), t.insert = t.strstart < dt - 1 ? t.strstart : dt - 1, e === P ? (d(t, !0), 0 === t.strm.avail_out ? yt : bt) : t.last_lit && (d(t, !1), 0 === t.strm.avail_out) ? mt : vt;
+      }return t.match_available && (r = L._tr_tally(t, 0, t.window[t.strstart - 1]), t.match_available = 0), t.insert = t.strstart < dt - 1 ? t.strstart : dt - 1, e === P ? (d(t, !0), 0 === t.strm.avail_out ? yt : bt) : t.last_lit && (d(t, !1), 0 === t.strm.avail_out) ? mt : vt;
     }function _(t, e) {
       for (var n, r, i, o, a = t.window;;) {
         if (t.lookahead <= st) {
           if (f(t), t.lookahead <= st && e === j) return mt;if (0 === t.lookahead) break;
         }if (t.match_length = 0, t.lookahead >= dt && t.strstart > 0 && (i = t.strstart - 1, (r = a[i]) === a[++i] && r === a[++i] && r === a[++i])) {
           o = t.strstart + st;do {} while (r === a[++i] && r === a[++i] && r === a[++i] && r === a[++i] && r === a[++i] && r === a[++i] && r === a[++i] && r === a[++i] && i < o);t.match_length = st - (o - i), t.match_length > t.lookahead && (t.match_length = t.lookahead);
-        }if (t.match_length >= dt ? (n = C._tr_tally(t, 1, t.match_length - dt), t.lookahead -= t.match_length, t.strstart += t.match_length, t.match_length = 0) : (n = C._tr_tally(t, 0, t.window[t.strstart]), t.lookahead--, t.strstart++), n && (d(t, !1), 0 === t.strm.avail_out)) return mt;
+        }if (t.match_length >= dt ? (n = L._tr_tally(t, 1, t.match_length - dt), t.lookahead -= t.match_length, t.strstart += t.match_length, t.match_length = 0) : (n = L._tr_tally(t, 0, t.window[t.strstart]), t.lookahead--, t.strstart++), n && (d(t, !1), 0 === t.strm.avail_out)) return mt;
       }return t.insert = 0, e === P ? (d(t, !0), 0 === t.strm.avail_out ? yt : bt) : t.last_lit && (d(t, !1), 0 === t.strm.avail_out) ? mt : vt;
     }function g(t, e) {
       for (var n;;) {
         if (0 === t.lookahead && (f(t), 0 === t.lookahead)) {
           if (e === j) return mt;break;
-        }if (t.match_length = 0, n = C._tr_tally(t, 0, t.window[t.strstart]), t.lookahead--, t.strstart++, n && (d(t, !1), 0 === t.strm.avail_out)) return mt;
+        }if (t.match_length = 0, n = L._tr_tally(t, 0, t.window[t.strstart]), t.lookahead--, t.strstart++, n && (d(t, !1), 0 === t.strm.avail_out)) return mt;
       }return t.insert = 0, e === P ? (d(t, !0), 0 === t.strm.avail_out ? yt : bt) : t.last_lit && (d(t, !1), 0 === t.strm.avail_out) ? mt : vt;
     }function m(t, e, n, r, i) {
       this.good_length = t, this.max_lazy = e, this.nice_length = n, this.max_chain = r, this.func = i;
@@ -3550,39 +3506,39 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     }function y() {
       this.strm = null, this.status = 0, this.pending_buf = null, this.pending_buf_size = 0, this.pending_out = 0, this.pending = 0, this.wrap = 0, this.gzhead = null, this.gzindex = 0, this.method = X, this.last_flush = -1, this.w_size = 0, this.w_bits = 0, this.w_mask = 0, this.window = null, this.window_size = 0, this.prev = null, this.head = null, this.ins_h = 0, this.hash_size = 0, this.hash_bits = 0, this.hash_mask = 0, this.hash_shift = 0, this.block_start = 0, this.match_length = 0, this.prev_match = 0, this.match_available = 0, this.strstart = 0, this.match_start = 0, this.lookahead = 0, this.prev_length = 0, this.max_chain_length = 0, this.max_lazy_match = 0, this.level = 0, this.strategy = 0, this.good_match = 0, this.nice_match = 0, this.dyn_ltree = new T.Buf16(2 * ot), this.dyn_dtree = new T.Buf16(2 * (2 * rt + 1)), this.bl_tree = new T.Buf16(2 * (2 * it + 1)), o(this.dyn_ltree), o(this.dyn_dtree), o(this.bl_tree), this.l_desc = null, this.d_desc = null, this.bl_desc = null, this.bl_count = new T.Buf16(at + 1), this.heap = new T.Buf16(2 * nt + 1), o(this.heap), this.heap_len = 0, this.heap_max = 0, this.depth = new T.Buf16(2 * nt + 1), o(this.depth), this.l_buf = 0, this.lit_bufsize = 0, this.last_lit = 0, this.d_buf = 0, this.opt_len = 0, this.static_len = 0, this.matches = 0, this.insert = 0, this.bi_buf = 0, this.bi_valid = 0;
     }function b(t) {
-      var e;return t && t.state ? (t.total_in = t.total_out = 0, t.data_type = J, e = t.state, e.pending = 0, e.pending_out = 0, e.wrap < 0 && (e.wrap = -e.wrap), e.status = e.wrap ? ct : _t, t.adler = 2 === e.wrap ? 0 : 1, e.last_flush = j, C._tr_init(e), z) : r(t, F);
+      var e;return t && t.state ? (t.total_in = t.total_out = 0, t.data_type = J, e = t.state, e.pending = 0, e.pending_out = 0, e.wrap < 0 && (e.wrap = -e.wrap), e.status = e.wrap ? ct : _t, t.adler = 2 === e.wrap ? 0 : 1, e.last_flush = j, L._tr_init(e), z) : r(t, F);
     }function w(t) {
       var e = b(t);return e === z && v(t.state), e;
     }function E(t, e) {
       return t && t.state ? 2 !== t.state.wrap ? F : (t.state.gzhead = e, z) : F;
     }function k(t, e, n, i, o, a) {
-      if (!t) return F;var d = 1;if (e === H && (e = 6), i < 0 ? (d = 0, i = -i) : i > 15 && (d = 2, i -= 16), o < 1 || o > Q || n !== X || i < 8 || i > 15 || e < 0 || e > 9 || a < 0 || a > W) return r(t, F);8 === i && (i = 9);var s = new y();return t.state = s, s.strm = t, s.wrap = d, s.gzhead = null, s.w_bits = i, s.w_size = 1 << s.w_bits, s.w_mask = s.w_size - 1, s.hash_bits = o + 7, s.hash_size = 1 << s.hash_bits, s.hash_mask = s.hash_size - 1, s.hash_shift = ~~((s.hash_bits + dt - 1) / dt), s.window = new T.Buf8(2 * s.w_size), s.head = new T.Buf16(s.hash_size), s.prev = new T.Buf16(s.w_size), s.lit_bufsize = 1 << o + 6, s.pending_buf_size = 4 * s.lit_bufsize, s.pending_buf = new T.Buf8(s.pending_buf_size), s.d_buf = 1 * s.lit_bufsize, s.l_buf = 3 * s.lit_bufsize, s.level = e, s.strategy = a, s.method = n, w(t);
+      if (!t) return F;var d = 1;if (e === q && (e = 6), i < 0 ? (d = 0, i = -i) : i > 15 && (d = 2, i -= 16), o < 1 || o > Q || n !== X || i < 8 || i > 15 || e < 0 || e > 9 || a < 0 || a > W) return r(t, F);8 === i && (i = 9);var s = new y();return t.state = s, s.strm = t, s.wrap = d, s.gzhead = null, s.w_bits = i, s.w_size = 1 << s.w_bits, s.w_mask = s.w_size - 1, s.hash_bits = o + 7, s.hash_size = 1 << s.hash_bits, s.hash_mask = s.hash_size - 1, s.hash_shift = ~~((s.hash_bits + dt - 1) / dt), s.window = new T.Buf8(2 * s.w_size), s.head = new T.Buf16(s.hash_size), s.prev = new T.Buf16(s.w_size), s.lit_bufsize = 1 << o + 6, s.pending_buf_size = 4 * s.lit_bufsize, s.pending_buf = new T.Buf8(s.pending_buf_size), s.d_buf = 1 * s.lit_bufsize, s.l_buf = 3 * s.lit_bufsize, s.level = e, s.strategy = a, s.method = n, w(t);
     }function x(t, e) {
       return k(t, e, X, tt, et, V);
     }function S(t, e) {
-      var n, d, l, c;if (!t || !t.state || e > U || e < 0) return t ? r(t, F) : F;if (d = t.state, !t.output || !t.input && 0 !== t.avail_in || d.status === gt && e !== P) return r(t, 0 === t.avail_out ? G : F);if (d.strm = t, n = d.last_flush, d.last_flush = e, d.status === ct) if (2 === d.wrap) t.adler = 0, s(d, 31), s(d, 139), s(d, 8), d.gzhead ? (s(d, (d.gzhead.text ? 1 : 0) + (d.gzhead.hcrc ? 2 : 0) + (d.gzhead.extra ? 4 : 0) + (d.gzhead.name ? 8 : 0) + (d.gzhead.comment ? 16 : 0)), s(d, 255 & d.gzhead.time), s(d, d.gzhead.time >> 8 & 255), s(d, d.gzhead.time >> 16 & 255), s(d, d.gzhead.time >> 24 & 255), s(d, 9 === d.level ? 2 : d.strategy >= Y || d.level < 2 ? 4 : 0), s(d, 255 & d.gzhead.os), d.gzhead.extra && d.gzhead.extra.length && (s(d, 255 & d.gzhead.extra.length), s(d, d.gzhead.extra.length >> 8 & 255)), d.gzhead.hcrc && (t.adler = M(t.adler, d.pending_buf, d.pending, 0)), d.gzindex = 0, d.status = ft) : (s(d, 0), s(d, 0), s(d, 0), s(d, 0), s(d, 0), s(d, 9 === d.level ? 2 : d.strategy >= Y || d.level < 2 ? 4 : 0), s(d, wt), d.status = _t);else {
+      var n, d, l, c;if (!t || !t.state || e > U || e < 0) return t ? r(t, F) : F;if (d = t.state, !t.output || !t.input && 0 !== t.avail_in || d.status === gt && e !== P) return r(t, 0 === t.avail_out ? G : F);if (d.strm = t, n = d.last_flush, d.last_flush = e, d.status === ct) if (2 === d.wrap) t.adler = 0, s(d, 31), s(d, 139), s(d, 8), d.gzhead ? (s(d, (d.gzhead.text ? 1 : 0) + (d.gzhead.hcrc ? 2 : 0) + (d.gzhead.extra ? 4 : 0) + (d.gzhead.name ? 8 : 0) + (d.gzhead.comment ? 16 : 0)), s(d, 255 & d.gzhead.time), s(d, d.gzhead.time >> 8 & 255), s(d, d.gzhead.time >> 16 & 255), s(d, d.gzhead.time >> 24 & 255), s(d, 9 === d.level ? 2 : d.strategy >= Y || d.level < 2 ? 4 : 0), s(d, 255 & d.gzhead.os), d.gzhead.extra && d.gzhead.extra.length && (s(d, 255 & d.gzhead.extra.length), s(d, d.gzhead.extra.length >> 8 & 255)), d.gzhead.hcrc && (t.adler = C(t.adler, d.pending_buf, d.pending, 0)), d.gzindex = 0, d.status = ft) : (s(d, 0), s(d, 0), s(d, 0), s(d, 0), s(d, 0), s(d, 9 === d.level ? 2 : d.strategy >= Y || d.level < 2 ? 4 : 0), s(d, wt), d.status = _t);else {
         var f = X + (d.w_bits - 8 << 4) << 8,
             h = -1;h = d.strategy >= Y || d.level < 2 ? 0 : d.level < 6 ? 1 : 6 === d.level ? 2 : 3, f |= h << 6, 0 !== d.strstart && (f |= lt), f += 31 - f % 31, d.status = _t, u(d, f), 0 !== d.strstart && (u(d, t.adler >>> 16), u(d, 65535 & t.adler)), t.adler = 1;
       }if (d.status === ft) if (d.gzhead.extra) {
-        for (l = d.pending; d.gzindex < (65535 & d.gzhead.extra.length) && (d.pending !== d.pending_buf_size || (d.gzhead.hcrc && d.pending > l && (t.adler = M(t.adler, d.pending_buf, d.pending - l, l)), a(t), l = d.pending, d.pending !== d.pending_buf_size));) {
+        for (l = d.pending; d.gzindex < (65535 & d.gzhead.extra.length) && (d.pending !== d.pending_buf_size || (d.gzhead.hcrc && d.pending > l && (t.adler = C(t.adler, d.pending_buf, d.pending - l, l)), a(t), l = d.pending, d.pending !== d.pending_buf_size));) {
           s(d, 255 & d.gzhead.extra[d.gzindex]), d.gzindex++;
-        }d.gzhead.hcrc && d.pending > l && (t.adler = M(t.adler, d.pending_buf, d.pending - l, l)), d.gzindex === d.gzhead.extra.length && (d.gzindex = 0, d.status = ht);
+        }d.gzhead.hcrc && d.pending > l && (t.adler = C(t.adler, d.pending_buf, d.pending - l, l)), d.gzindex === d.gzhead.extra.length && (d.gzindex = 0, d.status = ht);
       } else d.status = ht;if (d.status === ht) if (d.gzhead.name) {
         l = d.pending;do {
-          if (d.pending === d.pending_buf_size && (d.gzhead.hcrc && d.pending > l && (t.adler = M(t.adler, d.pending_buf, d.pending - l, l)), a(t), l = d.pending, d.pending === d.pending_buf_size)) {
+          if (d.pending === d.pending_buf_size && (d.gzhead.hcrc && d.pending > l && (t.adler = C(t.adler, d.pending_buf, d.pending - l, l)), a(t), l = d.pending, d.pending === d.pending_buf_size)) {
             c = 1;break;
           }c = d.gzindex < d.gzhead.name.length ? 255 & d.gzhead.name.charCodeAt(d.gzindex++) : 0, s(d, c);
-        } while (0 !== c);d.gzhead.hcrc && d.pending > l && (t.adler = M(t.adler, d.pending_buf, d.pending - l, l)), 0 === c && (d.gzindex = 0, d.status = $t);
+        } while (0 !== c);d.gzhead.hcrc && d.pending > l && (t.adler = C(t.adler, d.pending_buf, d.pending - l, l)), 0 === c && (d.gzindex = 0, d.status = $t);
       } else d.status = $t;if (d.status === $t) if (d.gzhead.comment) {
         l = d.pending;do {
-          if (d.pending === d.pending_buf_size && (d.gzhead.hcrc && d.pending > l && (t.adler = M(t.adler, d.pending_buf, d.pending - l, l)), a(t), l = d.pending, d.pending === d.pending_buf_size)) {
+          if (d.pending === d.pending_buf_size && (d.gzhead.hcrc && d.pending > l && (t.adler = C(t.adler, d.pending_buf, d.pending - l, l)), a(t), l = d.pending, d.pending === d.pending_buf_size)) {
             c = 1;break;
           }c = d.gzindex < d.gzhead.comment.length ? 255 & d.gzhead.comment.charCodeAt(d.gzindex++) : 0, s(d, c);
-        } while (0 !== c);d.gzhead.hcrc && d.pending > l && (t.adler = M(t.adler, d.pending_buf, d.pending - l, l)), 0 === c && (d.status = pt);
+        } while (0 !== c);d.gzhead.hcrc && d.pending > l && (t.adler = C(t.adler, d.pending_buf, d.pending - l, l)), 0 === c && (d.status = pt);
       } else d.status = pt;if (d.status === pt && (d.gzhead.hcrc ? (d.pending + 2 > d.pending_buf_size && a(t), d.pending + 2 <= d.pending_buf_size && (s(d, 255 & t.adler), s(d, t.adler >> 8 & 255), t.adler = 0, d.status = _t)) : d.status = _t), 0 !== d.pending) {
         if (a(t), 0 === t.avail_out) return d.last_flush = -1, z;
       } else if (0 === t.avail_in && i(e) <= i(n) && e !== P) return r(t, G);if (d.status === gt && 0 !== t.avail_in) return r(t, G);if (0 !== t.avail_in || 0 !== d.lookahead || e !== j && d.status !== gt) {
-        var $ = d.strategy === Y ? g(d, e) : d.strategy === K ? _(d, e) : O[d.level].func(d, e);if ($ !== yt && $ !== bt || (d.status = gt), $ === mt || $ === yt) return 0 === t.avail_out && (d.last_flush = -1), z;if ($ === vt && (e === B ? C._tr_align(d) : e !== U && (C._tr_stored_block(d, 0, 0, !1), e === N && (o(d.head), 0 === d.lookahead && (d.strstart = 0, d.block_start = 0, d.insert = 0))), a(t), 0 === t.avail_out)) return d.last_flush = -1, z;
+        var $ = d.strategy === Y ? g(d, e) : d.strategy === K ? _(d, e) : O[d.level].func(d, e);if ($ !== yt && $ !== bt || (d.status = gt), $ === mt || $ === yt) return 0 === t.avail_out && (d.last_flush = -1), z;if ($ === vt && (e === B ? L._tr_align(d) : e !== U && (L._tr_stored_block(d, 0, 0, !1), e === N && (o(d.head), 0 === d.lookahead && (d.strstart = 0, d.block_start = 0, d.insert = 0))), a(t), 0 === t.avail_out)) return d.last_flush = -1, z;
       }return e !== P ? z : d.wrap <= 0 ? D : (2 === d.wrap ? (s(d, 255 & t.adler), s(d, t.adler >> 8 & 255), s(d, t.adler >> 16 & 255), s(d, t.adler >> 24 & 255), s(d, 255 & t.total_in), s(d, t.total_in >> 8 & 255), s(d, t.total_in >> 16 & 255), s(d, t.total_in >> 24 & 255)) : (u(d, t.adler >>> 16), u(d, 65535 & t.adler)), a(t), d.wrap > 0 && (d.wrap = -d.wrap), 0 !== d.pending ? z : D);
     }function A(t) {
       var e;return t && t.state ? (e = t.state.status) !== ct && e !== ft && e !== ht && e !== $t && e !== pt && e !== _t && e !== gt ? r(t, F) : (t.state = null, e === _t ? r(t, Z) : z) : F;
@@ -3595,16 +3551,16 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           s,
           u,
           l,
-          c = e.length;if (!t || !t.state) return F;if (n = t.state, 2 === (a = n.wrap) || 1 === a && n.status !== ct || n.lookahead) return F;for (1 === a && (t.adler = L(t.adler, e, c, 0)), n.wrap = 0, c >= n.w_size && (0 === a && (o(n.head), n.strstart = 0, n.block_start = 0, n.insert = 0), l = new T.Buf8(n.w_size), T.arraySet(l, e, c - n.w_size, n.w_size, 0), e = l, c = n.w_size), d = t.avail_in, s = t.next_in, u = t.input, t.avail_in = c, t.next_in = 0, t.input = e, f(n); n.lookahead >= dt;) {
+          c = e.length;if (!t || !t.state) return F;if (n = t.state, 2 === (a = n.wrap) || 1 === a && n.status !== ct || n.lookahead) return F;for (1 === a && (t.adler = M(t.adler, e, c, 0)), n.wrap = 0, c >= n.w_size && (0 === a && (o(n.head), n.strstart = 0, n.block_start = 0, n.insert = 0), l = new T.Buf8(n.w_size), T.arraySet(l, e, c - n.w_size, n.w_size, 0), e = l, c = n.w_size), d = t.avail_in, s = t.next_in, u = t.input, t.avail_in = c, t.next_in = 0, t.input = e, f(n); n.lookahead >= dt;) {
         r = n.strstart, i = n.lookahead - (dt - 1);do {
           n.ins_h = (n.ins_h << n.hash_shift ^ n.window[r + dt - 1]) & n.hash_mask, n.prev[r & n.w_mask] = n.head[n.ins_h], n.head[n.ins_h] = r, r++;
         } while (--i);n.strstart = r, n.lookahead = dt - 1, f(n);
       }return n.strstart += n.lookahead, n.block_start = n.strstart, n.insert = n.lookahead, n.lookahead = 0, n.match_length = n.prev_length = dt - 1, n.match_available = 0, t.next_in = s, t.input = u, t.avail_in = d, n.wrap = a, z;
     }var O,
         T = n(22),
-        C = n(141),
-        L = n(64),
-        M = n(65),
+        L = n(139),
+        M = n(64),
+        C = n(65),
         I = n(63),
         j = 0,
         B = 1,
@@ -3616,8 +3572,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         F = -2,
         Z = -3,
         G = -5,
-        H = -1,
-        q = 1,
+        q = -1,
+        H = 1,
         Y = 2,
         K = 3,
         W = 4,
@@ -3686,9 +3642,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           f = e.stat_desc.extra_bits,
           h = e.stat_desc.extra_base,
           $ = e.stat_desc.max_length,
-          p = 0;for (o = 0; o <= q; o++) {
+          p = 0;for (o = 0; o <= H; o++) {
         t.bl_count[o] = 0;
-      }for (s[2 * t.heap[t.heap_max] + 1] = 0, n = t.heap_max + 1; n < H; n++) {
+      }for (s[2 * t.heap[t.heap_max] + 1] = 0, n = t.heap_max + 1; n < q; n++) {
         r = t.heap[n], o = s[2 * s[2 * r + 1] + 1] + 1, o > $ && (o = $, p++), s[2 * r + 1] = o, r > u || (t.bl_count[o]++, a = 0, r >= h && (a = f[r - h]), d = s[2 * r], t.opt_len += d * (o + a), c && (t.static_len += d * (l[2 * r + 1] + a)));
       }if (0 !== p) {
         do {
@@ -3704,8 +3660,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     }function h(t, e, n) {
       var r,
           i,
-          o = new Array(q + 1),
-          a = 0;for (r = 1; r <= q; r++) {
+          o = new Array(H + 1),
+          a = 0;for (r = 1; r <= H; r++) {
         o[r] = a = a + n[r - 1] << 1;
       }for (i = 0; i <= e; i++) {
         var d = t[2 * i + 1];0 !== d && (t[2 * i] = l(o[d]++, d));
@@ -3716,7 +3672,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           n,
           r,
           o,
-          a = new Array(q + 1);for (n = 0, r = 0; r < z - 1; r++) {
+          a = new Array(H + 1);for (n = 0, r = 0; r < z - 1; r++) {
         for (dt[r] = n, t = 0; t < 1 << Q[r]; t++) {
           at[n++] = r;
         }
@@ -3728,7 +3684,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         for (st[r] = o << 7, t = 0; t < 1 << tt[r] - 7; t++) {
           ot[256 + o++] = r;
         }
-      }for (e = 0; e <= q; e++) {
+      }for (e = 0; e <= H; e++) {
         a[e] = 0;
       }for (t = 0; t <= 143;) {
         rt[2 * t + 1] = 8, t++, a[8]++;
@@ -3740,7 +3696,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         rt[2 * t + 1] = 8, t++, a[8]++;
       }for (h(rt, F + 1, a), t = 0; t < Z; t++) {
         it[2 * t + 1] = 5, it[2 * t] = l(t, 5);
-      }ut = new i(rt, Q, D + 1, F, q), lt = new i(it, tt, 0, Z, q), ct = new i(new Array(0), et, 0, G, K);
+      }ut = new i(rt, Q, D + 1, F, H), lt = new i(it, tt, 0, Z, H), ct = new i(new Array(0), et, 0, G, K);
     }function p(t) {
       var e;for (e = 0; e < F; e++) {
         t.dyn_ltree[2 * e] = 0;
@@ -3752,7 +3708,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     }function _(t) {
       t.bi_valid > 8 ? d(t, t.bi_buf) : t.bi_valid > 0 && (t.pending_buf[t.pending++] = t.bi_buf), t.bi_buf = 0, t.bi_valid = 0;
     }function g(t, e, n, r) {
-      _(t), r && (d(t, n), d(t, ~n)), L.arraySet(t.pending_buf, t.window, e, n, t.pending), t.pending += n;
+      _(t), r && (d(t, n), d(t, ~n)), M.arraySet(t.pending_buf, t.window, e, n, t.pending), t.pending += n;
     }function m(t, e, n, r) {
       var i = 2 * e,
           o = 2 * n;return t[i] < t[o] || t[i] === t[o] && r[e] <= r[n];
@@ -3776,7 +3732,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           a = e.stat_desc.static_tree,
           d = e.stat_desc.has_stree,
           s = e.stat_desc.elems,
-          u = -1;for (t.heap_len = 0, t.heap_max = H, n = 0; n < s; n++) {
+          u = -1;for (t.heap_len = 0, t.heap_max = q, n = 0; n < s; n++) {
         0 !== o[2 * n] ? (t.heap[++t.heap_len] = u = n, t.depth[n] = 0) : o[2 * n + 1] = 0;
       }for (; t.heap_len < 2;) {
         i = t.heap[++t.heap_len] = u < 2 ? ++u : 0, o[2 * i] = 1, t.depth[i] = 0, t.opt_len--, d && (t.static_len -= a[2 * i + 1]);
@@ -3831,11 +3787,11 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     }function T(t, e, n, r) {
       var i,
           o,
-          a = 0;t.level > 0 ? (t.strm.data_type === B && (t.strm.data_type = S(t)), b(t, t.l_desc), b(t, t.d_desc), a = k(t), i = t.opt_len + 3 + 7 >>> 3, (o = t.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== e ? R(t, e, n, r) : t.strategy === M || o === i ? (s(t, (P << 1) + (r ? 1 : 0), 3), y(t, rt, it)) : (s(t, (U << 1) + (r ? 1 : 0), 3), x(t, t.l_desc.max_code + 1, t.d_desc.max_code + 1, a + 1), y(t, t.dyn_ltree, t.dyn_dtree)), p(t), r && _(t);
-    }function C(t, e, n) {
+          a = 0;t.level > 0 ? (t.strm.data_type === B && (t.strm.data_type = S(t)), b(t, t.l_desc), b(t, t.d_desc), a = k(t), i = t.opt_len + 3 + 7 >>> 3, (o = t.static_len + 3 + 7 >>> 3) <= i && (i = o)) : i = o = n + 5, n + 4 <= i && -1 !== e ? R(t, e, n, r) : t.strategy === C || o === i ? (s(t, (P << 1) + (r ? 1 : 0), 3), y(t, rt, it)) : (s(t, (U << 1) + (r ? 1 : 0), 3), x(t, t.l_desc.max_code + 1, t.d_desc.max_code + 1, a + 1), y(t, t.dyn_ltree, t.dyn_dtree)), p(t), r && _(t);
+    }function L(t, e, n) {
       return t.pending_buf[t.d_buf + 2 * t.last_lit] = e >>> 8 & 255, t.pending_buf[t.d_buf + 2 * t.last_lit + 1] = 255 & e, t.pending_buf[t.l_buf + t.last_lit] = 255 & n, t.last_lit++, 0 === e ? t.dyn_ltree[2 * n]++ : (t.matches++, e--, t.dyn_ltree[2 * (at[n] + D + 1)]++, t.dyn_dtree[2 * a(e)]++), t.last_lit === t.lit_bufsize - 1;
-    }var L = n(22),
-        M = 4,
+    }var M = n(22),
+        C = 4,
         I = 0,
         j = 1,
         B = 2,
@@ -3847,8 +3803,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         F = D + 1 + z,
         Z = 30,
         G = 19,
-        H = 2 * F + 1,
-        q = 15,
+        q = 2 * F + 1,
+        H = 15,
         Y = 16,
         K = 7,
         W = 256,
@@ -3862,7 +3818,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         rt = new Array(2 * (F + 2));r(rt);var it = new Array(2 * Z);r(it);var ot = new Array(512);r(ot);var at = new Array(256);r(at);var dt = new Array(z);r(dt);var st = new Array(Z);r(st);var ut,
         lt,
         ct,
-        ft = !1;e._tr_init = A, e._tr_stored_block = R, e._tr_flush_block = T, e._tr_tally = C, e._tr_align = O;
+        ft = !1;e._tr_init = A, e._tr_stored_block = R, e._tr_flush_block = T, e._tr_tally = L, e._tr_align = O;
   }, function (t, e, n) {
     "use strict";
     function r(t) {
@@ -3870,13 +3826,13 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     }function i() {
       this.mode = 0, this.last = !1, this.wrap = 0, this.havedict = !1, this.flags = 0, this.dmax = 0, this.check = 0, this.total = 0, this.head = null, this.wbits = 0, this.wsize = 0, this.whave = 0, this.wnext = 0, this.window = null, this.hold = 0, this.bits = 0, this.length = 0, this.offset = 0, this.extra = 0, this.lencode = null, this.distcode = null, this.lenbits = 0, this.distbits = 0, this.ncode = 0, this.nlen = 0, this.ndist = 0, this.have = 0, this.next = null, this.lens = new m.Buf16(320), this.work = new m.Buf16(288), this.lendyn = null, this.distdyn = null, this.sane = 0, this.back = 0, this.was = 0;
     }function o(t) {
-      var e;return t && t.state ? (e = t.state, t.total_in = t.total_out = e.total = 0, t.msg = "", e.wrap && (t.adler = 1 & e.wrap), e.mode = N, e.last = 0, e.havedict = 0, e.dmax = 32768, e.head = null, e.hold = 0, e.bits = 0, e.lencode = e.lendyn = new m.Buf32(pt), e.distcode = e.distdyn = new m.Buf32(_t), e.sane = 1, e.back = -1, O) : L;
+      var e;return t && t.state ? (e = t.state, t.total_in = t.total_out = e.total = 0, t.msg = "", e.wrap && (t.adler = 1 & e.wrap), e.mode = N, e.last = 0, e.havedict = 0, e.dmax = 32768, e.head = null, e.hold = 0, e.bits = 0, e.lencode = e.lendyn = new m.Buf32(pt), e.distcode = e.distdyn = new m.Buf32(_t), e.sane = 1, e.back = -1, O) : M;
     }function a(t) {
-      var e;return t && t.state ? (e = t.state, e.wsize = 0, e.whave = 0, e.wnext = 0, o(t)) : L;
+      var e;return t && t.state ? (e = t.state, e.wsize = 0, e.whave = 0, e.wnext = 0, o(t)) : M;
     }function d(t, e) {
-      var n, r;return t && t.state ? (r = t.state, e < 0 ? (n = 0, e = -e) : (n = 1 + (e >> 4), e < 48 && (e &= 15)), e && (e < 8 || e > 15) ? L : (null !== r.window && r.wbits !== e && (r.window = null), r.wrap = n, r.wbits = e, a(t))) : L;
+      var n, r;return t && t.state ? (r = t.state, e < 0 ? (n = 0, e = -e) : (n = 1 + (e >> 4), e < 48 && (e &= 15)), e && (e < 8 || e > 15) ? M : (null !== r.window && r.wbits !== e && (r.window = null), r.wrap = n, r.wbits = e, a(t))) : M;
     }function s(t, e) {
-      var n, r;return t ? (r = new i(), t.state = r, r.window = null, n = d(t, e), n !== O && (t.state = null), n) : L;
+      var n, r;return t ? (r = new i(), t.state = r, r.window = null, n = d(t, e), n !== O && (t.state = null), n) : M;
     }function u(t) {
       return s(t, gt);
     }function l(t) {
@@ -3923,7 +3879,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           xt,
           St = 0,
           At = new m.Buf8(4),
-          Rt = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];if (!t || !t.state || !t.output || !t.input && 0 !== t.avail_in) return L;n = t.state, n.mode === K && (n.mode = W), d = t.next_out, o = t.output, u = t.avail_out, a = t.next_in, i = t.input, s = t.avail_in, f = n.hold, h = n.bits, $ = s, p = u, Et = O;t: for (;;) {
+          Rt = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];if (!t || !t.state || !t.output || !t.input && 0 !== t.avail_in) return M;n = t.state, n.mode === K && (n.mode = W), d = t.next_out, o = t.output, u = t.avail_out, a = t.next_in, i = t.input, s = t.avail_in, f = n.hold, h = n.bits, $ = s, p = u, Et = O;t: for (;;) {
         switch (n.mode) {case N:
             if (0 === n.wrap) {
               n.mode = W;break;
@@ -3937,7 +3893,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
               t.msg = "unknown compression method", n.mode = ft;break;
             }if (f >>>= 4, h -= 4, wt = 8 + (15 & f), 0 === n.wbits) n.wbits = wt;else if (wt > n.wbits) {
               t.msg = "invalid window size", n.mode = ft;break;
-            }n.dmax = 1 << wt, t.adler = n.check = 1, n.mode = 512 & f ? q : K, f = 0, h = 0;break;case P:
+            }n.dmax = 1 << wt, t.adler = n.check = 1, n.mode = 512 & f ? H : K, f = 0, h = 0;break;case P:
             for (; h < 16;) {
               if (0 === s) break t;s--, f += i[a++] << h, h += 8;
             }if (n.flags = f, (255 & n.flags) !== B) {
@@ -3966,18 +3922,18 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
               if (0 === s) break t;_ = 0;do {
                 wt = i[a + _++], n.head && wt && n.length < 65536 && (n.head.comment += String.fromCharCode(wt));
               } while (wt && _ < s);if (512 & n.flags && (n.check = y(n.check, i, _, a)), s -= _, a += _, wt) break t;
-            } else n.head && (n.head.comment = null);n.mode = H;case H:
+            } else n.head && (n.head.comment = null);n.mode = q;case q:
             if (512 & n.flags) {
               for (; h < 16;) {
                 if (0 === s) break t;s--, f += i[a++] << h, h += 8;
               }if (f !== (65535 & n.check)) {
                 t.msg = "header crc mismatch", n.mode = ft;break;
               }f = 0, h = 0;
-            }n.head && (n.head.hcrc = n.flags >> 9 & 1, n.head.done = !0), t.adler = n.check = 0, n.mode = K;break;case q:
+            }n.head && (n.head.hcrc = n.flags >> 9 & 1, n.head.done = !0), t.adler = n.check = 0, n.mode = K;break;case H:
             for (; h < 32;) {
               if (0 === s) break t;s--, f += i[a++] << h, h += 8;
             }t.adler = n.check = r(f), f = 0, h = 0, n.mode = Y;case Y:
-            if (0 === n.havedict) return t.next_out = d, t.avail_out = u, t.next_in = a, t.avail_in = s, n.hold = f, n.bits = h, C;t.adler = n.check = 1, n.mode = K;case K:
+            if (0 === n.havedict) return t.next_out = d, t.avail_out = u, t.next_in = a, t.avail_in = s, n.hold = f, n.bits = h, L;t.adler = n.check = 1, n.mode = K;case K:
             if (e === A || e === R) break t;case W:
             if (n.last) {
               f >>>= 7 & h, h -= 7 & h, n.mode = ut;break;
@@ -4104,25 +4060,25 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
               }f = 0, h = 0;
             }n.mode = ct;case ct:
             Et = T;break t;case ft:
-            Et = M;break t;case ht:
+            Et = C;break t;case ht:
             return I;case $t:default:
-            return L;}
+            return M;}
       }return t.next_out = d, t.avail_out = u, t.next_in = a, t.avail_in = s, n.hold = f, n.bits = h, (n.wsize || p !== t.avail_out && n.mode < ft && (n.mode < ut || e !== S)) && c(t, t.output, t.next_out, p - t.avail_out) ? (n.mode = ht, I) : ($ -= t.avail_in, p -= t.avail_out, t.total_in += $, t.total_out += p, n.total += p, n.wrap && p && (t.adler = n.check = n.flags ? y(n.check, o, p, t.next_out - p) : v(n.check, o, p, t.next_out - p)), t.data_type = n.bits + (n.last ? 64 : 0) + (n.mode === K ? 128 : 0) + (n.mode === nt || n.mode === J ? 256 : 0), (0 === $ && 0 === p || e === S) && Et === O && (Et = j), Et);
     }function h(t) {
-      if (!t || !t.state) return L;var e = t.state;return e.window && (e.window = null), t.state = null, O;
+      if (!t || !t.state) return M;var e = t.state;return e.window && (e.window = null), t.state = null, O;
     }function $(t, e) {
-      var n;return t && t.state ? (n = t.state, 0 == (2 & n.wrap) ? L : (n.head = e, e.done = !1, O)) : L;
+      var n;return t && t.state ? (n = t.state, 0 == (2 & n.wrap) ? M : (n.head = e, e.done = !1, O)) : M;
     }function p(t, e) {
       var n,
           r,
-          i = e.length;return t && t.state ? (n = t.state, 0 !== n.wrap && n.mode !== Y ? L : n.mode === Y && (r = 1, (r = v(r, e, i, 0)) !== n.check) ? M : c(t, e, i, i) ? (n.mode = ht, I) : (n.havedict = 1, O)) : L;
+          i = e.length;return t && t.state ? (n = t.state, 0 !== n.wrap && n.mode !== Y ? M : n.mode === Y && (r = 1, (r = v(r, e, i, 0)) !== n.check) ? C : c(t, e, i, i) ? (n.mode = ht, I) : (n.havedict = 1, O)) : M;
     }var _,
         g,
         m = n(22),
         v = n(64),
         y = n(65),
-        b = n(143),
-        w = n(144),
+        b = n(141),
+        w = n(142),
         E = 0,
         k = 1,
         x = 2,
@@ -4131,9 +4087,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         R = 6,
         O = 0,
         T = 1,
-        C = 2,
-        L = -2,
-        M = -3,
+        L = 2,
+        M = -2,
+        C = -3,
         I = -4,
         j = -5,
         B = 8,
@@ -4145,8 +4101,8 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         F = 6,
         Z = 7,
         G = 8,
-        H = 9,
-        q = 10,
+        q = 9,
+        H = 10,
         Y = 11,
         K = 12,
         W = 13,
@@ -4253,9 +4209,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
           R = 0,
           O = 0,
           T = 0,
-          C = 0,
           L = 0,
-          M = null,
+          M = 0,
+          C = null,
           I = 0,
           j = new r.Buf16(16),
           B = new r.Buf16(16),
@@ -4270,19 +4226,19 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         B[E + 1] = B[E] + j[E];
       }for (k = 0; k < s; k++) {
         0 !== e[n + k] && (c[B[e[n + k]]++] = k);
-      }if (0 === t ? (M = N = c, m = 19) : 1 === t ? (M = i, I -= 257, N = o, P -= 257, m = 256) : (M = a, N = d, m = -1), L = 0, k = 0, E = x, g = l, R = A, O = 0, p = -1, C = 1 << A, _ = C - 1, 1 === t && C > 852 || 2 === t && C > 592) return 1;for (var U = 0;;) {
-        U++, v = E - O, c[k] < m ? (y = 0, b = c[k]) : c[k] > m ? (y = N[P + c[k]], b = M[I + c[k]]) : (y = 96, b = 0), h = 1 << E - O, $ = 1 << R, x = $;do {
-          $ -= h, u[g + (L >> O) + $] = v << 24 | y << 16 | b | 0;
-        } while (0 !== $);for (h = 1 << E - 1; L & h;) {
+      }if (0 === t ? (C = N = c, m = 19) : 1 === t ? (C = i, I -= 257, N = o, P -= 257, m = 256) : (C = a, N = d, m = -1), M = 0, k = 0, E = x, g = l, R = A, O = 0, p = -1, L = 1 << A, _ = L - 1, 1 === t && L > 852 || 2 === t && L > 592) return 1;for (var U = 0;;) {
+        U++, v = E - O, c[k] < m ? (y = 0, b = c[k]) : c[k] > m ? (y = N[P + c[k]], b = C[I + c[k]]) : (y = 96, b = 0), h = 1 << E - O, $ = 1 << R, x = $;do {
+          $ -= h, u[g + (M >> O) + $] = v << 24 | y << 16 | b | 0;
+        } while (0 !== $);for (h = 1 << E - 1; M & h;) {
           h >>= 1;
-        }if (0 !== h ? (L &= h - 1, L += h) : L = 0, k++, 0 == --j[E]) {
+        }if (0 !== h ? (M &= h - 1, M += h) : M = 0, k++, 0 == --j[E]) {
           if (E === S) break;E = e[n + c[k]];
-        }if (E > A && (L & _) !== p) {
+        }if (E > A && (M & _) !== p) {
           for (0 === O && (O = A), g += x, R = E - O, T = 1 << R; R + O < S && !((T -= j[R + O]) <= 0);) {
             R++, T <<= 1;
-          }if (C += 1 << R, 1 === t && C > 852 || 2 === t && C > 592) return 1;p = L & _, u[p] = A << 24 | R << 16 | g - l | 0;
+          }if (L += 1 << R, 1 === t && L > 852 || 2 === t && L > 592) return 1;p = M & _, u[p] = A << 24 | R << 16 | g - l | 0;
         }
-      }return 0 !== L && (u[g + L] = E - O << 24 | 64 << 16 | 0), f.bits = A, 0;
+      }return 0 !== M && (u[g + M] = E - O << 24 | 64 << 16 | 0), f.bits = A, 0;
     };
   }, function (t, e, n) {
     "use strict";
@@ -4397,7 +4353,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       };
     }).call(e, n(0));
   }, function (t, e, n) {
-    t.exports = n(149);
+    t.exports = n(147);
   }, function (t, e, n) {
     function r() {}function i(t, e, n) {
       function i() {
@@ -4414,7 +4370,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }, c)), window[$] = function (t) {
         o("jsonp got", t), s && clearTimeout(s), i(), n && n(null, t);
       }, t += (~t.indexOf("?") ? "&" : "?") + l + "=" + f($), t = t.replace("?&", "?"), o('jsonp req "%s"', t), d = document.createElement("script"), d.src = t, h.parentNode.insertBefore(d, h);
-    }var o = n(150)("jsonp");t.exports = i;var a = 0;
+    }var o = n(148)("jsonp");t.exports = i;var a = 0;
   }, function (t, e, n) {
     (function (r) {
       function i() {
@@ -4436,7 +4392,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
         var t;try {
           t = e.storage.debug;
         } catch (t) {}return !t && void 0 !== r && "env" in r && (t = r.env.DEBUG), t;
-      }e = t.exports = n(151), e.log = a, e.formatArgs = o, e.save = d, e.load = s, e.useColors = i, e.storage = "undefined" != typeof chrome && void 0 !== chrome.storage ? chrome.storage.local : function () {
+      }e = t.exports = n(149), e.log = a, e.formatArgs = o, e.save = d, e.load = s, e.useColors = i, e.storage = "undefined" != typeof chrome && void 0 !== chrome.storage ? chrome.storage.local : function () {
         try {
           return window.localStorage;
         } catch (t) {}
@@ -4482,7 +4438,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
       }return !1;
     }function s(t) {
       return t instanceof Error ? t.stack || t.message : t;
-    }e = t.exports = i.debug = i.default = i, e.coerce = s, e.disable = a, e.enable = o, e.enabled = d, e.humanize = n(152), e.names = [], e.skips = [], e.formatters = {};var u;
+    }e = t.exports = i.debug = i.default = i, e.coerce = s, e.disable = a, e.enable = o, e.enabled = d, e.humanize = n(150), e.names = [], e.skips = [], e.formatters = {};var u;
   }, function (t, e) {
     function n(t) {
       if (t = String(t), !(t.length > 100)) {
@@ -4514,18 +4470,9 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
     "use strict";
     var r = function r() {
       var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;return n("div", { staticClass: "vue-tel-input", class: { disabled: t.disabled } }, [n("div", { directives: [{ name: "click-outside", rawName: "v-click-outside", value: t.clickedOutside, expression: "clickedOutside" }], staticClass: "dropdown", class: { open: t.open }, attrs: { tabindex: "0" }, on: { click: t.toggleDropdown, keydown: [t.keyboardNav, function (e) {
-            return "button" in e || !t._k(e.keyCode, "esc", 27, e.key, "Escape") ? t.reset(e) : null;
-          }] } }, [n("span", { staticClass: "selection" }, [n("div", { staticClass: "iti-flag", class: t.activeCountry.iso2.toLowerCase() }), t._v(" "), n("span", { staticClass: "dropdown-arrow" }, [t._v("\n        " + t._s(t.open ? "▲" : "▼") + "\n      ")])]), t._v(" "), n("ul", { directives: [{ name: "show", rawName: "v-show", value: t.open, expression: "open" }], ref: "list" }, t._l(t.sortedCountries, function (e, r) {
-        return n("li", { key: e.iso2 + (e.preferred ? "-preferred" : ""), staticClass: "dropdown-item", class: t.getItemClass(r, e.iso2), on: { click: function click(n) {
-              t.choose(e);
-            }, mousemove: function mousemove(e) {
-              t.selectedIndex = r;
-            } } }, [n("div", { staticClass: "iti-flag", class: e.iso2.toLowerCase() }), t._v(" "), n("strong", [t._v(t._s(e.name) + " ")]), t._v(" "), n("span", [t._v("+" + t._s(e.dialCode))])]);
-      }))]), t._v(" "), n("input", { directives: [{ name: "model", rawName: "v-model", value: t.phone, expression: "phone" }], ref: "input", attrs: { type: "tel", placeholder: t.placeholder, state: t.state, formatter: t.format, disabled: t.disabled, required: t.required }, domProps: { value: t.phone }, on: { blur: t.onBlur, input: [function (e) {
+          e = t.$createElement;return (t._self._c || e)("input", { directives: [{ name: "model", rawName: "v-model", value: t.phone, expression: "phone" }], ref: "input", attrs: { type: "tel", placeholder: t.placeholder, state: t.state, formatter: t.format, disabled: t.disabled, required: t.required }, domProps: { value: t.phone }, on: { blur: t.onBlur, input: [function (e) {
             e.target.composing || (t.phone = e.target.value);
-          }, t.onInput] } })]);
+          }, t.onInput] } });
     },
         i = [],
         o = { render: r, staticRenderFns: i };e.a = o;
@@ -4536,16 +4483,6 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
 /***/ }),
 /* 9 */,
 /* 10 */
-/*!********************************!*\
-  !*** ./dist/vue-tel-input.css ***!
-  \********************************/
-/*! dynamic exports provided */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 11 */
 /*!**********************!*\
   !*** ./demo/App.vue ***!
   \**********************/
@@ -4554,10 +4491,10 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */](Object.assign({}, __WEB
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_babelrc_false_presets_Users_stevend_coding_vue_vue_tel_input_node_modules_babel_preset_poi_index_js_jsx_vue_cacheDirectory_true_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(/*! !babel-loader?{"babelrc":false,"presets":[["/Users/stevend/coding/vue/vue-tel-input/node_modules/babel-preset-poi/index.js",{"jsx":"vue"}]],"cacheDirectory":true}!../node_modules/vue-loader/lib/selector?type=script&index=0!./App.vue */ 2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_babelrc_false_presets_Users_creo_IDO_WebDev_opensource_vue_tel_mini_input_node_modules_babel_preset_poi_index_js_jsx_vue_cacheDirectory_true_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(/*! !babel-loader?{"babelrc":false,"presets":[["/Users/creo/IDO/WebDev/opensource/vue-tel-mini-input/node_modules/babel-preset-poi/index.js",{"jsx":"vue"}]],"cacheDirectory":true}!../node_modules/vue-loader/lib/selector?type=script&index=0!./App.vue */ 2);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e56a6a6e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-e56a6a6e","hasScoped":false,"buble":{"transforms":{}}}!../node_modules/vue-loader/lib/selector?type=template&index=0!./App.vue */ 13);
-var normalizeComponent = __webpack_require__(/*! ../node_modules/vue-loader/lib/component-normalizer */ 12)
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_26cee420_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-26cee420","hasScoped":false,"buble":{"transforms":{}}}!../node_modules/vue-loader/lib/selector?type=template&index=0!./App.vue */ 12);
+var normalizeComponent = __webpack_require__(/*! ../node_modules/vue-loader/lib/component-normalizer */ 11)
 /* script */
 
 
@@ -4572,8 +4509,8 @@ var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_babelrc_false_presets_Users_stevend_coding_vue_vue_tel_input_node_modules_babel_preset_poi_index_js_jsx_vue_cacheDirectory_true_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e56a6a6e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_babelrc_false_presets_Users_creo_IDO_WebDev_opensource_vue_tel_mini_input_node_modules_babel_preset_poi_index_js_jsx_vue_cacheDirectory_true_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_26cee420_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -4584,17 +4521,17 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 12 */,
-/* 13 */
+/* 11 */,
+/* 12 */
 /*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-e56a6a6e","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./demo/App.vue ***!
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-26cee420","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./demo/App.vue ***!
   \***********************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('h1',[_vm._v("Telephone Input Vue")]),_vm._v(" "),_c('h2',{staticStyle:{"color":"#999"}},[_vm._v("made with ❤ by Steven.")]),_vm._v(" "),_c('div',{staticStyle:{"width":"500px","margin":"20px auto"}},[_c('vue-tel-input',{attrs:{"preferredCountries":['us', 'gb', 'ua']},on:{"onInput":_vm.onInput}})],1),_vm._v(" "),(_vm.phone.number)?_c('div',{staticStyle:{"color":"#e83e8c"}},[_c('span',[_vm._v("Number:\n      "),_c('strong',[_vm._v(_vm._s(_vm.phone.number))]),_vm._v(", \n    ")]),_vm._v(" "),_c('span',[_vm._v("Is valid:\n      "),_c('strong',[_vm._v(_vm._s(_vm.phone.isValid))]),_vm._v(", \n    ")]),_vm._v(" "),_c('span',[_vm._v("Country:\n      "),_c('strong',[_vm._v(_vm._s(_vm.phone.country))])])]):_vm._e()])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('h1',[_vm._v("Telephone mini Input Vue")]),_vm._v(" "),_c('h2',{staticStyle:{"color":"#999"}},[_vm._v("made with ❤ by Steven and Sergey.")]),_vm._v(" "),_c('div',{staticStyle:{"width":"500px","margin":"20px auto"}},[_c('vue-tel-mini-input',{attrs:{"preferredCountries":['us', 'gb', 'ua']},on:{"onInput":_vm.onInput}})],1),_vm._v(" "),(_vm.phone.number)?_c('div',{staticStyle:{"color":"#e83e8c"}},[_c('span',[_vm._v("Number:\n      "),_c('strong',[_vm._v(_vm._s(_vm.phone.number))]),_vm._v(", \n    ")]),_vm._v(" "),_c('span',[_vm._v("Is valid:\n      "),_c('strong',[_vm._v(_vm._s(_vm.phone.isValid))]),_vm._v(", \n    ")]),_vm._v(" "),_c('span',[_vm._v("Country:\n      "),_c('strong',[_vm._v(_vm._s(_vm.phone.country))])])]):_vm._e()])}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <h1>Telephone Input Vue</h1>
-    <h2 style="color: #999">made with &#x2764; by Steven.</h2>
+    <h1>Telephone mini Input Vue</h1>
+    <h2 style="color: #999">made with &#x2764; by Steven and Sergey.</h2>
     <div style="width: 500px; margin: 20px auto;">
-      <vue-tel-input @onInput="onInput"
+      <vue-tel-mini-input @onInput="onInput"
                      :preferredCountries="['us', 'gb', 'ua']">
-      </vue-tel-input>
+      </vue-tel-mini-input>
     </div>
     <div v-if="phone.number"
          style="color: #e83e8c">
