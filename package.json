@@ -1,6 +1,6 @@
 {
   "name": "vue-tel-mini-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "International Telephone Input with Vue",
   "author": "Steven Dao <iamstevendao@gmail.com>, Sergey Shukhta <promo.creo@gmail.com>",
   "main": "dist/vue-tel-mini-input.js",
