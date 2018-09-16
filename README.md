@@ -1,6 +1,8 @@
 # vue-tel-mini-input
 International Telephone Input (this is minified version of package vue-tel-input by [Steven](https://github.com/iamstevendao))
 
+![preview](https://user-images.githubusercontent.com/723379/45596230-62aafd80-b9c1-11e8-8cc0-de3545908907.png)
+
 ## Installation
 - **yarn**:
   ```bash
