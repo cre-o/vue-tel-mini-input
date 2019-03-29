@@ -6,20 +6,20 @@ International Telephone Input (this is minified version of package vue-tel-input
 ## Installation
 - **yarn**:
   ```bash
-    yarn add vue-mini-tel-input
+    yarn add vue-tel-mini-input
   ```
 - **npm**:
   ```bash
-    npm i --save vue-mini-tel-input
+    npm i --save vue-tel-mini-input
   ```
 
 ## Usage
 - Install as a global component:
     ```javascript
     import Vue from 'vue'
-    import VueMiniTelInput from 'vue-mini-tel-input'
+    import VueTelMiniInput from 'vue-tel-mini-input'
 
-    Vue.use(VueMiniTelInput)
+    Vue.use(VueTelMiniInput)
     ```
 
 - In your component:
